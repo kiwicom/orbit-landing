@@ -1,0 +1,24 @@
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+lib/
+
+.env
+.out
+.storybook
+
+#Jest
+#
+coverage/
+
+# OSX
+#
+.DS_Store
+
+# IDE
+.idea
+.vscode
+
+deploy

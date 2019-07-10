@@ -1,0 +1,6 @@
+// @flow
+import * as React from "react";
+
+import typeof BadgeType from "./Badge";
+
+declare export var Badge: BadgeType;

@@ -1,0 +1,31 @@
+{
+  "name": "@kiwicom/orbit-landing-components",
+  "version": "0.0.0",
+  "description": "Orbit-landing-components is a React component library for building landing pages of Kiwi.com",
+  "scripts": {
+    "storybook": "start-storybook",
+    "build": "yarn clean && yarn build:lib",
+    "build:lib": "babel --out-dir lib --ignore **/*.stories.js,**/*.test.js,**/*.storyshot.js src && yarn copy:lib",
+    "build:storybook": "build-storybook -c .storybook -o .out -s ./static",
+    "copy:lib": "copyfiles -u 1 'src/**/*.md' lib && copyfiles -u 1 'src/**/*.js.flow' lib && copyfiles -u 1 'src/**/*.json' lib",
+    "clean": "rimraf lib es"
+  },
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "author": "kiwi.com",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.4.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "babel-loader": "^8.0.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  }
+}
