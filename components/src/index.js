@@ -1,3 +1,3 @@
 // @flow
 
-export { default as Badge } from './Badge';
+export { default as Hero } from './Hero';

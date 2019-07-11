@@ -1,6 +1,7 @@
 // @flow
-import * as React from "react";
 
-import typeof BadgeType from "./Badge";
+import * as React from 'react';
 
-declare export var Badge: BadgeType;
+import typeof HeroType from './Hero';
+
+declare export var Hero: HeroType;

@@ -1521,6 +1521,11 @@
   resolved "https://registry.yarnpkg.com/@kiwicom/js/-/js-0.10.0.tgz#79f317e5a6c6ad8e81375215829d65f6c10bbe74"
   integrity sha512-rTTPAth4/8f9JHkt4c8NyWbfvg4YMe7/F+BjJziA/4QZ1gTTqzfGAncUn6MRRFCFEDk0wJ6YIFKH/mTRy7ecgw==
 
+"@kiwicom/js@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@kiwicom/js/-/js-0.9.0.tgz#67032574d8ee318cd747001a7b4c87013214327a"
+  integrity sha512-CwDiWwLWE0iWzCrL08x7jdEySAIVdmcmF/rik8gjK5oW4jA5G9fOBxsSSVm2bLtq8HG9KIz4YHDbtWO1K7LIiQ==
+
 "@kiwicom/monorepo-utils@^0.21.0":
   version "0.21.0"
   resolved "https://registry.yarnpkg.com/@kiwicom/monorepo-utils/-/monorepo-utils-0.21.0.tgz#acad60aa8425c5331e7b8eca7f5f8e620f7f2c96"
@@ -1530,6 +1535,21 @@
     "@kiwicom/js" "^0.10.0"
     glob "^7.1.4"
     is-ci "^2.0.0"
+
+"@kiwicom/orbit-components@^0.49.1":
+  version "0.49.1"
+  resolved "https://registry.yarnpkg.com/@kiwicom/orbit-components/-/orbit-components-0.49.1.tgz#565376ff144537be2d7c6c50e84979e55328c317"
+  integrity sha512-nqDOGPaiCrCFdWH/M2RovXbJbzB7v/638l33hEGl0racI3+vD3xizmaD9Bg1x3m2uov+hm4x6Qv0fYKLBG0sDg==
+  dependencies:
+    "@kiwicom/js" "^0.9.0"
+    "@kiwicom/orbit-design-tokens" "^0.6.4"
+
+"@kiwicom/orbit-design-tokens@^0.6.4":
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/@kiwicom/orbit-design-tokens/-/orbit-design-tokens-0.6.4.tgz#10ae70ad667db0ea329c08e705185da88b368beb"
+  integrity sha512-8K3ZcmAv0hKqD6UICVawfOp9TKdowI1HJqkPskVHMXBTiITyOcj35vVqrsv3IBmJXLmgo56I1YvqSvOWKy9xmA==
+  dependencies:
+    ramda "^0.26.1"
 
 "@mikaelkristiansson/domready@^1.0.9":
   version "1.0.9"
@@ -11762,6 +11782,11 @@ ramda@^0.21.0:
   version "0.21.0"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.21.0.tgz#a001abedb3ff61077d4ff1d577d44de77e8d0a35"
   integrity sha1-oAGr7bP/YQd9T/HVd9RN536NCjU=
+
+ramda@^0.26.1:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
+  integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
