@@ -110,7 +110,7 @@ const Hero = ({ img, pattern }) => {
           <Stack flex direction="row">
             <Stack flex shrink direction="column">
               <Stack flex shrink>
-                <Text type="white">
+                <Text type="white" size="large">
                   Join us in making travel better and win your share of 1.000
                   EUR for flight tickets
                 </Text>
@@ -118,7 +118,9 @@ const Hero = ({ img, pattern }) => {
 
               <Stack flex shrink>
                 <Button>Register</Button>
-                <Button type="white">Share</Button>
+                <Button type="white" bordered>
+                  Share
+                </Button>
               </Stack>
             </Stack>
             <Stack flex shrink justify="end" align="center">
