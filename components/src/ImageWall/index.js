@@ -4,16 +4,22 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 
+import Pattern from '../utils/Pattern';
+import pattern01 from '../../static/pattern01.svg';
+import pattern02 from '../../static/heroBox.svg';
 import defaultTheme from '../defaultTheme';
 
 const StyledImage = styled.div`
-  background-color: grey;
   width: 100%;
   height: 150px;
   border-radius: ${({ theme }) => theme.orbit.borderRadiusLarge};
+  background-image: ${({ img }) => `url(${img})`};
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   ${media.tablet(css`
-    height: 33vh;
+    height: 32vh;
   `)};
 `;
 
@@ -24,31 +30,66 @@ StyledImage.defaultProps = {
 const StyledImageWall = styled.div`
   height: 100vh;
   width: 100vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  position: relative;
+  overflow-x: hidden;
 `;
 
 const StyledGrid = styled.div`
+  background-color: #121212;
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 1vw;
-  grid-row-gap: 1vw;
+  grid-column-gap: 0.8vw;
+  grid-row-gap: 0.8vw;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 140vw;
+    height: 200px;
+    background-color: #121212;
+    z-index: -1;
+  }
+
+  &:before {
+    top: 0;
+    left: 0;
+    transform: translate(-10%, 2vh) rotate(1.2deg);
+  }
+
+  &:after {
+    left: 0;
+    bottom: 0;
+    transform: translate(-10%, -2vh) rotate(1.2deg);
+  }
+
+  & > :nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    height: 100%;
+  }
+
+  & > :nth-child(7) {
+    grid-row-start: 4;
+    grid-row-end: span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 100%;
+  }
 
   ${media.tablet(css`
     grid-template-columns: 2fr 1fr 1fr 2fr;
 
-    & > :nth-child(1) {
-      grid-row-start: 1;
-      grid-row-end: span 2;
-      height: 100%;
-    }
     & > :nth-child(7) {
       grid-row-start: 2;
       grid-row-end: span 2;
       grid-column-start: 4;
       grid-column-end: 5;
-      height: 100%;
     }
     & > :nth-child(9) {
       grid-column-start: 2;
@@ -62,24 +103,32 @@ StyledGrid.defaultProps = {
   theme: defaultTheme,
 };
 
-const ImageWallItem = () => {
-  return <StyledImage />;
+const ImageWallItem = ({ img }) => {
+  return <StyledImage img={img} />;
 };
 
-const ImageWall = () => {
+const ImageWall = ({ images }) => {
   return (
     <StyledImageWall>
       <StyledGrid>
-        <ImageWallItem />
-        <ImageWallItem />
-        <ImageWallItem />
-        <ImageWallItem />
-        <ImageWallItem />
-        <ImageWallItem />
-        <ImageWallItem />
-        <ImageWallItem />
-        <ImageWallItem />
+        {images.map((item, index) => {
+          return <ImageWallItem key={index} img={item} />;
+        })}
       </StyledGrid>
+      <Pattern
+        top="0px"
+        left="0px"
+        width="6vh"
+        height="6vh"
+        pattern={pattern02}
+      />
+      <Pattern
+        bottom="0px"
+        right="0px"
+        width="13vh"
+        height="11vh"
+        pattern={pattern01}
+      />
     </StyledImageWall>
   );
 };
