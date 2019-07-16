@@ -2,6 +2,8 @@
 
 import { defaultTokens } from '@kiwicom/orbit-design-tokens';
 
+console.log(defaultTokens);
+
 defaultTokens.fontSizeHeadingDisplay =
   'calc(70px + (166 - 80) * ((100vw - 320px) / (1920 - 320)))';
 defaultTokens.lineHeightHeading = '1.02';
