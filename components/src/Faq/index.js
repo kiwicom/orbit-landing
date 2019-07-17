@@ -72,6 +72,7 @@ FaqWrapper.defaultProps = {
 const StyledContent = styled.div`
   max-height: 0;
   display: none;
+  padding: 1vh 0 0 0;
 
   ${({ expanded }) =>
     expanded &&
@@ -96,14 +97,12 @@ const FaqItem = ({ question, answer, index }) => {
             setExpanded(!expanded);
           }}
         >
-          <Stack spacing="natural">
-            <Text weight="bold" spacing="natural">
-              {question}
-            </Text>
-            <StyledContent expanded={expanded}>
-              <Text>{answer}</Text>
-            </StyledContent>
-          </Stack>
+          <Text weight="bold" spacing="natural">
+            {question}
+          </Text>
+          <StyledContent expanded={expanded}>
+            <Text>{answer}</Text>
+          </StyledContent>
         </BubbleWrapper>
       </Stack>
     </FaqWrapper>
