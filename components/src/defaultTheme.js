@@ -23,6 +23,8 @@ defaultTokens.fontSizeTextNormal =
 defaultTokens.fontSizeTextLarge =
   'calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)))';
 
+defaultTokens.fontFamily = `"Circular Pro", -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif`;
+
 export default {
   orbit: defaultTokens,
   rtl: false,
