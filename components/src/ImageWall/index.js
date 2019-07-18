@@ -6,7 +6,7 @@ import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 
 import Pattern from '../utils/Pattern';
 import pattern01 from '../../static/pattern01.svg';
-import pattern02 from '../../static/heroBox.svg';
+import pattern02 from '../../static/pattern05.svg';
 import defaultTheme from '../defaultTheme';
 
 const StyledImage = styled.div`

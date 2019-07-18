@@ -8,7 +8,7 @@ import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Grid from '@kiwicom/orbit-components/lib/utils/Grid';
 
-import heroBox from '../../static/heroBox.svg';
+import heroBox from '../../static/pattern05.svg';
 import defaultTheme from '../defaultTheme';
 
 const StyledHero = styled.div`

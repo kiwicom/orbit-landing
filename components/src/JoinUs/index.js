@@ -43,13 +43,17 @@ StyledJoinUs.defaultProps = {
 };
 
 const ContentWrapper = styled.div`
-  width: 70vw;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  max-width: 70vw;
+  height: 100%;
   padding: 3.37vw 5.26vw;
   box-sizing: border-box;
   z-index: 1;
 
-  ${media.tablet(css`
-    width: 45.68vw;
+  ${media.desktop(css`
+    max-width: 45.68vw;
   `)};
 `;
 
@@ -57,23 +61,9 @@ ContentWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const Wrapper = styled.div`
-  width: 100%;
-  height: 100%;
+const StyledSpan = styled.span`
+  display: block;
 `;
-
-Wrapper.defaultProps = {
-  theme: defaultTheme,
-};
-
-const BottomWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-`;
-
-BottomWrapper.defaultProps = {
-  theme: defaultTheme,
-};
 
 const JoinUs = ({ img, pattern, pattern2 }) => {
   return (
@@ -96,7 +86,7 @@ const JoinUs = ({ img, pattern, pattern2 }) => {
       </Hide>
       <Stack direction="column" justify="center" align="center">
         <ContentWrapper>
-          <Stack direction="column" justify="center" align="center">
+          <Stack direction="column" justify="center" align="center" basis="70%">
             <Heading inverted type="title1">
               Join Us
             </Heading>
@@ -105,12 +95,16 @@ const JoinUs = ({ img, pattern, pattern2 }) => {
               task
             </Text>
             <Button>Register</Button>
+          </Stack>
+          <Stack direction="column" justify="center" align="center">
             <Text type="white" size="small" align="center">
               We value the participation of each member and we want all
               attendees to have an enjoying and fulfilling experience.
-              <TextLink external={false} href="https://kiwi.com" type="primary">
-                Check our Code of Conduct
-              </TextLink>
+              <StyledSpan>
+                <TextLink external href="https://kiwi.com" type="primary">
+                  Check our Code of Conduct
+                </TextLink>
+              </StyledSpan>
             </Text>
           </Stack>
         </ContentWrapper>

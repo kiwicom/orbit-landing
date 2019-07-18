@@ -4,8 +4,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import joinUsImg from '../../static/joinUsImg.jpg';
-import joinUsPattern from '../../static/joinUsPattern.svg';
-import joinUsPattern2 from '../../static/joinUsPattern2.svg';
+import joinUsPattern from '../../static/pattern03.svg';
+import joinUsPattern2 from '../../static/pattern04.svg';
 
 import JoinUs from './index';
 

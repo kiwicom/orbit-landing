@@ -4,7 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import heroImg from '../../static/hero.jpg';
-import heroPattern from '../../static/heroPattern.svg';
+import heroPattern from '../../static/pattern04.svg';
 
 import Hero from './index';
 
