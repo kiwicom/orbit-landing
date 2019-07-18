@@ -3,7 +3,7 @@
 import { defaultTokens } from '@kiwicom/orbit-design-tokens';
 
 defaultTokens.fontSizeHeadingDisplay =
-  'calc(70px + (166 - 80) * ((100vw - 320px) / (1920 - 320)))';
+  'calc(55px + (166 - 55) * ((100vw - 320px) / (1920 - 320)))';
 defaultTokens.lineHeightHeading = '1.02';
 
 defaultTokens.fontSizeHeadingTitle1 =
