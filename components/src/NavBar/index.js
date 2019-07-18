@@ -1,12 +1,10 @@
 // @flow
 
 import React from 'react';
-import styled, { css } from 'styled-components';
-import Heading from '@kiwicom/orbit-components/lib/Heading';
-import Text from '@kiwicom/orbit-components/lib/Text';
+import styled from 'styled-components';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
-import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 import defaultTheme from '@kiwicom/orbit-components/lib/defaultTheme';
+import Hide from '@kiwicom/orbit-components/lib/Hide';
 
 import logo from '../../static/kiwi-white.svg';
 
@@ -31,33 +29,55 @@ const StyledLink = styled.a`
   font-family: ${({ theme }) => theme.orbit.fontFamily};
   font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1920 - 320)));
   color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 StyledLink.defaultProps = {
   theme: defaultTheme,
 };
 
-const Link = ({ children }) => {
-  return <StyledLink>{children}</StyledLink>;
+const StyledImage = styled.div`
+  height: 4.21vw;
+  width: 8.52vw;
+  min-width: 80px;
+  min-height: 40px;
+  background-image: ${({ img }) => `url(${img})`};
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+`;
+
+const Link = ({ children, onClick, href }) => {
+  return (
+    <StyledLink onClick={onClick} href={href}>
+      {children}
+    </StyledLink>
+  );
 };
 
-const Logo = () => {
-  return <img width="162px" src={logo} alt="Kiwi.com logo" />;
-};
-
-const NavBar = ({ items }) => {
+const NavBar = ({ items, title }) => {
   return (
     <StyledMainContent>
       <Stack flex align="center" spacing="none">
         <Stack flex shrink align="center">
-          <Logo />
-          <StyledText>Travel Hackathon</StyledText>
+          <StyledImage img={logo} />
+          <StyledText>{title}</StyledText>
         </Stack>
-        <Stack spacing="loose" flex shrink justify="end">
-          {items.map((el, index) => {
-            return <Link key={index}>About</Link>;
-          })}
-        </Stack>
+        <Hide on={['smallMobile', 'mediumMobile', 'largeMobile']}>
+          <Stack spacing="loose" flex shrink justify="end">
+            {items.map((el, index) => {
+              return (
+                <Link href={el.href} onClick={el.onClick} key={index}>
+                  {el.title}
+                </Link>
+              );
+            })}
+          </Stack>
+        </Hide>
       </Stack>
     </StyledMainContent>
   );

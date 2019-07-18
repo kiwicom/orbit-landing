@@ -8,18 +8,32 @@ import NavBar from './index';
 storiesOf('NavBar', module).add('Default', () => (
   <div style={{ background: 'black' }}>
     <NavBar
+      title="Travel Hackathon"
       items={[
         {
-          question: 'Do all the team members need to fill out the form?',
-          answer: 'Yes, all the team must fill out the form',
+          title: 'About',
+          onClick: '',
+          href: '#test',
         },
         {
-          question: 'Do all the team members need to fill out the form?',
-          answer: 'Yes, all the team must fill out the form',
+          title: 'Prizes',
+          onClick: '',
+          href: '#test',
         },
         {
-          question: 'Do all the team members need to fill out the form?',
-          answer: 'Yes, all the team must fill out the form',
+          title: 'FAQ',
+          onClick: '',
+          href: '#test',
+        },
+        {
+          title: 'Contact',
+          onClick: '',
+          href: '#test',
+        },
+        {
+          title: 'Sponsors',
+          onClick: '',
+          href: '#test',
         },
       ]}
     />
