@@ -3,11 +3,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import heroImg from '../../static/hero.jpg';
-import heroPattern from '../../static/heroPattern.svg';
+import joinUsImg from '../../static/joinUsImg.jpg';
+import joinUsPattern from '../../static/joinUsPattern.svg';
+import joinUsPattern2 from '../../static/joinUsPattern2.svg';
 
-import Hero from './index';
+import JoinUs from './index';
 
-storiesOf('Hero', module).add('Default', () => (
-  <Hero img={heroImg} pattern={heroPattern} />
+storiesOf('JoinUs', module).add('Default', () => (
+  <JoinUs img={joinUsImg} pattern={joinUsPattern} pattern2={joinUsPattern2} />
 ));

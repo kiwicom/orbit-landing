@@ -18,10 +18,19 @@ defaultTokens.fontSizeHeadingTitle4 =
   'calc(16px + (40 - 16) * ((100vw - 320px) / (1920 - 320)))';
 defaultTokens.fontWeightHeadingTitle4 = '600';
 
+defaultTokens.fontSizeTextSmall =
+  'calc(12px + (24 - 14) * ((100vw - 320px) / (1920 - 320)))';
 defaultTokens.fontSizeTextNormal =
   'calc(16px + (28 - 16) * ((100vw - 320px) / (1920 - 320)))';
 defaultTokens.fontSizeTextLarge =
   'calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)))';
+
+// Button component
+defaultTokens.fontSizeButtonNormal =
+  'calc(16px + (28 - 16) * ((100vw - 320px) / (1920 - 320)))';
+defaultTokens.borderRadiusNormal = `6px`;
+defaultTokens.paddingButtonNormal = `0.84vw 1.68vw`;
+defaultTokens.heightButtonNormal = `auto`;
 
 defaultTokens.fontFamily = `"Circular Pro", -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif`;
 

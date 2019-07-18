@@ -1,140 +1,122 @@
 // @flow
 
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Button from '@kiwicom/orbit-components/lib/Button';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Text from '@kiwicom/orbit-components/lib/Text';
+import TextLink from '@kiwicom/orbit-components/lib/TextLink';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
-import Grid from '@kiwicom/orbit-components/lib/utils/Grid';
+import Hide from '@kiwicom/orbit-components/lib/Hide';
+import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 
-import heroBox from '../../static/heroBox.svg';
+import StyledPattern from '../utils/Pattern';
 import defaultTheme from '../defaultTheme';
 
-const StyledHero = styled.div`
-  background: black;
-  height: 100%;
-  height: 100vh;
+const StyledJoinUs = styled.div`
+  display: flex;
+  align-items: flex-center;
+  width: 100%;
+  height: 44.73vw;
+  min-height: 430px;
   background-image: ${({ img }) => `url(${img})`};
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom right;
+  background-position: bottom left;
   position: relative;
   overflow: hidden;
 
-  &:after {
+  &:before {
     content: '';
-    width: 69px;
-    height: 57px;
     display: block;
-    background-image: url(${heroBox});
-    background-size: cover;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: -19px;
-    right: 20px;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
   }
 `;
 
-StyledHero.defaultProps = {
+StyledJoinUs.defaultProps = {
   theme: defaultTheme,
 };
 
-const HeadingWrapper = styled.div`
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-left: 5.2vw;
-  padding-right: 5.2vw;
+const ContentWrapper = styled.div`
+  width: 70vw;
+  padding: 3.37vw 5.26vw;
   box-sizing: border-box;
+  z-index: 1;
+
+  ${media.tablet(css`
+    width: 45.68vw;
+  `)};
 `;
 
-const StyledDate = styled.span`
-  color: ${({ theme }) => theme.orbit.colorTextWarning};
-  display: block;
-`;
-StyledDate.defaultProps = {
+ContentWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const StyledAlign = styled.span`
-  text-align: right;
-`;
-
-const StyledWrapper = styled.div`
+const Wrapper = styled.div`
+  width: 100%;
   height: 100%;
 `;
-StyledWrapper.defaultProps = {
+
+Wrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const BottomTextWrapper = styled(HeadingWrapper)`
-  align-items: flex-end;
-  padding-bottom: 4.16vw;
+const BottomWrapper = styled.div`
+  width: 100%;
+  height: 100%;
 `;
 
-const StyledTextWithPattern = styled.span`
-  display: block;
-  position: relative;
+BottomWrapper.defaultProps = {
+  theme: defaultTheme,
+};
 
-  &:after {
-    content: '';
-    min-width: 190px;
-    min-height: 130px;
-    width: 20vw;
-    height: 14.7vw;
-    display: block;
-    background-image: ${({ pattern }) => `url(${pattern})`};
-    background-size: cover;
-    position: absolute;
-    top: -6vw;
-    right: -7vw;
-  }
-`;
-
-const Hero = ({ img, pattern }) => {
+const JoinUs = ({ img, pattern, pattern2 }) => {
   return (
-    <StyledHero img={img}>
-      <Grid rows="calc(100vh - 230px) 230px">
-        <StyledWrapper>
-          <HeadingWrapper>
-            <Heading inverted type="display">
-              <StyledTextWithPattern pattern={pattern}>
-                Travel
-              </StyledTextWithPattern>
-              Hackathon
+    <StyledJoinUs img={img}>
+      <Hide on={['smallMobile', 'mediumMobile', 'largeMobile', 'tablet']}>
+        <StyledPattern
+          width="21.73vw"
+          height="14.26vw"
+          bottom="6.47vw"
+          left="9.21vw"
+          pattern={pattern}
+        />
+        <StyledPattern
+          width="21.73vw"
+          height="14.26vw"
+          top="5.16vw"
+          right="12vw"
+          pattern={pattern2}
+        />
+      </Hide>
+      <Stack direction="column" justify="center" align="center">
+        <ContentWrapper>
+          <Stack direction="column" justify="center" align="center">
+            <Heading inverted type="title1">
+              Join Us
             </Heading>
-          </HeadingWrapper>
-        </StyledWrapper>
-
-        <BottomTextWrapper>
-          <Stack flex direction="row">
-            <Stack flex shrink direction="column">
-              <Stack flex shrink>
-                <Text type="white" size="large">
-                  Join us in making travel better and win your share of 1.000
-                  EUR for flight tickets
-                </Text>
-              </Stack>
-
-              <Stack flex shrink>
-                <Button>Register</Button>
-                <Button type="white" bordered>
-                  Share
-                </Button>
-              </Stack>
-            </Stack>
-            <Stack flex shrink justify="end" align="center">
-              <Heading inverted type="title2" element="h2">
-                <StyledAlign>
-                  <StyledDate>10 may</StyledDate> ljubljana
-                </StyledAlign>
-              </Heading>
-            </Stack>
+            <Text type="white" align="center">
+              The participants will be selected based on their solution of entry
+              task
+            </Text>
+            <Button>Register</Button>
+            <Text type="white" size="small" align="center">
+              We value the participation of each member and we want all
+              attendees to have an enjoying and fulfilling experience.
+              <TextLink external={false} href="https://kiwi.com" type="primary">
+                Check our Code of Conduct
+              </TextLink>
+            </Text>
           </Stack>
-        </BottomTextWrapper>
-      </Grid>
-    </StyledHero>
+        </ContentWrapper>
+      </Stack>
+    </StyledJoinUs>
   );
 };
 
-export default Hero;
+export default JoinUs;
