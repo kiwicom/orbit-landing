@@ -33,7 +33,7 @@ const StyledImageWall = styled.div`
   padding-top: 5vw;
   padding-bottom: 5vw;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 
 const StyledGrid = styled.div`
