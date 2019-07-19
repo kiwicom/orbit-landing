@@ -22,7 +22,7 @@ const Panel = ({ items }) => {
     <StyledMainContent>
       <Grid
         rows="repeat(3,  1fr)"
-        tablet={{ columns: 'repeat(3,  1fr)', rows: null }}
+        tablet={{ columns: 'repeat(3,  1fr)', rows: 'none' }}
         columns={null}
         gap="6vw"
       >
