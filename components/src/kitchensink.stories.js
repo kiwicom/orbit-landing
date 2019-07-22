@@ -13,10 +13,13 @@ import Imagewall from './ImageWall';
 import JoinUs from './JoinUs';
 import Panel from './Panel';
 import Locations from './Locations';
+import HeroCentered from './HeroCentered';
 // Images
 import logo from '../static/kiwi.svg';
 import heroImg from '../static/hero.jpg';
 import heroPattern from '../static/pattern04.svg';
+import heroImg2 from '../static/hero02.jpg';
+import heroSvg from '../static/hero2.svg';
 import missionImage from '../static/mission.jpg';
 import grid01 from '../static/grid01.jpg';
 import grid02 from '../static/grid02.jpg';
@@ -49,7 +52,8 @@ const StyledStack = styled.div`
   & > * {
     margin: 0 0 5.26vh 0;
   }
-  & > :nth-child(1) {
+  & > :nth-child(1),
+  & > :nth-child(2) {
     margin: 0;
   }
 `;
@@ -92,11 +96,46 @@ storiesOf('KitchenSink', module).add('Default', () => (
         />
       }
     />
+    <HeroCentered
+      backgroundImage={heroImg2}
+      heroImage={heroSvg}
+      navBar={
+        <NavBar
+          title="Travel Hackathon"
+          items={[
+            {
+              title: 'About',
+              onClick: '',
+              href: '#test',
+            },
+            {
+              title: 'Prizes',
+              onClick: '',
+              href: '#test',
+            },
+            {
+              title: 'FAQ',
+              onClick: '',
+              href: '#test',
+            },
+            {
+              title: 'Contact',
+              onClick: '',
+              href: '#test',
+            },
+            {
+              title: 'Sponsors',
+              onClick: '',
+              href: '#test',
+            },
+          ]}
+        />
+      }
+    />
     <Locations
       title="Hack the travel and discover the world from a whole new
     perspective."
       pattern={heroPattern}
-      backgroundImage={heroImg}
       locations={[
         {
           backgroundImage: grid01,
