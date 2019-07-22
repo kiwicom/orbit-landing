@@ -7,10 +7,6 @@ import ButtonLink from '@kiwicom/orbit-components/lib/ButtonLink';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Hide from '@kiwicom/orbit-components/lib/Hide';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
-import Facebook from '@kiwicom/orbit-components/lib/icons/Facebook';
-import Instagram from '@kiwicom/orbit-components/lib/icons/Instagram';
-import Twitter from '@kiwicom/orbit-components/lib/icons/Twitter';
-import Linkedin from '@kiwicom/orbit-components/lib/icons/Linkedin';
 
 import KiwiLogo from '../../static/kiwi.svg';
 import defaultTheme from '../defaultTheme';
@@ -50,7 +46,7 @@ const Logo = styled.img`
   min-height: 40px;
 `;
 
-const Footer = () => {
+const Footer = ({ shareTitle, shareLinks, navigationLinks }) => {
   return (
     <StyledFooter>
       <Stack
@@ -74,14 +70,21 @@ const Footer = () => {
             <Hide on={['smallMobile', 'mediumMobile', 'largeMobile']}>
               <StyledText>
                 <Text size="small" type="white">
-                  Share us with your friends
+                  {shareTitle}
                 </Text>
               </StyledText>
             </Hide>
-            <ButtonLink iconLeft={<Facebook />} transparent />
-            <ButtonLink iconLeft={<Instagram />} transparent />
-            <ButtonLink iconLeft={<Twitter />} transparent />
-            <ButtonLink iconLeft={<Linkedin />} transparent />
+            {shareLinks.map((el, i) => {
+              return (
+                <ButtonLink
+                  key={i}
+                  title={el.title}
+                  iconLeft={el.icon}
+                  href={el.href}
+                  transparent
+                />
+              );
+            })}
           </Stack>
         </FooterWrapper>
         <Stack
@@ -94,18 +97,13 @@ const Footer = () => {
           largeDesktop={{ justify: 'between' }}
           shrink
         >
-          <ButtonLink size="small" type="secondary">
-            Privacy Policy
-          </ButtonLink>
-          <ButtonLink size="small" type="secondary">
-            Code of Conduct
-          </ButtonLink>
-          <ButtonLink size="small" type="secondary">
-            Legal
-          </ButtonLink>
-          <ButtonLink size="small" type="secondary">
-            Site Map
-          </ButtonLink>
+          {navigationLinks.map((el, i) => {
+            return (
+              <ButtonLink key={i} href={el.href} size="small" type="secondary">
+                {el.title}
+              </ButtonLink>
+            );
+          })}
         </Stack>
       </Stack>
     </StyledFooter>
