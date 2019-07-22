@@ -1,0 +1,575 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1375.14" height="577.853" viewBox="0 0 1375.14 577.853">
+  <g id="Group_61" data-name="Group 61" transform="translate(-288.368 -250)">
+    <g id="Datový_zdroj_1" data-name="Datový zdroj 1" transform="translate(1111.3 525.572)">
+      <g id="Vrstva_3" data-name="Vrstva 3">
+        <path id="Path_29" data-name="Path 29" d="M5.718,2.859A2.859,2.859,0,1,1,2.859,0,2.859,2.859,0,0,1,5.718,2.859Z" fill="#cad5df"/>
+        <path id="Path_30" data-name="Path 30" d="M22.208,2.859A2.859,2.859,0,1,1,19.349,0a2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-2.499 0)" fill="#cad5df"/>
+        <path id="Path_31" data-name="Path 31" d="M38.7,2.859A2.859,2.859,0,1,1,35.839,0,2.859,2.859,0,0,1,38.7,2.859Z" transform="translate(-4.998)" fill="#cad5df"/>
+        <path id="Path_32" data-name="Path 32" d="M55.188,2.859A2.859,2.859,0,1,1,52.329,0a2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-7.498)" fill="#cad5df"/>
+        <path id="Path_33" data-name="Path 33" d="M71.678,2.859A2.859,2.859,0,1,1,68.819,0a2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-9.997)" fill="#cad5df"/>
+        <path id="Path_34" data-name="Path 34" d="M88.168,2.859A2.859,2.859,0,1,1,85.309,0a2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-12.496)" fill="#cad5df"/>
+        <circle id="Ellipse_8" data-name="Ellipse 8" cx="2.859" cy="2.859" r="2.859" transform="translate(0 14.177)" fill="#cad5df"/>
+        <path id="Path_35" data-name="Path 35" d="M22.208,19.569a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-2.499 -2.533)" fill="#cad5df"/>
+        <path id="Path_36" data-name="Path 36" d="M38.7,19.569a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,38.7,19.569Z" transform="translate(-4.998 -2.533)" fill="#cad5df"/>
+        <circle id="Ellipse_9" data-name="Ellipse 9" cx="2.859" cy="2.859" r="2.859" transform="translate(41.972 14.177)" fill="#cad5df"/>
+        <circle id="Ellipse_10" data-name="Ellipse 10" cx="2.859" cy="2.859" r="2.859" transform="translate(55.963 14.177)" fill="#cad5df"/>
+        <circle id="Ellipse_11" data-name="Ellipse 11" cx="2.859" cy="2.859" r="2.859" transform="translate(69.954 14.177)" fill="#cad5df"/>
+        <path id="Path_37" data-name="Path 37" d="M5.718,36.279A2.859,2.859,0,1,1,2.859,33.42,2.859,2.859,0,0,1,5.718,36.279Z" transform="translate(0 -5.065)" fill="#cad5df"/>
+        <path id="Path_38" data-name="Path 38" d="M22.208,36.279a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,22.208,36.279Z" transform="translate(-2.499 -5.065)" fill="#cad5df"/>
+        <path id="Path_39" data-name="Path 39" d="M38.7,36.279a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,38.7,36.279Z" transform="translate(-4.998 -5.065)" fill="#cad5df"/>
+        <path id="Path_40" data-name="Path 40" d="M55.188,36.279a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,55.188,36.279Z" transform="translate(-7.498 -5.065)" fill="#cad5df"/>
+        <path id="Path_41" data-name="Path 41" d="M71.678,36.279a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-9.997 -5.065)" fill="#cad5df"/>
+        <path id="Path_42" data-name="Path 42" d="M88.168,36.279a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-12.496 -5.065)" fill="#cad5df"/>
+        <path id="Path_43" data-name="Path 43" d="M5.718,52.989A2.859,2.859,0,1,1,2.859,50.13a2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(0 -7.598)" fill="#cad5df"/>
+        <path id="Path_44" data-name="Path 44" d="M22.208,52.989a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-2.499 -7.598)" fill="#cad5df"/>
+        <path id="Path_45" data-name="Path 45" d="M38.7,52.989a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,38.7,52.989Z" transform="translate(-4.998 -7.598)" fill="#cad5df"/>
+        <path id="Path_46" data-name="Path 46" d="M55.188,52.989a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-7.498 -7.598)" fill="#cad5df"/>
+        <path id="Path_47" data-name="Path 47" d="M71.678,52.989a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-9.997 -7.598)" fill="#cad5df"/>
+        <path id="Path_48" data-name="Path 48" d="M88.168,52.989a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-12.496 -7.598)" fill="#cad5df"/>
+        <circle id="Ellipse_12" data-name="Ellipse 12" cx="2.859" cy="2.859" r="2.859" transform="translate(0 56.71)" fill="#cad5df"/>
+        <path id="Path_49" data-name="Path 49" d="M22.208,69.7a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,22.208,69.7Z" transform="translate(-2.499 -10.13)" fill="#cad5df"/>
+        <path id="Path_50" data-name="Path 50" d="M38.7,69.7a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,38.7,69.7Z" transform="translate(-4.998 -10.13)" fill="#cad5df"/>
+        <circle id="Ellipse_13" data-name="Ellipse 13" cx="2.859" cy="2.859" r="2.859" transform="translate(41.972 56.71)" fill="#cad5df"/>
+        <circle id="Ellipse_14" data-name="Ellipse 14" cx="2.859" cy="2.859" r="2.859" transform="translate(55.963 56.71)" fill="#cad5df"/>
+        <circle id="Ellipse_15" data-name="Ellipse 15" cx="2.859" cy="2.859" r="2.859" transform="translate(69.954 56.71)" fill="#cad5df"/>
+      </g>
+    </g>
+    <g id="Datový_zdroj_1-2" data-name="Datový zdroj 1" transform="translate(1361.3 565.572)">
+      <g id="Vrstva_3-2" data-name="Vrstva 3">
+        <path id="Path_29-2" data-name="Path 29" d="M5.718,2.859A2.859,2.859,0,1,1,2.859,0,2.859,2.859,0,0,1,5.718,2.859Z" fill="#cad5df"/>
+        <path id="Path_30-2" data-name="Path 30" d="M22.208,2.859A2.859,2.859,0,1,1,19.349,0a2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-2.499 0)" fill="#cad5df"/>
+        <path id="Path_31-2" data-name="Path 31" d="M38.7,2.859A2.859,2.859,0,1,1,35.839,0,2.859,2.859,0,0,1,38.7,2.859Z" transform="translate(-4.998)" fill="#cad5df"/>
+        <path id="Path_32-2" data-name="Path 32" d="M55.188,2.859A2.859,2.859,0,1,1,52.329,0a2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-7.498)" fill="#cad5df"/>
+        <path id="Path_33-2" data-name="Path 33" d="M71.678,2.859A2.859,2.859,0,1,1,68.819,0a2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-9.997)" fill="#cad5df"/>
+        <path id="Path_34-2" data-name="Path 34" d="M88.168,2.859A2.859,2.859,0,1,1,85.309,0a2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-12.496)" fill="#cad5df"/>
+        <circle id="Ellipse_8-2" data-name="Ellipse 8" cx="2.859" cy="2.859" r="2.859" transform="translate(0 14.177)" fill="#cad5df"/>
+        <path id="Path_35-2" data-name="Path 35" d="M22.208,19.569a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-2.499 -2.533)" fill="#cad5df"/>
+        <path id="Path_36-2" data-name="Path 36" d="M38.7,19.569a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,38.7,19.569Z" transform="translate(-4.998 -2.533)" fill="#cad5df"/>
+        <circle id="Ellipse_9-2" data-name="Ellipse 9" cx="2.859" cy="2.859" r="2.859" transform="translate(41.972 14.177)" fill="#cad5df"/>
+        <circle id="Ellipse_10-2" data-name="Ellipse 10" cx="2.859" cy="2.859" r="2.859" transform="translate(55.963 14.177)" fill="#cad5df"/>
+        <circle id="Ellipse_11-2" data-name="Ellipse 11" cx="2.859" cy="2.859" r="2.859" transform="translate(69.954 14.177)" fill="#cad5df"/>
+        <path id="Path_37-2" data-name="Path 37" d="M5.718,36.279A2.859,2.859,0,1,1,2.859,33.42,2.859,2.859,0,0,1,5.718,36.279Z" transform="translate(0 -5.065)" fill="#cad5df"/>
+        <path id="Path_38-2" data-name="Path 38" d="M22.208,36.279a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,22.208,36.279Z" transform="translate(-2.499 -5.065)" fill="#cad5df"/>
+        <path id="Path_39-2" data-name="Path 39" d="M38.7,36.279a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,38.7,36.279Z" transform="translate(-4.998 -5.065)" fill="#cad5df"/>
+        <path id="Path_40-2" data-name="Path 40" d="M55.188,36.279a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,55.188,36.279Z" transform="translate(-7.498 -5.065)" fill="#cad5df"/>
+        <path id="Path_41-2" data-name="Path 41" d="M71.678,36.279a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-9.997 -5.065)" fill="#cad5df"/>
+        <path id="Path_42-2" data-name="Path 42" d="M88.168,36.279a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-12.496 -5.065)" fill="#cad5df"/>
+        <path id="Path_43-2" data-name="Path 43" d="M5.718,52.989A2.859,2.859,0,1,1,2.859,50.13a2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(0 -7.598)" fill="#cad5df"/>
+        <path id="Path_44-2" data-name="Path 44" d="M22.208,52.989a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-2.499 -7.598)" fill="#cad5df"/>
+        <path id="Path_45-2" data-name="Path 45" d="M38.7,52.989a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,38.7,52.989Z" transform="translate(-4.998 -7.598)" fill="#cad5df"/>
+        <path id="Path_46-2" data-name="Path 46" d="M55.188,52.989a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-7.498 -7.598)" fill="#cad5df"/>
+        <path id="Path_47-2" data-name="Path 47" d="M71.678,52.989a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-9.997 -7.598)" fill="#cad5df"/>
+        <path id="Path_48-2" data-name="Path 48" d="M88.168,52.989a2.859,2.859,0,1,1-2.859-2.859,2.859,2.859,0,0,1,2.859,2.859Z" transform="translate(-12.496 -7.598)" fill="#cad5df"/>
+        <circle id="Ellipse_12-2" data-name="Ellipse 12" cx="2.859" cy="2.859" r="2.859" transform="translate(0 56.71)" fill="#cad5df"/>
+        <path id="Path_49-2" data-name="Path 49" d="M22.208,69.7a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,22.208,69.7Z" transform="translate(-2.499 -10.13)" fill="#cad5df"/>
+        <path id="Path_50-2" data-name="Path 50" d="M38.7,69.7a2.859,2.859,0,1,1-2.859-2.859A2.859,2.859,0,0,1,38.7,69.7Z" transform="translate(-4.998 -10.13)" fill="#cad5df"/>
+        <circle id="Ellipse_13-2" data-name="Ellipse 13" cx="2.859" cy="2.859" r="2.859" transform="translate(41.972 56.71)" fill="#cad5df"/>
+        <circle id="Ellipse_14-2" data-name="Ellipse 14" cx="2.859" cy="2.859" r="2.859" transform="translate(55.963 56.71)" fill="#cad5df"/>
+        <circle id="Ellipse_15-2" data-name="Ellipse 15" cx="2.859" cy="2.859" r="2.859" transform="translate(69.954 56.71)" fill="#cad5df"/>
+      </g>
+    </g>
+    <g id="Datový_zdroj_1-3" data-name="Datový zdroj 1" transform="translate(637.3 471.98)">
+      <g id="Vrstva_3-3" data-name="Vrstva 3">
+        <path id="Path_29-3" data-name="Path 29" d="M3.3,1.65A1.65,1.65,0,1,1,1.65,0,1.65,1.65,0,0,1,3.3,1.65Z" fill="#cad5df"/>
+        <path id="Path_30-3" data-name="Path 30" d="M19.789,1.65A1.65,1.65,0,1,1,18.14,0a1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-8.418 0)" fill="#cad5df"/>
+        <path id="Path_31-3" data-name="Path 31" d="M36.279,1.65A1.65,1.65,0,1,1,34.63,0a1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-16.835)" fill="#cad5df"/>
+        <path id="Path_32-3" data-name="Path 32" d="M52.769,1.65A1.65,1.65,0,1,1,51.12,0a1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-25.253)" fill="#cad5df"/>
+        <path id="Path_33-3" data-name="Path 33" d="M69.259,1.65A1.65,1.65,0,1,1,67.61,0a1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-33.671)" fill="#cad5df"/>
+        <path id="Path_34-3" data-name="Path 34" d="M85.749,1.65A1.65,1.65,0,1,1,84.1,0a1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-42.088)" fill="#cad5df"/>
+        <ellipse id="Ellipse_8-3" data-name="Ellipse 8" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(0 8.18)" fill="#cad5df"/>
+        <path id="Path_35-3" data-name="Path 35" d="M19.789,18.36a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-8.418 -8.53)" fill="#cad5df"/>
+        <path id="Path_36-3" data-name="Path 36" d="M36.279,18.36a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,36.279,18.36Z" transform="translate(-16.835 -8.53)" fill="#cad5df"/>
+        <ellipse id="Ellipse_9-3" data-name="Ellipse 9" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(24.217 8.18)" fill="#cad5df"/>
+        <ellipse id="Ellipse_10-3" data-name="Ellipse 10" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(32.289 8.18)" fill="#cad5df"/>
+        <ellipse id="Ellipse_11-3" data-name="Ellipse 11" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(40.362 8.18)" fill="#cad5df"/>
+        <path id="Path_37-3" data-name="Path 37" d="M3.3,35.07a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,3.3,35.07Z" transform="translate(0 -17.06)" fill="#cad5df"/>
+        <path id="Path_38-3" data-name="Path 38" d="M19.789,35.07a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,19.789,35.07Z" transform="translate(-8.418 -17.06)" fill="#cad5df"/>
+        <path id="Path_39-3" data-name="Path 39" d="M36.279,35.07a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,36.279,35.07Z" transform="translate(-16.835 -17.06)" fill="#cad5df"/>
+        <path id="Path_40-3" data-name="Path 40" d="M52.769,35.07a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,52.769,35.07Z" transform="translate(-25.253 -17.06)" fill="#cad5df"/>
+        <path id="Path_41-3" data-name="Path 41" d="M69.259,35.07a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-33.671 -17.06)" fill="#cad5df"/>
+        <path id="Path_42-3" data-name="Path 42" d="M85.749,35.07a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-42.088 -17.06)" fill="#cad5df"/>
+        <path id="Path_43-3" data-name="Path 43" d="M3.3,51.78a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,3.3,51.78Z" transform="translate(0 -25.59)" fill="#cad5df"/>
+        <path id="Path_44-3" data-name="Path 44" d="M19.789,51.78a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-8.418 -25.59)" fill="#cad5df"/>
+        <path id="Path_45-3" data-name="Path 45" d="M36.279,51.78a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-16.835 -25.59)" fill="#cad5df"/>
+        <path id="Path_46-3" data-name="Path 46" d="M52.769,51.78a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-25.253 -25.59)" fill="#cad5df"/>
+        <path id="Path_47-3" data-name="Path 47" d="M69.259,51.78a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-33.671 -25.59)" fill="#cad5df"/>
+        <path id="Path_48-3" data-name="Path 48" d="M85.749,51.78a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-42.088 -25.59)" fill="#cad5df"/>
+        <ellipse id="Ellipse_12-3" data-name="Ellipse 12" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(0 32.72)" fill="#cad5df"/>
+        <path id="Path_49-3" data-name="Path 49" d="M19.789,68.49a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,19.789,68.49Z" transform="translate(-8.418 -34.12)" fill="#cad5df"/>
+        <path id="Path_50-3" data-name="Path 50" d="M36.279,68.49a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,36.279,68.49Z" transform="translate(-16.835 -34.12)" fill="#cad5df"/>
+        <ellipse id="Ellipse_13-3" data-name="Ellipse 13" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(24.217 32.72)" fill="#cad5df"/>
+        <ellipse id="Ellipse_14-3" data-name="Ellipse 14" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(32.289 32.72)" fill="#cad5df"/>
+        <ellipse id="Ellipse_15-3" data-name="Ellipse 15" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(40.362 32.72)" fill="#cad5df"/>
+      </g>
+    </g>
+    <g id="Datový_zdroj_1-4" data-name="Datový zdroj 1" transform="translate(637.3 471.98)">
+      <g id="Vrstva_3-4" data-name="Vrstva 3">
+        <path id="Path_29-4" data-name="Path 29" d="M3.3,1.65A1.65,1.65,0,1,1,1.65,0,1.65,1.65,0,0,1,3.3,1.65Z" fill="#cad5df"/>
+        <path id="Path_30-4" data-name="Path 30" d="M19.789,1.65A1.65,1.65,0,1,1,18.14,0a1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-8.418 0)" fill="#cad5df"/>
+        <path id="Path_31-4" data-name="Path 31" d="M36.279,1.65A1.65,1.65,0,1,1,34.63,0a1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-16.835)" fill="#cad5df"/>
+        <path id="Path_32-4" data-name="Path 32" d="M52.769,1.65A1.65,1.65,0,1,1,51.12,0a1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-25.253)" fill="#cad5df"/>
+        <path id="Path_33-4" data-name="Path 33" d="M69.259,1.65A1.65,1.65,0,1,1,67.61,0a1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-33.671)" fill="#cad5df"/>
+        <path id="Path_34-4" data-name="Path 34" d="M85.749,1.65A1.65,1.65,0,1,1,84.1,0a1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-42.088)" fill="#cad5df"/>
+        <ellipse id="Ellipse_8-4" data-name="Ellipse 8" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(0 8.18)" fill="#cad5df"/>
+        <path id="Path_35-4" data-name="Path 35" d="M19.789,18.36a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-8.418 -8.53)" fill="#cad5df"/>
+        <path id="Path_36-4" data-name="Path 36" d="M36.279,18.36a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,36.279,18.36Z" transform="translate(-16.835 -8.53)" fill="#cad5df"/>
+        <ellipse id="Ellipse_9-4" data-name="Ellipse 9" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(24.217 8.18)" fill="#cad5df"/>
+        <ellipse id="Ellipse_10-4" data-name="Ellipse 10" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(32.289 8.18)" fill="#cad5df"/>
+        <ellipse id="Ellipse_11-4" data-name="Ellipse 11" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(40.362 8.18)" fill="#cad5df"/>
+        <path id="Path_37-4" data-name="Path 37" d="M3.3,35.07a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,3.3,35.07Z" transform="translate(0 -17.06)" fill="#cad5df"/>
+        <path id="Path_38-4" data-name="Path 38" d="M19.789,35.07a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,19.789,35.07Z" transform="translate(-8.418 -17.06)" fill="#cad5df"/>
+        <path id="Path_39-4" data-name="Path 39" d="M36.279,35.07a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,36.279,35.07Z" transform="translate(-16.835 -17.06)" fill="#cad5df"/>
+        <path id="Path_40-4" data-name="Path 40" d="M52.769,35.07a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,52.769,35.07Z" transform="translate(-25.253 -17.06)" fill="#cad5df"/>
+        <path id="Path_41-4" data-name="Path 41" d="M69.259,35.07a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-33.671 -17.06)" fill="#cad5df"/>
+        <path id="Path_42-4" data-name="Path 42" d="M85.749,35.07a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-42.088 -17.06)" fill="#cad5df"/>
+        <path id="Path_43-4" data-name="Path 43" d="M3.3,51.78a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,3.3,51.78Z" transform="translate(0 -25.59)" fill="#cad5df"/>
+        <path id="Path_44-4" data-name="Path 44" d="M19.789,51.78a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-8.418 -25.59)" fill="#cad5df"/>
+        <path id="Path_45-4" data-name="Path 45" d="M36.279,51.78a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-16.835 -25.59)" fill="#cad5df"/>
+        <path id="Path_46-4" data-name="Path 46" d="M52.769,51.78a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-25.253 -25.59)" fill="#cad5df"/>
+        <path id="Path_47-4" data-name="Path 47" d="M69.259,51.78a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-33.671 -25.59)" fill="#cad5df"/>
+        <path id="Path_48-4" data-name="Path 48" d="M85.749,51.78a1.65,1.65,0,1,1-1.65-1.65,1.65,1.65,0,0,1,1.65,1.65Z" transform="translate(-42.088 -25.59)" fill="#cad5df"/>
+        <ellipse id="Ellipse_12-4" data-name="Ellipse 12" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(0 32.72)" fill="#cad5df"/>
+        <path id="Path_49-4" data-name="Path 49" d="M19.789,68.49a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,19.789,68.49Z" transform="translate(-8.418 -34.12)" fill="#cad5df"/>
+        <path id="Path_50-4" data-name="Path 50" d="M36.279,68.49a1.65,1.65,0,1,1-1.65-1.65A1.65,1.65,0,0,1,36.279,68.49Z" transform="translate(-16.835 -34.12)" fill="#cad5df"/>
+        <ellipse id="Ellipse_13-4" data-name="Ellipse 13" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(24.217 32.72)" fill="#cad5df"/>
+        <ellipse id="Ellipse_14-4" data-name="Ellipse 14" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(32.289 32.72)" fill="#cad5df"/>
+        <ellipse id="Ellipse_15-4" data-name="Ellipse 15" cx="1.65" cy="1.65" rx="1.65" ry="1.65" transform="translate(40.362 32.72)" fill="#cad5df"/>
+      </g>
+    </g>
+    <path id="Path_189" data-name="Path 189" d="M-300.2,0V-137.577H-431.244v48.642h77.319c-3.267,14.52-21.054,42.108-63.525,42.108-41.745,0-77.319-27.951-77.319-81.675,0-57.354,41.019-80.586,75.867-80.586,42.834,0,59.895,29.04,63.888,45.012l55.176-19.239c-11.253-35.937-45.375-79.5-119.064-79.5-72.6,0-133.947,53.361-133.947,134.31,0,81.312,58.806,133.947,130.317,133.947,36.663,0,60.984-15.246,72.237-31.581L-346.665,0Zm99.825,0V-262.812h-55.176V0ZM-68.97-45.375c-20.691,0-40.656-14.883-40.656-45.012,0-30.492,19.965-44.649,40.656-44.649,21.054,0,40.656,14.157,40.656,44.649S-47.916-45.375-68.97-45.375Zm0-140.481c-53.724,0-95.832,39.567-95.832,95.469S-122.694,5.445-68.97,5.445c54.087,0,95.832-39.93,95.832-95.832S-14.883-185.856-68.97-185.856ZM115.8,0V-20.328c8.349,13.794,26.862,24.321,50.82,24.321,50.457,0,86.031-39.567,86.031-94.743,0-54.087-31.581-94.017-83.853-94.017-24.684,0-44.649,10.164-52.272,21.417v-99.462H62.436V0Zm81.675-90.387c0,30.129-19.239,45.012-40.656,45.012S115.8-60.621,115.8-90.387c0-30.492,19.6-44.649,41.019-44.649S197.472-120.879,197.472-90.387Zm79.86,40.656c0,28.677,22.869,54.813,62.436,54.813,23.958,0,41.382-10.164,50.82-25.41C390.588-7.986,392.04-1.452,392.4,0h49.731a177.288,177.288,0,0,1-2.178-27.951V-116.16c0-37.026-21.417-69.7-79.86-69.7-53,0-76.956,34.122-79.134,59.9l47.916,9.8c1.089-13.431,11.616-26.5,30.855-26.5,17.424,0,26.5,9.075,26.5,19.6,0,6.171-3.267,10.89-13.068,12.342l-42.471,6.534C300.927-99.825,277.332-81.675,277.332-49.731ZM353.2-34.848c-15.246,0-21.417-9.075-21.417-18.513,0-12.705,8.712-18.15,20.328-19.965l34.122-5.445v7.986C386.232-42.834,369.534-34.848,353.2-34.848ZM541.6,0V-262.812H486.42V0Z" transform="translate(960 631)" fill="#fff"/>
+    <g id="Group_8" data-name="Group 8" transform="translate(1278.557 1261.235) rotate(-90)">
+      <g id="Datový_zdroj_22" data-name="Datový zdroj 22" transform="translate(841.036 365.122) rotate(-120)">
+        <g id="Vrstva_8" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_53" data-name="Path 53" d="M5.323,10.645,0,5.323,5.323,0l1.5,1.5L3.008,5.323,6.823,9.138Z" transform="translate(0 0)" fill="#f9971e"/>
+          <path id="Path_54" data-name="Path 54" d="M5.323,10.645,0,5.323,5.323,0l1.5,1.5L3.008,5.323,6.823,9.138Z" transform="translate(6.586 0)" fill="#f9971e"/>
+          <path id="Path_55" data-name="Path 55" d="M5.323,10.645,0,5.323,5.323,0l1.5,1.5L3.008,5.323,6.823,9.138Z" transform="translate(13.173 0)" fill="#f9971e"/>
+          <path id="Path_56" data-name="Path 56" d="M5.323,10.645,0,5.323,5.323,0,6.829,1.5,3.008,5.323,6.829,9.138Z" transform="translate(19.759 0)" fill="#f9971e"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_23" data-name="Datový zdroj 23" transform="translate(673.477 346.487)">
+        <g id="Vrstva_8-2" data-name="Vrstva 8">
+          <path id="Path_57" data-name="Path 57" d="M9.041,2.969H6.072V0h-3.1V2.969H0v3.1H2.969V9.041h3.1V6.072H9.041Z" fill="#f9971e"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_24" data-name="Datový zdroj 24" transform="translate(791.832 292.241)">
+        <g id="Vrstva_8-3" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_58" data-name="Path 58" d="M5.074,9.978A4.993,4.993,0,1,1,9.978,4.9,4.993,4.993,0,0,1,5.074,9.978ZM4.94,2.326a1.1,1.1,0,1,0,0-.016Z" transform="translate(0.008 0.008)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_19" data-name="Datový zdroj 19" transform="matrix(-0.259, 0.966, -0.966, -0.259, 700.228, 277.281)">
+        <g id="Vrstva_8-4" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_59" data-name="Path 59" d="M20.873,26.656,25.288,0,0,9.507Z" transform="translate(0 0)" fill="none" stroke="#f7ab1d" stroke-miterlimit="10" stroke-width="1.33"/>
+          <path id="Path_60" data-name="Path 60" d="M20.873,26.652,25.288,0,0,9.5Z" transform="translate(7.731 0.903)" fill="none" stroke="#f7ab1d" stroke-miterlimit="10" stroke-width="1.33"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20" data-name="Datový zdroj 20" transform="translate(750.904 254.85) rotate(60)">
+        <g id="Vrstva_8-5" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61" data-name="Path 61" d="M65.365,3.707c-3.413,3.471-7.28,3.229-10.355,3.036-2.736-.164-4.9-.3-6.952,1.75s-1.934,4.225-1.75,6.961c.184,3.065.425,6.884-3.046,10.355s-7.29,3.229-10.316,3.036c-2.736-.164-4.9-.3-6.952,1.76s-1.934,4.215-1.75,6.952c.184,3.065.425,6.884-3.046,10.355S13.87,51.17,10.805,50.948c-2.736-.164-4.931-.3-6.952,1.75A2.214,2.214,0,1,1,.721,49.575c3.471-3.471,7.29-3.239,10.355-3.046,2.736.174,4.9.309,6.952-1.75s1.934-4.215,1.76-6.952c-.193-3.065-.435-6.884,3.036-10.355s7.29-3.229,10.355-3.046c2.736.174,4.9.309,6.952-1.75s1.934-4.216,1.76-6.952C41.7,12.66,41.455,8.832,44.926,5.37s7.29-3.239,10.355-3.046c2.736.174,4.9.309,6.961-1.75a2.214,2.214,0,0,1,3.123,3.133Z" fill="#00a991"/>
+        </g>
+      </g>
+      <ellipse id="Ellipse_16" data-name="Ellipse 16" cx="2.877" cy="2.877" rx="2.877" ry="2.877" transform="translate(752.38 329.226)" fill="#f9971e"/>
+      <g id="Datový_zdroj_20-2" data-name="Datový zdroj 20" transform="translate(749.902 355.693) rotate(30)">
+        <g id="Vrstva_8-6" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-2" data-name="Path 61" d="M24.135,1.369A4.393,4.393,0,0,1,20.311,2.49a2.892,2.892,0,0,0-2.567.646,2.879,2.879,0,0,0-.646,2.57A4.426,4.426,0,0,1,15.974,9.53a4.395,4.395,0,0,1-3.809,1.121A2.884,2.884,0,0,0,9.6,11.3a2.874,2.874,0,0,0-.646,2.567,4.426,4.426,0,0,1-1.125,3.823A4.406,4.406,0,0,1,3.99,18.812a2.884,2.884,0,0,0-2.567.646A.818.818,0,1,1,.266,18.3,4.415,4.415,0,0,1,4.09,17.18a2.872,2.872,0,0,0,2.567-.646,2.886,2.886,0,0,0,.65-2.567,4.411,4.411,0,0,1,1.121-3.823A4.426,4.426,0,0,1,12.25,9.019a2.872,2.872,0,0,0,2.567-.646,2.886,2.886,0,0,0,.65-2.567,4.409,4.409,0,0,1,1.121-3.823A4.426,4.426,0,0,1,20.411.858a2.881,2.881,0,0,0,2.57-.646.818.818,0,0,1,1.153,1.157Z" transform="translate(0 0)" fill="#f9971e"/>
+        </g>
+        <g id="Vrstva_8-7" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-3" data-name="Path 61" d="M24.135,1.369A4.393,4.393,0,0,1,20.311,2.49a2.892,2.892,0,0,0-2.567.646,2.879,2.879,0,0,0-.646,2.57A4.426,4.426,0,0,1,15.974,9.53a4.395,4.395,0,0,1-3.809,1.121A2.884,2.884,0,0,0,9.6,11.3a2.874,2.874,0,0,0-.646,2.567,4.426,4.426,0,0,1-1.125,3.823A4.406,4.406,0,0,1,3.99,18.812a2.884,2.884,0,0,0-2.567.646A.818.818,0,1,1,.266,18.3,4.415,4.415,0,0,1,4.09,17.18a2.872,2.872,0,0,0,2.567-.646,2.886,2.886,0,0,0,.65-2.567,4.411,4.411,0,0,1,1.121-3.823A4.426,4.426,0,0,1,12.25,9.019a2.872,2.872,0,0,0,2.567-.646,2.886,2.886,0,0,0,.65-2.567,4.409,4.409,0,0,1,1.121-3.823A4.426,4.426,0,0,1,20.411.858a2.881,2.881,0,0,0,2.57-.646.818.818,0,0,1,1.153,1.157Z" transform="translate(0 0)" fill="#f9971e"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_19-2" data-name="Datový zdroj 19" transform="matrix(-0.951, -0.309, 0.309, -0.951, 807.211, 360.144)">
+        <g id="Vrstva_8-8" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_59-2" data-name="Path 59" d="M10.192,13.015,12.347,0,0,4.642Z" transform="translate(0)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.33"/>
+          <path id="Path_60-2" data-name="Path 60" d="M10.192,13.013,12.347,0,0,4.64Z" transform="translate(3.775 0.441)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.33"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_22-2" data-name="Datový zdroj 22" transform="translate(732.742 254.471) rotate(107)">
+        <g id="Vrstva_8-9" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_53-2" data-name="Path 53" d="M2.157,4.314,0,2.157,2.157,0l.608.608L1.219,2.157,2.766,3.7Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_54-2" data-name="Path 54" d="M2.157,4.314,0,2.157,2.157,0l.608.608L1.219,2.157,2.766,3.7Z" transform="translate(2.669 0)" fill="#fff"/>
+          <path id="Path_55-2" data-name="Path 55" d="M2.157,4.314,0,2.157,2.157,0l.608.608L1.219,2.157,2.766,3.7Z" transform="translate(5.339 0)" fill="#fff"/>
+          <path id="Path_56-2" data-name="Path 56" d="M2.157,4.314,0,2.157,2.157,0l.611.608L1.219,2.157,2.768,3.7Z" transform="translate(8.008 0)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_23-2" data-name="Datový zdroj 23" transform="translate(848.314 330.41)">
+        <g id="Vrstva_8-10" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_57-2" data-name="Path 57" d="M6.114,2.008H4.107V0h-2.1V2.008H0v2.1H2.008V6.114h2.1V4.107H6.114Z" fill="#00a991"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20-3" data-name="Datový zdroj 20" transform="matrix(0.259, 0.966, -0.966, 0.259, 857.505, 276.249)">
+        <g id="Vrstva_8-11" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-4" data-name="Path 61" d="M52.581,2.982c-2.745,2.792-5.856,2.6-8.33,2.442-2.2-.132-3.943-.241-5.592,1.408s-1.556,3.4-1.408,5.6c.148,2.465.342,5.538-2.45,8.33s-5.864,2.6-8.3,2.442c-2.2-.132-3.943-.241-5.592,1.416S19.355,28.01,19.5,30.211c.148,2.465.342,5.538-2.45,8.33s-5.9,2.621-8.361,2.442c-2.2-.132-3.967-.241-5.592,1.408A1.781,1.781,0,1,1,.58,39.879c2.792-2.792,5.864-2.605,8.33-2.45,2.2.14,3.943.249,5.592-1.408s1.556-3.391,1.416-5.592c-.156-2.465-.35-5.538,2.442-8.33s5.864-2.6,8.33-2.45c2.2.14,3.943.249,5.592-1.408s1.556-3.391,1.416-5.592c-.156-2.465-.35-5.545,2.442-8.33S42,1.714,44.469,1.87c2.2.14,3.943.249,5.6-1.408a1.781,1.781,0,0,1,2.512,2.52Z" fill="#f9971e"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20-4" data-name="Datový zdroj 20" transform="matrix(0.993, 0.122, -0.122, 0.993, 698.082, 350.818)">
+        <g id="Vrstva_8-12" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-5" data-name="Path 61" d="M21.689,1.23a3.948,3.948,0,0,1-3.436,1.007,2.6,2.6,0,0,0-2.307.581,2.587,2.587,0,0,0-.581,2.31,3.977,3.977,0,0,1-1.011,3.436,3.949,3.949,0,0,1-3.423,1.007,2.591,2.591,0,0,0-2.307.584,2.583,2.583,0,0,0-.581,2.307A3.977,3.977,0,0,1,7.034,15.9a3.96,3.96,0,0,1-3.449,1.007,2.592,2.592,0,0,0-2.307.581A.735.735,0,1,1,.239,16.45a3.967,3.967,0,0,1,3.436-1.011,2.581,2.581,0,0,0,2.307-.581,2.594,2.594,0,0,0,.584-2.307A3.964,3.964,0,0,1,7.573,9.116a3.977,3.977,0,0,1,3.436-1.011,2.581,2.581,0,0,0,2.307-.581A2.594,2.594,0,0,0,13.9,5.218a3.962,3.962,0,0,1,1.007-3.436A3.977,3.977,0,0,1,18.343.771a2.589,2.589,0,0,0,2.31-.581A.735.735,0,0,1,21.689,1.23Z" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20-5" data-name="Datový zdroj 20" transform="matrix(0.993, 0.122, -0.122, 0.993, 698.082, 350.818)">
+        <g id="Vrstva_8-13" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-6" data-name="Path 61" d="M21.689,1.23a3.948,3.948,0,0,1-3.436,1.007,2.6,2.6,0,0,0-2.307.581,2.587,2.587,0,0,0-.581,2.31,3.977,3.977,0,0,1-1.011,3.436,3.949,3.949,0,0,1-3.423,1.007,2.591,2.591,0,0,0-2.307.584,2.583,2.583,0,0,0-.581,2.307A3.977,3.977,0,0,1,7.034,15.9a3.96,3.96,0,0,1-3.449,1.007,2.592,2.592,0,0,0-2.307.581A.735.735,0,1,1,.239,16.45a3.967,3.967,0,0,1,3.436-1.011,2.581,2.581,0,0,0,2.307-.581,2.594,2.594,0,0,0,.584-2.307A3.964,3.964,0,0,1,7.573,9.116a3.977,3.977,0,0,1,3.436-1.011,2.581,2.581,0,0,0,2.307-.581A2.594,2.594,0,0,0,13.9,5.218a3.962,3.962,0,0,1,1.007-3.436A3.977,3.977,0,0,1,18.343.771a2.589,2.589,0,0,0,2.31-.581A.735.735,0,0,1,21.689,1.23Z" fill="#fff"/>
+        </g>
+      </g>
+      <ellipse id="Ellipse_17" data-name="Ellipse 17" cx="1.606" cy="1.606" rx="1.606" ry="1.606" transform="translate(664.981 327.194)" fill="#fff"/>
+      <ellipse id="Ellipse_18" data-name="Ellipse 18" cx="1.606" cy="1.606" rx="1.606" ry="1.606" transform="translate(719.86 375.467)" fill="#00a991"/>
+    </g>
+    <g id="Vrstva_2" data-name="Vrstva 2" transform="translate(1348.008 249.999)">
+      <g id="Vrstva_8-14" data-name="Vrstva 8" transform="translate(-0.008 0.001)">
+        <path id="Path_128" data-name="Path 128" d="M33.465,32,49.342,52.677a1.214,1.214,0,0,0,1.94,0L52.1,51.56a.342.342,0,0,0-.375-.538L43.457,31.176a20.254,20.254,0,0,0,2.567-2.07,1.826,1.826,0,0,0-.22-2.787l-.073-.049a1.818,1.818,0,0,0-2.445.4,9.006,9.006,0,0,0-1.051,1.63l-2.3-5.534a2.046,2.046,0,0,1,.212-1.956L49.717,7.018a15.486,15.486,0,0,0,1.174-3.13c.2-1.182,0-3.4-.473-3.766S47.761.285,46.693.84a15.25,15.25,0,0,0-2.608,2.078L33.954,16.3a2.013,2.013,0,0,1-1.793.815l-5.974-.481a10.164,10.164,0,0,0,1.231-1.508,1.818,1.818,0,0,0-.383-2.445l-.065-.057a1.826,1.826,0,0,0-2.722.652,19.708,19.708,0,0,0-1.182,3.081l-21.4-1.736a.342.342,0,0,0-.628-.187L.227,15.543A1.206,1.206,0,0,0,.814,17.4l24.557,8.68a.815.815,0,0,1,.383,1.182l-4.695,6.724A65.433,65.433,0,0,0,16.373,42.3a.742.742,0,0,1-.685.416l-9.463-.139a.293.293,0,0,0-.522-.2l-.619.815a1.5,1.5,0,0,0,.7,2.29L13.039,48.2a.734.734,0,0,1,.456.88c-.122.489-.212.921-.269,1.288a.636.636,0,0,0,.921.668c.326-.171.717-.383,1.141-.66a.75.75,0,0,1,1.011.155l4.768,6.1a1.5,1.5,0,0,0,2.388,0l.619-.815a.293.293,0,0,0-.326-.456l-3.065-8.966a.734.734,0,0,1,.2-.766A65.034,65.034,0,0,0,27.3,38.6l4.947-6.52a.815.815,0,0,1,1.239,0" transform="translate(0.008 -0.001)" fill="#f7ab1d"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-2" data-name="Vrstva 2" transform="translate(1212.375 338.69) rotate(40)">
+      <g id="Vrstva_8-15" data-name="Vrstva 8">
+        <path id="Path_129" data-name="Path 129" d="M48.45,61.22l9.97-60.2L1.31,22.49Z" fill="none" stroke="#f7ab1d" stroke-miterlimit="10" stroke-width="1.33"/>
+        <path id="Path_130" data-name="Path 130" d="M65.91,63.25,75.88,3.06,18.77,24.52Z" fill="none" stroke="#f7ab1d" stroke-miterlimit="10" stroke-width="1.33"/>
+      </g>
+    </g>
+    <g id="Datový_zdroj_1-5" data-name="Datový zdroj 1" transform="translate(954.3 637.572)">
+      <g id="Vrstva_3-5" data-name="Vrstva 3">
+        <path id="Path_29-5" data-name="Path 29" d="M3.271,1.635A1.635,1.635,0,1,1,1.635,0,1.635,1.635,0,0,1,3.271,1.635Z" fill="#cad5df"/>
+        <path id="Path_30-5" data-name="Path 30" d="M19.761,1.635A1.635,1.635,0,1,1,18.125,0a1.635,1.635,0,0,1,1.635,1.635Z" transform="translate(-8.488 0)" fill="#cad5df"/>
+        <path id="Path_31-5" data-name="Path 31" d="M36.251,1.635A1.635,1.635,0,1,1,34.615,0a1.635,1.635,0,0,1,1.635,1.635Z" transform="translate(-16.976 0)" fill="#cad5df"/>
+        <path id="Path_32-5" data-name="Path 32" d="M52.741,1.635A1.635,1.635,0,1,1,51.105,0a1.635,1.635,0,0,1,1.635,1.635Z" transform="translate(-25.463 0)" fill="#cad5df"/>
+        <path id="Path_33-5" data-name="Path 33" d="M69.231,1.635A1.635,1.635,0,1,1,67.6,0a1.635,1.635,0,0,1,1.635,1.635Z" transform="translate(-33.951 0)" fill="#cad5df"/>
+        <path id="Path_34-5" data-name="Path 34" d="M85.721,1.635A1.635,1.635,0,1,1,84.085,0a1.635,1.635,0,0,1,1.635,1.635Z" transform="translate(-42.439)" fill="#cad5df"/>
+        <circle id="Ellipse_8-5" data-name="Ellipse 8" cx="1.635" cy="1.635" r="1.635" transform="translate(0 8.109)" fill="#cad5df"/>
+        <path id="Path_35-5" data-name="Path 35" d="M19.761,18.345a1.635,1.635,0,1,1-1.635-1.635,1.635,1.635,0,0,1,1.635,1.635Z" transform="translate(-8.488 -8.601)" fill="#cad5df"/>
+        <path id="Path_36-5" data-name="Path 36" d="M36.251,18.345a1.635,1.635,0,1,1-1.635-1.635A1.635,1.635,0,0,1,36.251,18.345Z" transform="translate(-16.976 -8.601)" fill="#cad5df"/>
+        <circle id="Ellipse_9-5" data-name="Ellipse 9" cx="1.635" cy="1.635" r="1.635" transform="translate(24.007 8.109)" fill="#cad5df"/>
+        <circle id="Ellipse_10-5" data-name="Ellipse 10" cx="1.635" cy="1.635" r="1.635" transform="translate(32.009 8.109)" fill="#cad5df"/>
+        <circle id="Ellipse_11-5" data-name="Ellipse 11" cx="1.635" cy="1.635" r="1.635" transform="translate(40.011 8.109)" fill="#cad5df"/>
+        <path id="Path_37-5" data-name="Path 37" d="M3.271,35.055A1.635,1.635,0,1,1,1.635,33.42,1.635,1.635,0,0,1,3.271,35.055Z" transform="translate(0 -17.202)" fill="#cad5df"/>
+        <path id="Path_38-5" data-name="Path 38" d="M19.761,35.055a1.635,1.635,0,1,1-1.635-1.635A1.635,1.635,0,0,1,19.761,35.055Z" transform="translate(-8.488 -17.202)" fill="#cad5df"/>
+        <path id="Path_39-5" data-name="Path 39" d="M36.251,35.055a1.635,1.635,0,1,1-1.635-1.635A1.635,1.635,0,0,1,36.251,35.055Z" transform="translate(-16.976 -17.202)" fill="#cad5df"/>
+        <path id="Path_40-5" data-name="Path 40" d="M52.741,35.055a1.635,1.635,0,1,1-1.635-1.635A1.635,1.635,0,0,1,52.741,35.055Z" transform="translate(-25.463 -17.202)" fill="#cad5df"/>
+        <path id="Path_41-5" data-name="Path 41" d="M69.231,35.055A1.635,1.635,0,1,1,67.6,33.42a1.635,1.635,0,0,1,1.635,1.635Z" transform="translate(-33.951 -17.202)" fill="#cad5df"/>
+        <path id="Path_42-5" data-name="Path 42" d="M85.721,35.055a1.635,1.635,0,1,1-1.635-1.635,1.635,1.635,0,0,1,1.635,1.635Z" transform="translate(-42.439 -17.202)" fill="#cad5df"/>
+        <path id="Path_43-5" data-name="Path 43" d="M3.271,51.765A1.635,1.635,0,1,1,1.635,50.13,1.635,1.635,0,0,1,3.271,51.765Z" transform="translate(0 -25.803)" fill="#cad5df"/>
+        <path id="Path_44-5" data-name="Path 44" d="M19.761,51.765a1.635,1.635,0,1,1-1.635-1.635A1.635,1.635,0,0,1,19.761,51.765Z" transform="translate(-8.488 -25.803)" fill="#cad5df"/>
+        <path id="Path_45-5" data-name="Path 45" d="M36.251,51.765a1.635,1.635,0,1,1-1.635-1.635A1.635,1.635,0,0,1,36.251,51.765Z" transform="translate(-16.976 -25.803)" fill="#cad5df"/>
+        <path id="Path_46-5" data-name="Path 46" d="M52.741,51.765a1.635,1.635,0,1,1-1.635-1.635A1.635,1.635,0,0,1,52.741,51.765Z" transform="translate(-25.463 -25.803)" fill="#cad5df"/>
+        <path id="Path_47-5" data-name="Path 47" d="M69.231,51.765A1.635,1.635,0,1,1,67.6,50.13,1.635,1.635,0,0,1,69.231,51.765Z" transform="translate(-33.951 -25.803)" fill="#cad5df"/>
+        <path id="Path_48-5" data-name="Path 48" d="M85.721,51.765a1.635,1.635,0,1,1-1.635-1.635,1.635,1.635,0,0,1,1.635,1.635Z" transform="translate(-42.439 -25.803)" fill="#cad5df"/>
+        <circle id="Ellipse_12-5" data-name="Ellipse 12" cx="1.635" cy="1.635" r="1.635" transform="translate(0 32.436)" fill="#cad5df"/>
+        <path id="Path_49-5" data-name="Path 49" d="M19.761,68.475a1.635,1.635,0,1,1-1.635-1.635A1.635,1.635,0,0,1,19.761,68.475Z" transform="translate(-8.488 -34.404)" fill="#cad5df"/>
+        <path id="Path_50-5" data-name="Path 50" d="M36.251,68.475a1.635,1.635,0,1,1-1.635-1.635A1.635,1.635,0,0,1,36.251,68.475Z" transform="translate(-16.976 -34.404)" fill="#cad5df"/>
+        <circle id="Ellipse_13-5" data-name="Ellipse 13" cx="1.635" cy="1.635" r="1.635" transform="translate(24.007 32.436)" fill="#cad5df"/>
+        <circle id="Ellipse_14-5" data-name="Ellipse 14" cx="1.635" cy="1.635" r="1.635" transform="translate(32.009 32.436)" fill="#cad5df"/>
+        <circle id="Ellipse_15-5" data-name="Ellipse 15" cx="1.635" cy="1.635" r="1.635" transform="translate(40.011 32.436)" fill="#cad5df"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-3" data-name="Vrstva 2" transform="matrix(0.848, -0.53, 0.53, 0.848, 524.696, 742.347)">
+      <g id="Vrstva_8-16" data-name="Vrstva 8">
+        <path id="Path_153" data-name="Path 153" d="M10.417,3.42H7V0H3.42V3.42H0V7H3.42v3.42H7V7h3.42Z" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-4" data-name="Vrstva 2" transform="translate(935 351)">
+      <g id="Vrstva_8-17" data-name="Vrstva 8">
+        <path id="Path_154" data-name="Path 154" d="M19.3,6.337H12.963V0H6.337V6.337H0v6.626H6.337V19.3h6.626V12.963H19.3Z" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-5" data-name="Vrstva 2" transform="translate(1538.673 698)">
+      <g id="Vrstva_8-18" data-name="Vrstva 8">
+        <path id="Path_155" data-name="Path 155" d="M15.417,5.062H10.355V0H5.062V5.062H0v5.293H5.062v5.062h5.293V10.355h5.062Z" fill="#00a991"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-6" data-name="Vrstva 2" transform="matrix(0.848, -0.53, 0.53, 0.848, 524.481, 699.812)">
+      <g id="Vrstva_8-19" data-name="Vrstva 8">
+        <path id="Path_156" data-name="Path 156" d="M15.93,31.31A15.66,15.66,0,1,1,31.31,15.38,15.66,15.66,0,0,1,15.93,31.31Zm-.42-24a3.458,3.458,0,1,0,0-.05Z" fill="#00a991"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-7" data-name="Vrstva 2" transform="translate(1096.008 296.008)">
+      <g id="Vrstva_8-20" data-name="Vrstva 8" transform="translate(-0.008 -0.008)">
+        <path id="Path_156-2" data-name="Path 156" d="M7.778,15.291a7.65,7.65,0,1,1,7.513-7.782A7.65,7.65,0,0,1,7.778,15.291ZM7.573,3.567a1.689,1.689,0,1,0,0-.024Z" transform="translate(0.008 0.008)" fill="#f9971e"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-8" data-name="Vrstva 2" transform="translate(1443.215 743.717) rotate(-135)">
+      <g id="Vrstva_8-21" data-name="Vrstva 8">
+        <path id="Path_157" data-name="Path 157" d="M5.965,11.93,0,5.965,5.965,0,7.647,1.682,3.371,5.965l4.276,4.276Z" fill="#f7ab1d"/>
+        <path id="Path_158" data-name="Path 158" d="M16.8,11.93,10.84,5.965,16.8,0l1.682,1.682L14.211,5.965l4.276,4.276Z" transform="translate(-3.459)" fill="#f7ab1d"/>
+        <path id="Path_159" data-name="Path 159" d="M27.645,11.93,21.68,5.965,27.645,0l1.682,1.682L25.051,5.965l4.276,4.276Z" transform="translate(-6.918)" fill="#f7ab1d"/>
+        <path id="Path_160" data-name="Path 160" d="M38.485,11.93,32.52,5.965,38.485,0l1.689,1.682L35.891,5.965l4.283,4.276Z" transform="translate(-10.377)" fill="#f7ab1d"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-9" data-name="Vrstva 2" transform="translate(1566.285 304.448) rotate(135)">
+      <g id="Vrstva_8-22" data-name="Vrstva 8">
+        <path id="Path_161" data-name="Path 161" d="M6.888,13.776,0,6.888,6.888,0,8.83,1.942,3.892,6.888,8.83,11.826Z" fill="#00a991"/>
+        <path id="Path_162" data-name="Path 162" d="M17.728,13.776,10.84,6.888,17.728,0,19.67,1.942,14.732,6.888l4.938,4.938Z" transform="translate(-2.317)" fill="#00a991"/>
+        <path id="Path_163" data-name="Path 163" d="M28.568,13.776,21.68,6.888,28.568,0,30.51,1.942,25.572,6.888l4.938,4.938Z" transform="translate(-4.633)" fill="#00a991"/>
+        <path id="Path_164" data-name="Path 164" d="M39.408,13.776,32.52,6.888,39.408,0l1.95,1.942L36.412,6.888l4.946,4.938Z" transform="translate(-6.95)" fill="#00a991"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-10" data-name="Vrstva 2" transform="translate(529.364 745.169) rotate(-1)">
+      <g id="Vrstva_8-23" data-name="Vrstva 8" transform="translate(-0.076 0.076)">
+        <path id="Path_165" data-name="Path 165" d="M52.362,3.05c-2.738,2.785-5.841,2.591-8.307,2.435-2.2-.132-3.932-.24-5.577,1.4s-1.551,3.39-1.4,5.585c.147,2.459.341,5.523-2.443,8.307s-5.848,2.591-8.276,2.435c-2.2-.132-3.932-.24-5.577,1.412s-1.551,3.382-1.4,5.577c.147,2.459.341,5.523-2.443,8.307s-5.879,2.614-8.338,2.436c-2.2-.132-3.956-.24-5.577,1.4A1.776,1.776,0,1,1,.5,39.846c2.785-2.785,5.848-2.6,8.307-2.443,2.2.14,3.932.248,5.577-1.4s1.551-3.382,1.412-5.577c-.155-2.459-.349-5.523,2.435-8.307s5.848-2.591,8.307-2.443c2.2.14,3.932.248,5.577-1.4s1.551-3.382,1.412-5.577c-.155-2.459-.349-5.53,2.435-8.307s5.848-2.6,8.307-2.443c2.2.14,3.932.248,5.585-1.4A1.776,1.776,0,0,1,52.362,3.05Z" transform="translate(0.076 -0.076)" fill="#f7ab1d"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-11" data-name="Vrstva 2" transform="translate(821.076 326.924)">
+      <g id="Vrstva_8-24" data-name="Vrstva 8">
+        <path id="Path_165-2" data-name="Path 165" d="M67.53,3.91C64,7.5,60,7.25,56.82,7.05c-2.83-.17-5.07-.31-7.19,1.81s-2,4.37-1.81,7.2c.19,3.17.44,7.12-3.15,10.71S37.13,30.11,34,29.91c-2.83-.17-5.07-.31-7.19,1.82s-2,4.36-1.81,7.19c.19,3.17.44,7.12-3.15,10.71S14.27,53,11.1,52.77c-2.83-.17-5.1-.31-7.19,1.81A2.29,2.29,0,1,1,.67,51.35C4.26,47.76,8.21,48,11.38,48.2c2.83.18,5.07.32,7.19-1.81s2-4.36,1.82-7.19c-.2-3.17-.45-7.12,3.14-10.71s7.54-3.34,10.71-3.15c2.83.18,5.07.32,7.19-1.81s2-4.36,1.82-7.19c-.2-3.17-.45-7.13,3.14-10.71S53.93,2.28,57.1,2.48c2.83.18,5.07.32,7.2-1.81a2.29,2.29,0,0,1,3.23,3.24Z" fill="#00a991"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-12" data-name="Vrstva 2" transform="matrix(0.545, 0.839, -0.839, 0.545, 932.025, 290.683)">
+      <g id="Vrstva_8-25" data-name="Vrstva 8">
+        <path id="Path_166" data-name="Path 166" d="M5.073,10.147,0,5.073,5.073,0,6.5,1.43,2.867,5.073,6.5,8.71Z" fill="#f7ab1d"/>
+        <path id="Path_167" data-name="Path 167" d="M15.913,10.147,10.84,5.073,15.913,0l1.43,1.43L13.707,5.073,17.344,8.71Z" transform="translate(-4.562)" fill="#f7ab1d"/>
+        <path id="Path_168" data-name="Path 168" d="M26.753,10.147,21.68,5.073,26.753,0l1.43,1.43L24.547,5.073,28.184,8.71Z" transform="translate(-9.124)" fill="#f7ab1d"/>
+        <path id="Path_169" data-name="Path 169" d="M37.593,10.147,32.52,5.073,37.593,0,39.03,1.43,35.387,5.073,39.03,8.71Z" transform="translate(-13.686)" fill="#f7ab1d"/>
+      </g>
+    </g>
+    <circle id="Ellipse_36" data-name="Ellipse 36" cx="5" cy="5" r="5" transform="translate(968 398)" fill="#00a991"/>
+    <g id="Vrstva_2-13" data-name="Vrstva 2" transform="translate(883.008 385.008)">
+      <g id="Vrstva_8-26" data-name="Vrstva 8" transform="translate(-0.008 -0.008)">
+        <path id="Path_170" data-name="Path 170" d="M12.867,25.291A12.65,12.65,0,1,1,25.291,12.423,12.65,12.65,0,0,1,12.867,25.291ZM12.528,5.9a2.794,2.794,0,1,0,0-.04Z" transform="translate(0.008 0.008)" fill="#f9971e"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-14" data-name="Vrstva 2" transform="translate(1119.076 367.812)">
+      <g id="Vrstva_8-27" data-name="Vrstva 8" transform="translate(-0.076 0.076)">
+        <path id="Path_171" data-name="Path 171" d="M37.079,2.183c-1.94,1.973-4.138,1.836-5.886,1.726-1.555-.093-2.786-.17-3.952.995s-1.1,2.4-.995,3.957c.1,1.742.242,3.913-1.731,5.886s-4.144,1.836-5.864,1.726c-1.555-.093-2.786-.17-3.952,1s-1.1,2.4-.995,3.952c.1,1.742.242,3.913-1.731,5.886s-4.166,1.852-5.908,1.726c-1.555-.093-2.8-.17-3.952.995A1.259,1.259,0,1,1,.334,28.255c1.973-1.973,4.144-1.841,5.886-1.731,1.555.1,2.786.176,3.952-.995s1.1-2.4,1-3.952c-.11-1.742-.247-3.913,1.726-5.886s4.144-1.836,5.886-1.731c1.555.1,2.786.176,3.952-.995s1.1-2.4,1-3.952c-.11-1.742-.247-3.919,1.726-5.886S29.605,1.287,31.347,1.4C32.9,1.5,34.134,1.573,35.3.4a1.259,1.259,0,0,1,1.775,1.781Z" transform="translate(0.076 -0.076)" fill="#00a991"/>
+      </g>
+    </g>
+    <circle id="Ellipse_37" data-name="Ellipse 37" cx="7" cy="7" r="7" transform="translate(1023 289)" fill="#00a991"/>
+    <circle id="Ellipse_38" data-name="Ellipse 38" cx="5" cy="5" r="5" transform="translate(1001 335)" fill="#f9971e"/>
+    <g id="Vrstva_2-15" data-name="Vrstva 2" transform="translate(976.69 267.98)">
+      <g id="Vrstva_8-28" data-name="Vrstva 8" transform="translate(1.31 1.02)">
+        <path id="Path_172" data-name="Path 172" d="M7.956,9.507,9.362,1.02,1.31,4.047Z" transform="translate(-1.31 -1.02)" fill="none" stroke="#f7ab1d" stroke-miterlimit="10" stroke-width="0.34"/>
+        <path id="Path_173" data-name="Path 173" d="M25.416,11.546,26.822,3.06,18.77,6.086Z" transform="translate(-16.308 -2.772)" fill="none" stroke="#f7ab1d" stroke-miterlimit="10" stroke-width="0.34"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-16" data-name="Vrstva 2" transform="translate(1169 312)">
+      <g id="Vrstva_8-29" data-name="Vrstva 8">
+        <path id="Path_174" data-name="Path 174" d="M22.3,7.322H14.978V0H7.322V7.322H0v7.656H7.322V22.3h7.656V14.978H22.3Z" fill="#fff"/>
+      </g>
+    </g>
+    <circle id="Ellipse_39" data-name="Ellipse 39" cx="5" cy="5" r="5" transform="translate(1264 316)" fill="#00a991"/>
+    <circle id="Ellipse_40" data-name="Ellipse 40" cx="3.5" cy="3.5" r="3.5" transform="translate(1314 394)" fill="#f9971e"/>
+    <g id="Vrstva_2-17" data-name="Vrstva 2" transform="translate(1304.008 334.008)">
+      <g id="Vrstva_8-30" data-name="Vrstva 8" transform="translate(-0.008 -0.008)">
+        <path id="Path_175" data-name="Path 175" d="M10.132,19.917A9.963,9.963,0,1,1,19.917,9.782,9.963,9.963,0,0,1,10.132,19.917ZM9.865,4.648a2.2,2.2,0,1,0,0-.032Z" transform="translate(0.008 0.008)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-18" data-name="Vrstva 2" transform="translate(1373.711 404.075) rotate(-40)">
+      <g id="Vrstva_8-31" data-name="Vrstva 8" transform="translate(-0.076 0.076)">
+        <path id="Path_176" data-name="Path 176" d="M50.375,2.937C47.741,5.616,44.756,5.43,42.383,5.28c-2.112-.127-3.783-.231-5.366,1.351S35.525,9.892,35.667,12c.142,2.366.328,5.313-2.351,7.992s-5.627,2.492-7.963,2.343c-2.112-.127-3.783-.231-5.366,1.358s-1.493,3.254-1.351,5.366c.142,2.366.328,5.313-2.351,7.992S10.63,39.571,8.264,39.4c-2.112-.127-3.806-.231-5.366,1.351a1.709,1.709,0,1,1-2.418-2.41c2.679-2.679,5.627-2.5,7.992-2.351,2.112.134,3.783.239,5.366-1.351s1.493-3.254,1.358-5.366c-.149-2.366-.336-5.313,2.343-7.992s5.627-2.492,7.992-2.351c2.112.134,3.783.239,5.366-1.351s1.493-3.254,1.358-5.366c-.149-2.366-.336-5.321,2.343-7.992s5.627-2.5,7.992-2.351C44.7,2,46.375,2.109,47.965.519a1.709,1.709,0,0,1,2.41,2.418Z" transform="translate(0.076 -0.076)" fill="#00a991"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-19" data-name="Vrstva 2" transform="translate(1373.711 404.075) rotate(-40)">
+      <g id="Vrstva_8-32" data-name="Vrstva 8" transform="translate(-0.076 0.076)">
+        <path id="Path_176-2" data-name="Path 176" d="M50.375,2.937C47.741,5.616,44.756,5.43,42.383,5.28c-2.112-.127-3.783-.231-5.366,1.351S35.525,9.892,35.667,12c.142,2.366.328,5.313-2.351,7.992s-5.627,2.492-7.963,2.343c-2.112-.127-3.783-.231-5.366,1.358s-1.493,3.254-1.351,5.366c.142,2.366.328,5.313-2.351,7.992S10.63,39.571,8.264,39.4c-2.112-.127-3.806-.231-5.366,1.351a1.709,1.709,0,1,1-2.418-2.41c2.679-2.679,5.627-2.5,7.992-2.351,2.112.134,3.783.239,5.366-1.351s1.493-3.254,1.358-5.366c-.149-2.366-.336-5.313,2.343-7.992s5.627-2.492,7.992-2.351c2.112.134,3.783.239,5.366-1.351s1.493-3.254,1.358-5.366c-.149-2.366-.336-5.321,2.343-7.992s5.627-2.5,7.992-2.351C44.7,2,46.375,2.109,47.965.519a1.709,1.709,0,0,1,2.41,2.418Z" transform="translate(0.076 -0.076)" fill="#00a991"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-20" data-name="Vrstva 2" transform="translate(1360.898 384.108) rotate(-66)">
+      <g id="Vrstva_8-33" data-name="Vrstva 8" transform="translate(0 0)">
+        <path id="Path_176-3" data-name="Path 176" d="M31.111,1.765C29.486,3.417,27.646,3.3,26.182,3.209c-1.3-.078-2.333-.143-3.309.833s-.92,2.011-.833,3.313c.087,1.459.2,3.276-1.45,4.929a5.665,5.665,0,0,1-4.91,1.445c-1.3-.078-2.333-.143-3.309.838s-.92,2.006-.833,3.309c.087,1.459.2,3.276-1.45,4.929a5.68,5.68,0,0,1-4.947,1.445c-1.3-.078-2.347-.143-3.309.833A1.054,1.054,0,1,1,.343,23.6a5.691,5.691,0,0,1,4.929-1.45c1.3.083,2.333.147,3.309-.833S9.5,19.307,9.418,18c-.092-1.459-.207-3.276,1.445-4.929s3.47-1.537,4.929-1.45c1.3.083,2.333.147,3.309-.833s.92-2.006.838-3.309c-.092-1.459-.207-3.281,1.445-4.929a5.7,5.7,0,0,1,4.929-1.45c1.3.083,2.333.147,3.313-.833a1.054,1.054,0,0,1,1.486,1.491Z" fill="#f9971e"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-21" data-name="Vrstva 2" transform="translate(1360.898 384.108) rotate(-66)">
+      <g id="Vrstva_8-34" data-name="Vrstva 8" transform="translate(0 0)">
+        <path id="Path_176-4" data-name="Path 176" d="M31.111,1.765C29.486,3.417,27.646,3.3,26.182,3.209c-1.3-.078-2.333-.143-3.309.833s-.92,2.011-.833,3.313c.087,1.459.2,3.276-1.45,4.929a5.665,5.665,0,0,1-4.91,1.445c-1.3-.078-2.333-.143-3.309.838s-.92,2.006-.833,3.309c.087,1.459.2,3.276-1.45,4.929a5.68,5.68,0,0,1-4.947,1.445c-1.3-.078-2.347-.143-3.309.833A1.054,1.054,0,1,1,.343,23.6a5.691,5.691,0,0,1,4.929-1.45c1.3.083,2.333.147,3.309-.833S9.5,19.307,9.418,18c-.092-1.459-.207-3.276,1.445-4.929s3.47-1.537,4.929-1.45c1.3.083,2.333.147,3.309-.833s.92-2.006.838-3.309c-.092-1.459-.207-3.281,1.445-4.929a5.7,5.7,0,0,1,4.929-1.45c1.3.083,2.333.147,3.313-.833a1.054,1.054,0,0,1,1.486,1.491Z" fill="#f9971e"/>
+      </g>
+    </g>
+    <circle id="Ellipse_41" data-name="Ellipse 41" cx="5.5" cy="5.5" r="5.5" transform="translate(1394 326)" fill="#fff"/>
+    <circle id="Ellipse_42" data-name="Ellipse 42" cx="3" cy="3" r="3" transform="translate(1357 330)" fill="#00a991"/>
+    <g id="Group_58" data-name="Group 58" transform="translate(-57.392 1286.767) rotate(-90)">
+      <g id="Datový_zdroj_22-3" data-name="Datový zdroj 22" transform="matrix(-0.839, 0.545, -0.545, -0.839, 871.237, 407.009)">
+        <g id="Vrstva_8-35" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_53-3" data-name="Path 53" d="M6.658,13.317,0,6.658,6.658,0,8.536,1.877,3.762,6.658l4.773,4.773Z" transform="translate(0 0)" fill="#00a991"/>
+          <path id="Path_54-3" data-name="Path 54" d="M6.658,13.317,0,6.658,6.658,0,8.536,1.877,3.762,6.658l4.773,4.773Z" transform="translate(8.239 0)" fill="#00a991"/>
+          <path id="Path_55-3" data-name="Path 55" d="M6.658,13.317,0,6.658,6.658,0,8.536,1.877,3.762,6.658l4.773,4.773Z" transform="translate(16.479 0)" fill="#00a991"/>
+          <path id="Path_56-3" data-name="Path 56" d="M6.658,13.317,0,6.658,6.658,0,8.543,1.877,3.762,6.658l4.781,4.773Z" transform="translate(24.718)" fill="#00a991"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_23-3" data-name="Datový zdroj 23" transform="translate(675.609 369.895)">
+        <g id="Vrstva_8-36" data-name="Vrstva 8">
+          <path id="Path_57-3" data-name="Path 57" d="M11.31,3.714H7.6V0H3.714V3.714H0V7.6H3.714V11.31H7.6V7.6H11.31Z" fill="#f9971e"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_24-2" data-name="Datový zdroj 24" transform="translate(903.666 471.035)">
+        <g id="Vrstva_8-37" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_58-2" data-name="Path 58" d="M6.349,12.484A6.246,6.246,0,1,1,12.484,6.13,6.246,6.246,0,0,1,6.349,12.484ZM6.182,2.911a1.379,1.379,0,1,0,0-.02Z" transform="translate(0.008 0.008)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20-6" data-name="Datový zdroj 20" transform="translate(740.905 355.885)">
+        <g id="Vrstva_8-38" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-7" data-name="Path 61" d="M17.805,1.09a3.254,3.254,0,0,1-2.833.83,2.143,2.143,0,0,0-1.9.479,2.133,2.133,0,0,0-.479,1.9,3.279,3.279,0,0,1-.833,2.833,3.256,3.256,0,0,1-2.822.83,2.136,2.136,0,0,0-1.9.481,2.129,2.129,0,0,0-.479,1.9,3.279,3.279,0,0,1-.833,2.833,3.265,3.265,0,0,1-2.843.83,2.137,2.137,0,0,0-1.9.479.606.606,0,1,1-.857-.854A3.271,3.271,0,0,1,2.954,12.8a2.128,2.128,0,0,0,1.9-.479,2.138,2.138,0,0,0,.481-1.9,3.268,3.268,0,0,1,.83-2.833A3.279,3.279,0,0,1,9,6.758a2.128,2.128,0,0,0,1.9-.479,2.138,2.138,0,0,0,.481-1.9,3.266,3.266,0,0,1,.83-2.833A3.279,3.279,0,0,1,15.047.712a2.135,2.135,0,0,0,1.9-.479.606.606,0,0,1,.854.857Z" transform="translate(0.076 -0.076)" fill="#00a991"/>
+        </g>
+      </g>
+      <ellipse id="Ellipse_16-2" data-name="Ellipse 16" cx="3.599" cy="3.599" rx="3.599" ry="3.599" transform="translate(774.314 348.303)" fill="#f9971e"/>
+      <g id="Datový_zdroj_20-7" data-name="Datový zdroj 20" transform="translate(771.213 381.412) rotate(30)">
+        <g id="Vrstva_8-39" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-8" data-name="Path 61" d="M30.192,1.712c-1.576,1.6-3.363,1.492-4.783,1.4-1.264-.076-2.264-.138-3.211.808s-.893,1.952-.808,3.215a5.536,5.536,0,0,1-1.407,4.783,5.5,5.5,0,0,1-4.765,1.4c-1.264-.076-2.264-.138-3.211.813s-.893,1.947-.808,3.211A5.536,5.536,0,0,1,9.792,22.13a5.512,5.512,0,0,1-4.8,1.4c-1.264-.076-2.278-.138-3.211.808A1.023,1.023,0,1,1,.333,22.9a5.523,5.523,0,0,1,4.783-1.407c1.264.08,2.264.143,3.211-.808s.893-1.947.813-3.211a5.518,5.518,0,0,1,1.4-4.783,5.536,5.536,0,0,1,4.783-1.407c1.264.08,2.264.143,3.211-.808s.893-1.947.813-3.211a5.515,5.515,0,0,1,1.4-4.783,5.536,5.536,0,0,1,4.783-1.407c1.264.08,2.264.143,3.215-.808a1.023,1.023,0,0,1,1.442,1.447Z" transform="translate(0 0)" fill="#f9971e"/>
+        </g>
+        <g id="Vrstva_8-40" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-9" data-name="Path 61" d="M30.192,1.712c-1.576,1.6-3.363,1.492-4.783,1.4-1.264-.076-2.264-.138-3.211.808s-.893,1.952-.808,3.215a5.536,5.536,0,0,1-1.407,4.783,5.5,5.5,0,0,1-4.765,1.4c-1.264-.076-2.264-.138-3.211.813s-.893,1.947-.808,3.211A5.536,5.536,0,0,1,9.792,22.13a5.512,5.512,0,0,1-4.8,1.4c-1.264-.076-2.278-.138-3.211.808A1.023,1.023,0,1,1,.333,22.9a5.523,5.523,0,0,1,4.783-1.407c1.264.08,2.264.143,3.211-.808s.893-1.947.813-3.211a5.518,5.518,0,0,1,1.4-4.783,5.536,5.536,0,0,1,4.783-1.407c1.264.08,2.264.143,3.211-.808s.893-1.947.813-3.211a5.515,5.515,0,0,1,1.4-4.783,5.536,5.536,0,0,1,4.783-1.407c1.264.08,2.264.143,3.215-.808a1.023,1.023,0,0,1,1.442,1.447Z" transform="translate(0 0)" fill="#f9971e"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_19-3" data-name="Datový zdroj 19" transform="matrix(-0.951, -0.309, 0.309, -0.951, 842.905, 386.98)">
+        <g id="Vrstva_8-41" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_59-3" data-name="Path 59" d="M12.749,16.282,15.446,0,0,5.807Z" transform="translate(0 0)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.33"/>
+          <path id="Path_60-3" data-name="Path 60" d="M12.749,16.279,15.446,0,0,5.8Z" transform="translate(4.722 0.552)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.33"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20-8" data-name="Datový zdroj 20" transform="matrix(0.978, -0.208, 0.208, 0.978, 868.42, 426.548)">
+        <g id="Vrstva_8-42" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-10" data-name="Path 61" d="M42.128,2.389c-2.2,2.237-4.692,2.081-6.674,1.957-1.763-.106-3.159-.193-4.48,1.128S29.727,8.2,29.846,9.96c.118,1.975.274,4.437-1.963,6.674s-4.7,2.081-6.649,1.957c-1.763-.106-3.159-.193-4.48,1.134s-1.246,2.717-1.128,4.48c.118,1.975.274,4.437-1.963,6.674s-4.723,2.1-6.7,1.957c-1.763-.106-3.178-.193-4.48,1.128A1.427,1.427,0,1,1,.465,31.951c2.237-2.237,4.7-2.088,6.674-1.963,1.763.112,3.159.2,4.48-1.128s1.246-2.717,1.134-4.48c-.125-1.975-.28-4.437,1.957-6.674s4.7-2.081,6.674-1.963c1.763.112,3.159.2,4.48-1.128S27.11,11.9,27,10.135c-.125-1.975-.28-4.443,1.957-6.674s4.7-2.088,6.674-1.963c1.763.112,3.159.2,4.487-1.128a1.427,1.427,0,0,1,2.013,2.019Z" transform="translate(0 0)" fill="#f9971e"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_23-4" data-name="Datový zdroj 23" transform="translate(916.539 444.655)">
+        <g id="Vrstva_8-43" data-name="Vrstva 8">
+          <path id="Path_57-4" data-name="Path 57" d="M7.649,2.511H5.137V0H2.511V2.511H0V5.137H2.511V7.649H5.137V5.137H7.649Z" fill="#00a991"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20-9" data-name="Datový zdroj 20" transform="matrix(0.993, 0.122, -0.122, 0.993, 706.388, 375.313)">
+        <g id="Vrstva_8-44" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-11" data-name="Path 61" d="M27.133,1.539a4.938,4.938,0,0,1-4.3,1.26c-1.136-.068-2.035-.124-2.886.726s-.8,1.754-.726,2.89a4.975,4.975,0,0,1-1.264,4.3,4.94,4.94,0,0,1-4.282,1.26c-1.136-.068-2.035-.124-2.886.73a3.231,3.231,0,0,0-.726,2.886,4.975,4.975,0,0,1-1.264,4.3,4.954,4.954,0,0,1-4.314,1.26c-1.136-.068-2.047-.124-2.886.726a.919.919,0,1,1-1.3-1.3,4.963,4.963,0,0,1,4.3-1.264c1.136.072,2.035.128,2.886-.726a3.245,3.245,0,0,0,.73-2.886,4.959,4.959,0,0,1,1.26-4.3,4.975,4.975,0,0,1,4.3-1.264c1.136.072,2.035.128,2.886-.726a3.245,3.245,0,0,0,.73-2.886,4.956,4.956,0,0,1,1.26-4.3,4.975,4.975,0,0,1,4.3-1.264c1.136.072,2.035.128,2.89-.726a.919.919,0,0,1,1.3,1.3Z" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20-10" data-name="Datový zdroj 20" transform="matrix(0.993, 0.122, -0.122, 0.993, 706.388, 375.313)">
+        <g id="Vrstva_8-45" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-12" data-name="Path 61" d="M27.133,1.539a4.938,4.938,0,0,1-4.3,1.26c-1.136-.068-2.035-.124-2.886.726s-.8,1.754-.726,2.89a4.975,4.975,0,0,1-1.264,4.3,4.94,4.94,0,0,1-4.282,1.26c-1.136-.068-2.035-.124-2.886.73a3.231,3.231,0,0,0-.726,2.886,4.975,4.975,0,0,1-1.264,4.3,4.954,4.954,0,0,1-4.314,1.26c-1.136-.068-2.047-.124-2.886.726a.919.919,0,1,1-1.3-1.3,4.963,4.963,0,0,1,4.3-1.264c1.136.072,2.035.128,2.886-.726a3.245,3.245,0,0,0,.73-2.886,4.959,4.959,0,0,1,1.26-4.3,4.975,4.975,0,0,1,4.3-1.264c1.136.072,2.035.128,2.886-.726a3.245,3.245,0,0,0,.73-2.886,4.956,4.956,0,0,1,1.26-4.3,4.975,4.975,0,0,1,4.3-1.264c1.136.072,2.035.128,2.89-.726a.919.919,0,0,1,1.3,1.3Z" fill="#fff"/>
+        </g>
+      </g>
+      <ellipse id="Ellipse_17-2" data-name="Ellipse 17" cx="2.009" cy="2.009" rx="2.009" ry="2.009" transform="translate(664.981 345.761)" fill="#fff"/>
+      <ellipse id="Ellipse_18-2" data-name="Ellipse 18" cx="2.009" cy="2.009" rx="2.009" ry="2.009" transform="translate(733.632 406.148)" fill="#00a991"/>
+    </g>
+    <circle id="Ellipse_43" data-name="Ellipse 43" cx="5" cy="5" r="5" transform="translate(1541 370)" fill="#00a991"/>
+    <circle id="Ellipse_44" data-name="Ellipse 44" cx="3" cy="3" r="3" transform="translate(1575 334)" fill="#fff"/>
+    <circle id="Ellipse_45" data-name="Ellipse 45" cx="3" cy="3" r="3" transform="translate(1510 342)" fill="#f9971e"/>
+    <circle id="Ellipse_46" data-name="Ellipse 46" cx="3" cy="3" r="3" transform="translate(1486 295)" fill="#00a991"/>
+    <circle id="Ellipse_47" data-name="Ellipse 47" cx="3" cy="3" r="3" transform="translate(1452 340)" fill="#00a991"/>
+    <g id="Vrstva_2-22" data-name="Vrstva 2" transform="translate(1452.008 306.008)">
+      <g id="Vrstva_8-46" data-name="Vrstva 8" transform="translate(-0.008 -0.008)">
+        <path id="Path_177" data-name="Path 177" d="M5.081,9.992A5,5,0,1,1,9.991,4.905,5,5,0,0,1,5.081,9.992ZM4.947,2.329a1.1,1.1,0,1,0,0-.016Z" transform="translate(0.008 0.008)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-23" data-name="Vrstva 2" transform="translate(1448.008 674.008)">
+      <g id="Vrstva_8-47" data-name="Vrstva 8" transform="translate(-0.008 -0.008)">
+        <path id="Path_178" data-name="Path 178" d="M10,19.667A9.838,9.838,0,1,1,19.667,9.659,9.838,9.838,0,0,1,10,19.667ZM9.741,4.589a2.172,2.172,0,1,0,0-.031Z" transform="translate(0.008 0.008)" fill="#00a991"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-24" data-name="Vrstva 2" transform="translate(1366 789)">
+      <g id="Vrstva_8-48" data-name="Vrstva 8">
+        <path id="Path_179" data-name="Path 179" d="M8.341,2.739H5.6V0H2.739V2.739H0V5.6H2.739V8.341H5.6V5.6H8.341Z" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-25" data-name="Vrstva 2" transform="translate(1333.252 824.396) rotate(-65)">
+      <g id="Vrstva_8-49" data-name="Vrstva 8">
+        <path id="Path_180" data-name="Path 180" d="M4.09,8.18,0,4.09,4.09,0,5.243,1.153,2.311,4.09,5.243,7.022Z" fill="#00a991"/>
+        <path id="Path_181" data-name="Path 181" d="M14.93,8.18,10.84,4.09,14.93,0l1.153,1.153L13.151,4.09l2.932,2.932Z" transform="translate(-5.779)" fill="#00a991"/>
+        <path id="Path_182" data-name="Path 182" d="M25.77,8.18,21.68,4.09,25.77,0l1.153,1.153L23.991,4.09l2.932,2.932Z" transform="translate(-11.558)" fill="#00a991"/>
+        <path id="Path_183" data-name="Path 183" d="M36.61,8.18,32.52,4.09,36.61,0l1.158,1.153L34.831,4.09l2.937,2.932Z" transform="translate(-17.336)" fill="#00a991"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-26" data-name="Vrstva 2" transform="translate(1317.076 774.924)">
+      <g id="Vrstva_8-50" data-name="Vrstva 8" transform="translate(-0.076 0.076)">
+        <path id="Path_184" data-name="Path 184" d="M24.874,1.491a4.541,4.541,0,0,1-3.952,1.159,2.99,2.99,0,0,0-2.653.668A2.976,2.976,0,0,0,17.6,5.975a4.575,4.575,0,0,1-1.162,3.952A4.543,4.543,0,0,1,12.5,11.086a2.981,2.981,0,0,0-2.653.672,2.971,2.971,0,0,0-.668,2.653,4.575,4.575,0,0,1-1.162,3.952,4.555,4.555,0,0,1-3.967,1.159A2.982,2.982,0,0,0,1.4,20.19.845.845,0,1,1,.2,19a4.564,4.564,0,0,1,3.952-1.162,2.969,2.969,0,0,0,2.653-.668,2.984,2.984,0,0,0,.672-2.653,4.56,4.56,0,0,1,1.159-3.952A4.575,4.575,0,0,1,12.588,9.4a2.969,2.969,0,0,0,2.653-.668,2.984,2.984,0,0,0,.672-2.653,4.558,4.558,0,0,1,1.159-3.952A4.575,4.575,0,0,1,21.025.963,2.979,2.979,0,0,0,23.682.295a.845.845,0,0,1,1.192,1.2Z" transform="translate(0.076 -0.076)" fill="#f7ab1d"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-27" data-name="Vrstva 2" transform="translate(1341.097 737.244) rotate(-60)">
+      <g id="Vrstva_8-51" data-name="Vrstva 8">
+        <path id="Path_185" data-name="Path 185" d="M67.53,3.91C64,7.5,60,7.25,56.82,7.05c-2.83-.17-5.07-.31-7.19,1.81s-2,4.37-1.81,7.2c.19,3.17.44,7.12-3.15,10.71S37.13,30.11,34,29.91c-2.83-.17-5.07-.31-7.19,1.82s-2,4.36-1.81,7.19c.19,3.17.44,7.12-3.15,10.71S14.27,53,11.1,52.77c-2.83-.17-5.1-.31-7.19,1.81A2.29,2.29,0,1,1,.67,51.35C4.26,47.76,8.21,48,11.38,48.2c2.83.18,5.07.32,7.19-1.81s2-4.36,1.82-7.19c-.2-3.17-.45-7.12,3.14-10.71s7.54-3.34,10.71-3.15c2.83.18,5.07.32,7.19-1.81s2-4.36,1.82-7.19c-.2-3.17-.45-7.13,3.14-10.71S53.93,2.28,57.1,2.48c2.83.18,5.07.32,7.2-1.81a2.29,2.29,0,0,1,3.23,3.24Z" fill="#00a991"/>
+      </g>
+    </g>
+    <circle id="Ellipse_48" data-name="Ellipse 48" cx="4" cy="4" r="4" transform="translate(1522 661)" fill="#fff"/>
+    <g id="Vrstva_2-28" data-name="Vrstva 2" transform="translate(1545.008 602.008)">
+      <g id="Vrstva_8-52" data-name="Vrstva 8" transform="translate(-0.008 -0.008)">
+        <path id="Path_186" data-name="Path 186" d="M5.234,10.292a5.15,5.15,0,1,1,5.058-5.239A5.15,5.15,0,0,1,5.234,10.292ZM5.1,2.4a1.137,1.137,0,1,0,0-.016Z" transform="translate(0.008 0.008)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Vrstva_2-29" data-name="Vrstva 2" transform="translate(1564.822 613.924)">
+      <g id="Vrstva_8-53" data-name="Vrstva 8" transform="translate(-0.076 0.076)">
+        <path id="Path_187" data-name="Path 187" d="M39.036,2.294c-2.042,2.077-4.356,1.932-6.2,1.817-1.637-.1-2.933-.179-4.16,1.047s-1.157,2.528-1.047,4.165c.11,1.834.255,4.119-1.822,6.2s-4.362,1.932-6.173,1.817c-1.637-.1-2.933-.179-4.16,1.053s-1.157,2.522-1.047,4.16c.11,1.834.255,4.119-1.822,6.2s-4.385,1.95-6.219,1.817c-1.637-.1-2.951-.179-4.16,1.047A1.325,1.325,0,1,1,.356,29.74c2.077-2.077,4.362-1.938,6.2-1.822,1.637.1,2.933.185,4.16-1.047s1.157-2.522,1.053-4.16c-.116-1.834-.26-4.119,1.817-6.2s4.362-1.932,6.2-1.822c1.637.1,2.933.185,4.16-1.047s1.157-2.522,1.053-4.16c-.116-1.834-.26-4.125,1.817-6.2S31.168,1.351,33,1.467c1.637.1,2.933.185,4.165-1.047a1.325,1.325,0,0,1,1.869,1.874Z" transform="translate(0.076 -0.076)" fill="#00a991"/>
+      </g>
+    </g>
+    <circle id="Ellipse_49" data-name="Ellipse 49" cx="4.5" cy="4.5" r="4.5" transform="translate(1498 694)" fill="#f9971e"/>
+    <g id="Vrstva_2-30" data-name="Vrstva 2" transform="translate(798.008 410.008)">
+      <g id="Vrstva_8-54" data-name="Vrstva 8" transform="translate(-0.008 -0.008)">
+        <path id="Path_156-3" data-name="Path 156" d="M6.43,12.642a6.325,6.325,0,1,1,6.212-6.434A6.325,6.325,0,0,1,6.43,12.642ZM6.26,2.948a1.4,1.4,0,1,0,0-.02Z" transform="translate(0.008 0.008)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_60" data-name="Group 60" transform="translate(134.007 -74.798) rotate(48)">
+      <g id="Datový_zdroj_22-4" data-name="Datový zdroj 22" transform="translate(825.191 355.05) rotate(-120)">
+        <g id="Vrstva_8-55" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_53-4" data-name="Path 53" d="M4.844,9.687,0,4.844,4.844,0,6.209,1.366,2.737,4.844,6.209,8.316Z" transform="translate(0 0)" fill="#f9971e"/>
+          <path id="Path_54-4" data-name="Path 54" d="M4.844,9.687,0,4.844,4.844,0,6.209,1.366,2.737,4.844,6.209,8.316Z" transform="translate(5.994 0)" fill="#f9971e"/>
+          <path id="Path_55-4" data-name="Path 55" d="M4.844,9.687,0,4.844,4.844,0,6.209,1.366,2.737,4.844,6.209,8.316Z" transform="translate(11.987 0)" fill="#f9971e"/>
+          <path id="Path_56-4" data-name="Path 56" d="M4.844,9.687,0,4.844,4.844,0,6.215,1.366,2.737,4.844,6.215,8.316Z" transform="translate(17.981 0)" fill="#f9971e"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_23-5" data-name="Datový zdroj 23" transform="translate(672.712 338.092)">
+        <g id="Vrstva_8-56" data-name="Vrstva 8">
+          <path id="Path_57-5" data-name="Path 57" d="M8.227,2.7h-2.7V0H2.7V2.7H0V5.526H2.7v2.7H5.526v-2.7h2.7Z" fill="#f9971e"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_24-3" data-name="Datový zdroj 24" transform="translate(780.415 288.728)">
+        <g id="Vrstva_8-57" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_58-3" data-name="Path 58" d="M4.617,9.079A4.544,4.544,0,1,1,9.079,4.457,4.544,4.544,0,0,1,4.617,9.079ZM4.495,2.116a1,1,0,1,0,0-.015Z" transform="translate(0.008 0.008)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_19-4" data-name="Datový zdroj 19" transform="matrix(-0.259, 0.966, -0.966, -0.259, 697.056, 275.115)">
+        <g id="Vrstva_8-58" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_59-4" data-name="Path 59" d="M18.995,24.257,23.012,0,0,8.651Z" transform="translate(0 0)" fill="none" stroke="#f7ab1d" stroke-miterlimit="10" stroke-width="1.33"/>
+          <path id="Path_60-4" data-name="Path 60" d="M18.995,24.253,23.012,0,0,8.647Z" transform="translate(7.035 0.822)" fill="none" stroke="#f7ab1d" stroke-miterlimit="10" stroke-width="1.33"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20-11" data-name="Datový zdroj 20" transform="translate(743.171 254.703) rotate(60)">
+        <g id="Vrstva_8-59" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-13" data-name="Path 61" d="M59.482,3.374c-3.106,3.159-6.625,2.939-9.423,2.763-2.49-.15-4.461-.273-6.326,1.593s-1.76,3.845-1.593,6.335c.167,2.789.387,6.264-2.771,9.423s-6.634,2.939-9.388,2.763c-2.49-.15-4.461-.273-6.326,1.6s-1.76,3.836-1.593,6.326c.167,2.789.387,6.264-2.771,9.423s-6.669,2.965-9.458,2.763c-2.49-.15-4.487-.273-6.326,1.593A2.015,2.015,0,1,1,.656,45.113c3.159-3.159,6.634-2.947,9.423-2.771,2.49.158,4.461.282,6.326-1.593s1.76-3.836,1.6-6.326c-.176-2.789-.4-6.264,2.763-9.423s6.634-2.939,9.423-2.771c2.49.158,4.461.282,6.326-1.593s1.76-3.836,1.6-6.326c-.176-2.789-.4-6.273,2.763-9.423s6.634-2.947,9.423-2.771c2.49.158,4.461.282,6.335-1.593a2.015,2.015,0,0,1,2.842,2.851Z" fill="#00a991"/>
+        </g>
+      </g>
+      <ellipse id="Ellipse_16-3" data-name="Ellipse 16" cx="2.618" cy="2.618" rx="2.618" ry="2.618" transform="translate(744.514 322.385)" fill="#f9971e"/>
+      <g id="Datový_zdroj_20-12" data-name="Datový zdroj 20" transform="translate(742.259 346.47) rotate(30)">
+        <g id="Vrstva_8-60" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-14" data-name="Path 61" d="M21.963,1.246a4,4,0,0,1-3.479,1.02,2.632,2.632,0,0,0-2.336.588,2.62,2.62,0,0,0-.588,2.339,4.027,4.027,0,0,1-1.023,3.479,4,4,0,0,1-3.466,1.02,2.624,2.624,0,0,0-2.336.591,2.616,2.616,0,0,0-.588,2.336A4.027,4.027,0,0,1,7.123,16.1a4.01,4.01,0,0,1-3.492,1.02,2.625,2.625,0,0,0-2.336.588A.744.744,0,1,1,.242,16.657a4.017,4.017,0,0,1,3.479-1.023,2.613,2.613,0,0,0,2.336-.588,2.626,2.626,0,0,0,.591-2.336,4.014,4.014,0,0,1,1.02-3.479,4.027,4.027,0,0,1,3.479-1.023,2.613,2.613,0,0,0,2.336-.588,2.626,2.626,0,0,0,.591-2.336A4.012,4.012,0,0,1,15.1,1.8,4.027,4.027,0,0,1,18.574.781,2.622,2.622,0,0,0,20.913.193a.744.744,0,0,1,1.049,1.053Z" transform="translate(0 0)" fill="#f9971e"/>
+        </g>
+        <g id="Vrstva_8-61" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-15" data-name="Path 61" d="M21.963,1.246a4,4,0,0,1-3.479,1.02,2.632,2.632,0,0,0-2.336.588,2.62,2.62,0,0,0-.588,2.339,4.027,4.027,0,0,1-1.023,3.479,4,4,0,0,1-3.466,1.02,2.624,2.624,0,0,0-2.336.591,2.616,2.616,0,0,0-.588,2.336A4.027,4.027,0,0,1,7.123,16.1a4.01,4.01,0,0,1-3.492,1.02,2.625,2.625,0,0,0-2.336.588A.744.744,0,1,1,.242,16.657a4.017,4.017,0,0,1,3.479-1.023,2.613,2.613,0,0,0,2.336-.588,2.626,2.626,0,0,0,.591-2.336,4.014,4.014,0,0,1,1.02-3.479,4.027,4.027,0,0,1,3.479-1.023,2.613,2.613,0,0,0,2.336-.588,2.626,2.626,0,0,0,.591-2.336A4.012,4.012,0,0,1,15.1,1.8,4.027,4.027,0,0,1,18.574.781,2.622,2.622,0,0,0,20.913.193a.744.744,0,0,1,1.049,1.053Z" transform="translate(0 0)" fill="#f9971e"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_19-5" data-name="Datový zdroj 19" transform="matrix(-0.951, -0.309, 0.309, -0.951, 794.41, 350.52)">
+        <g id="Vrstva_8-62" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_59-5" data-name="Path 59" d="M9.274,11.844,11.236,0,0,4.224Z" transform="translate(0 0)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.33"/>
+          <path id="Path_60-5" data-name="Path 60" d="M9.274,11.842,11.236,0,0,4.222Z" transform="translate(3.435 0.401)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.33"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_22-5" data-name="Datový zdroj 22" transform="translate(726.643 254.358) rotate(107)">
+        <g id="Vrstva_8-63" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_53-5" data-name="Path 53" d="M1.963,3.926,0,1.963,1.963,0l.554.554L1.109,1.963,2.517,3.37Z" transform="translate(0 0)" fill="#fff"/>
+          <path id="Path_54-5" data-name="Path 54" d="M1.963,3.926,0,1.963,1.963,0l.554.554L1.109,1.963,2.517,3.37Z" transform="translate(2.429 0)" fill="#fff"/>
+          <path id="Path_55-5" data-name="Path 55" d="M1.963,3.926,0,1.963,1.963,0l.554.554L1.109,1.963,2.517,3.37Z" transform="translate(4.858 0)" fill="#fff"/>
+          <path id="Path_56-5" data-name="Path 56" d="M1.963,3.926,0,1.963,1.963,0l.556.554-1.41,1.41L2.519,3.37Z" transform="translate(7.288 0)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_23-6" data-name="Datový zdroj 23" transform="translate(831.814 323.462)">
+        <g id="Vrstva_8-64" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_57-6" data-name="Path 57" d="M5.564,1.827H3.737V0H1.827V1.827H0v1.91H1.827V5.564h1.91V3.737H5.564Z" fill="#00a991"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20-13" data-name="Datový zdroj 20" transform="matrix(0.259, 0.966, -0.966, 0.259, 840.178, 274.176)">
+        <g id="Vrstva_8-65" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-16" data-name="Path 61" d="M47.848,2.714c-2.5,2.541-5.329,2.364-7.58,2.222-2-.12-3.588-.219-5.089,1.281s-1.416,3.093-1.281,5.1c.134,2.244.311,5.039-2.229,7.58s-5.336,2.364-7.552,2.222c-2-.12-3.588-.219-5.089,1.288s-1.416,3.086-1.281,5.089c.134,2.244.311,5.039-2.229,7.58s-5.365,2.385-7.608,2.222c-2-.12-3.61-.219-5.089,1.281A1.621,1.621,0,1,1,.528,36.29c2.541-2.541,5.336-2.371,7.58-2.229,2,.127,3.588.226,5.089-1.281s1.416-3.086,1.288-5.089c-.142-2.244-.318-5.039,2.222-7.58s5.336-2.364,7.58-2.229c2,.127,3.588.226,5.089-1.281s1.416-3.086,1.288-5.089c-.142-2.244-.318-5.046,2.222-7.58S38.223,1.56,40.466,1.7c2,.127,3.588.226,5.1-1.281a1.621,1.621,0,0,1,2.286,2.293Z" fill="#f9971e"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20-14" data-name="Datový zdroj 20" transform="matrix(0.993, 0.122, -0.122, 0.993, 695.102, 342.033)">
+        <g id="Vrstva_8-66" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-17" data-name="Path 61" d="M19.737,1.119a3.592,3.592,0,0,1-3.127.917,2.365,2.365,0,0,0-2.1.528,2.354,2.354,0,0,0-.528,2.1,3.619,3.619,0,0,1-.92,3.127,3.594,3.594,0,0,1-3.115.917,2.358,2.358,0,0,0-2.1.531,2.351,2.351,0,0,0-.528,2.1,3.619,3.619,0,0,1-.92,3.127,3.6,3.6,0,0,1-3.138.917,2.359,2.359,0,0,0-2.1.528.669.669,0,1,1-.946-.943,3.61,3.61,0,0,1,3.127-.92,2.348,2.348,0,0,0,2.1-.528,2.36,2.36,0,0,0,.531-2.1A3.608,3.608,0,0,1,6.892,8.3a3.619,3.619,0,0,1,3.127-.92,2.348,2.348,0,0,0,2.1-.528,2.36,2.36,0,0,0,.531-2.1,3.605,3.605,0,0,1,.917-3.127A3.619,3.619,0,0,1,16.692.7a2.356,2.356,0,0,0,2.1-.528.669.669,0,0,1,.943.946Z" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Datový_zdroj_20-15" data-name="Datový zdroj 20" transform="matrix(0.993, 0.122, -0.122, 0.993, 695.102, 342.033)">
+        <g id="Vrstva_8-67" data-name="Vrstva 8" transform="translate(0 0)">
+          <path id="Path_61-18" data-name="Path 61" d="M19.737,1.119a3.592,3.592,0,0,1-3.127.917,2.365,2.365,0,0,0-2.1.528,2.354,2.354,0,0,0-.528,2.1,3.619,3.619,0,0,1-.92,3.127,3.594,3.594,0,0,1-3.115.917,2.358,2.358,0,0,0-2.1.531,2.351,2.351,0,0,0-.528,2.1,3.619,3.619,0,0,1-.92,3.127,3.6,3.6,0,0,1-3.138.917,2.359,2.359,0,0,0-2.1.528.669.669,0,1,1-.946-.943,3.61,3.61,0,0,1,3.127-.92,2.348,2.348,0,0,0,2.1-.528,2.36,2.36,0,0,0,.531-2.1A3.608,3.608,0,0,1,6.892,8.3a3.619,3.619,0,0,1,3.127-.92,2.348,2.348,0,0,0,2.1-.528,2.36,2.36,0,0,0,.531-2.1,3.605,3.605,0,0,1,.917-3.127A3.619,3.619,0,0,1,16.692.7a2.356,2.356,0,0,0,2.1-.528.669.669,0,0,1,.943.946Z" fill="#fff"/>
+        </g>
+      </g>
+      <ellipse id="Ellipse_17-3" data-name="Ellipse 17" cx="1.462" cy="1.462" rx="1.462" ry="1.462" transform="translate(664.981 320.535)" fill="#fff"/>
+      <ellipse id="Ellipse_18-3" data-name="Ellipse 18" cx="1.462" cy="1.462" rx="1.462" ry="1.462" transform="translate(714.921 364.464)" fill="#00a991"/>
+    </g>
+    <g id="Vrstva_2-31" data-name="Vrstva 2" transform="translate(495 755)">
+      <g id="Vrstva_8-68" data-name="Vrstva 8">
+        <path id="Path_188" data-name="Path 188" d="M15.039,4.938H10.1V0H4.938V4.938H0V10.1H4.938v4.938H10.1V10.1h4.938Z" fill="#00a991"/>
+      </g>
+    </g>
+    <circle id="Ellipse_50" data-name="Ellipse 50" cx="4.5" cy="4.5" r="4.5" transform="translate(491 708)" fill="#fff"/>
+    <text id="_27_-_28_September" data-name="27 - 28 September" transform="translate(394 315)" fill="#f9971e" font-size="46" font-family="CircularPro-Bold, Circular Pro" font-weight="700"><tspan x="0" y="0">27 - 28 September</tspan></text>
+    <text id="Travel_Hackathon" data-name="Travel Hackathon" transform="translate(958.739 761.278)" fill="#fff" font-size="88" font-family="CircularPro-Black, Circular Pro" font-weight="800"><tspan x="-362.252" y="0">Travel Hackathon</tspan></text>
+  </g>
+</svg>
