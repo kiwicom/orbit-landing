@@ -63,7 +63,7 @@ const Footer = () => {
         shrink
       >
         <FooterWrapper>
-          <Logo src={KiwiLogo} />
+          <Logo src={KiwiLogo} alt="" />
           <Stack
             justify="end"
             align="center"

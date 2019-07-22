@@ -14,10 +14,19 @@ const StyledPattern = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  position: absolute;
+  position: ${({ relative }) => (relative ? 'relative' : 'absolute')};
 `;
 
-const Pattern = ({ pattern, top, bottom, left, right, width, height }) => {
+const Pattern = ({
+  pattern,
+  top,
+  bottom,
+  left,
+  right,
+  width,
+  height,
+  relative,
+}) => {
   return (
     <StyledPattern
       top={top}
@@ -27,6 +36,7 @@ const Pattern = ({ pattern, top, bottom, left, right, width, height }) => {
       width={width}
       height={height}
       pattern={pattern}
+      relative={relative}
     />
   );
 };

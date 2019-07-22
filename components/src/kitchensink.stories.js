@@ -12,7 +12,9 @@ import Mission from './Mission';
 import Imagewall from './ImageWall';
 import JoinUs from './JoinUs';
 import Panel from './Panel';
+import Locations from './Locations';
 // Images
+import logo from '../static/kiwi.svg';
 import heroImg from '../static/hero.jpg';
 import heroPattern from '../static/pattern04.svg';
 import missionImage from '../static/mission.jpg';
@@ -45,7 +47,10 @@ const images = [
 
 const StyledStack = styled.div`
   & > * {
-    margin: 0 0 5.26vh 0 !important;
+    margin: 0 0 5.26vh 0;
+  }
+  & > :nth-child(1) {
+    margin: 0;
   }
 `;
 
@@ -86,6 +91,39 @@ storiesOf('KitchenSink', module).add('Default', () => (
           ]}
         />
       }
+    />
+    <Locations
+      title="Hack the travel and discover the world from a whole new
+    perspective."
+      pattern={heroPattern}
+      backgroundImage={heroImg}
+      locations={[
+        {
+          backgroundImage: grid01,
+          eventName: 'Travel Hack',
+          location: 'Barcelona',
+          logo: logo,
+        },
+        {
+          backgroundImage: grid01,
+          eventName: 'Travel Hack',
+          location: 'Barcelona',
+          logo: logo,
+        },
+        {
+          backgroundImage: grid01,
+          eventName: 'Travel Hack',
+          location: 'Barcelona',
+          logo: logo,
+        },
+        {
+          backgroundImage: grid01,
+          eventName: 'Travel Hack',
+          location: 'Barcelona',
+          logo: logo,
+        },
+      ]}
+      locationsHeading="Choose your destination"
     />
     <Mission img={missionImage} />
     <Panel
