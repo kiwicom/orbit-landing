@@ -14,6 +14,7 @@ import JoinUs from './JoinUs';
 import Panel from './Panel';
 import Locations from './Locations';
 import HeroCentered from './HeroCentered';
+import Timeline from './Timeline';
 // Images
 import logo from '../static/kiwi.svg';
 import heroImg from '../static/hero.jpg';
@@ -188,6 +189,15 @@ storiesOf('KitchenSink', module).add('Default', () => (
       ]}
     />
     <Imagewall images={images} />
+    <Timeline
+      title="Schedule"
+      content="We begin on Friday, 10th of May at 18:00 and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long"
+      items={[
+        { time: '17:00', title: 'Registration' },
+        { time: '17:30', title: 'Welcome and introduction' },
+        { time: '18:00', title: 'Pitching of ideas' },
+      ]}
+    />
     <Faq
       items={[
         {
