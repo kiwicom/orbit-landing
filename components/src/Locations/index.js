@@ -220,7 +220,7 @@ const LocationTile = ({ eventName, location, logo, backgroundImage, hide }) => {
       <StyledTileContent>
         <StyledLogo logo={logo} />
         <Stack spacing="natural">
-          <Text type="white" size="small">
+          <Text type="white" size="large">
             {eventName}
           </Text>
           <TileHeading type="white" size="large" inverted weight="bold">
