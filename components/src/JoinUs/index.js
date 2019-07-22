@@ -90,7 +90,7 @@ const JoinUs = ({ img, pattern, pattern2 }) => {
             <Heading inverted type="title1">
               Join Us
             </Heading>
-            <Text type="white" align="center">
+            <Text type="white" size="large" align="center">
               The participants will be selected based on their solution of entry
               task
             </Text>

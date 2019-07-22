@@ -17,7 +17,7 @@ const StyledMainContent = styled.div`
 
 const StyledText = styled.div`
   font-family: ${({ theme }) => theme.orbit.fontFamily};
-  font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1920 - 320)));
+  font-size: ${({ theme }) => theme.orbit.fontSizeTextNormal};
   color: #fff;
 `;
 
@@ -27,7 +27,7 @@ StyledText.defaultProps = {
 
 const StyledLink = styled.a`
   font-family: ${({ theme }) => theme.orbit.fontFamily};
-  font-size: calc(16px + (28 - 16) * ((100vw - 320px) / (1920 - 320)));
+  font-size: ${({ theme }) => theme.orbit.fontSizeTextNormal};
   color: #fff;
   text-decoration: none;
 
@@ -41,14 +41,14 @@ StyledLink.defaultProps = {
 };
 
 const StyledImage = styled.div`
-  height: 4.21vw;
-  width: 8.52vw;
+  height: 3.21vw;
+  width: 6.52vw;
   min-width: 80px;
   min-height: 40px;
   background-image: ${({ img }) => `url(${img})`};
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: left center;
 `;
 
 const Link = ({ children, onClick, href }) => {
