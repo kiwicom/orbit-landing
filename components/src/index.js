@@ -9,3 +9,4 @@ export { default as Mission } from './Mission';
 export { default as NavBar } from './NavBar';
 export { default as Panel } from './Panel';
 export { default as Sponsors } from './Sponsors';
+export { default as Prizes } from './Prizes';
