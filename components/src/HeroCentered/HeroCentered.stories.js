@@ -2,21 +2,27 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import Button from '@kiwicom/orbit-components/lib/Button';
 
 import heroImg from '../../static/hero02.jpg';
 import heroPattern from '../../static/hero2.svg';
 import NavBar from '../NavBar';
 
-import Hero from './index';
+import HeroCentered from './index';
 
 storiesOf('HeroCentered', module)
   .add('Default', () => (
-    <Hero backgroundImage={heroImg} heroImage={heroPattern} />
-  ))
-  .add('With NavBar', () => (
-    <Hero
+    <HeroCentered
       backgroundImage={heroImg}
       heroImage={heroPattern}
+      actions={<Button>Register</Button>}
+    />
+  ))
+  .add('With NavBar', () => (
+    <HeroCentered
+      backgroundImage={heroImg}
+      heroImage={heroPattern}
+      actions={<Button>Register</Button>}
       navBar={
         <NavBar
           title="Travel Hackathon"

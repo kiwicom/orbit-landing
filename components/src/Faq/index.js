@@ -8,42 +8,42 @@ import Stack from '@kiwicom/orbit-components/lib/Stack';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 
 import defaultTheme from '../defaultTheme';
+import Container from '../utils/Container';
 
 const StyledMainContent = styled.div`
-  padding-left: 5.2vw;
-  padding-right: 7.8vw;
-  box-sizing: border-box;
   text-align: center;
 `;
 
 const Faq = ({ items }) => {
   return (
-    <StyledMainContent>
-      <Stack
-        flex
-        align="center"
-        direction="column"
-        spacing="natural"
-        tablet={{ spacing: 'loose' }}
-      >
-        <Heading style="title1" element="h2">
-          FAQ
-        </Heading>
-        <Stack spacing="none" flex wrap>
-          {items.map((item, index) => {
-            return (
-              <FaqItem
-                key={index}
-                question={item.question}
-                answer={item.answer}
-                img={item.img}
-                index={index}
-              />
-            );
-          })}
+    <Container>
+      <StyledMainContent>
+        <Stack
+          flex
+          align="center"
+          direction="column"
+          spacing="natural"
+          tablet={{ spacing: 'loose' }}
+        >
+          <Heading style="title1" element="h2">
+            FAQ
+          </Heading>
+          <Stack spacing="none" flex wrap>
+            {items.map((item, index) => {
+              return (
+                <FaqItem
+                  key={index}
+                  question={item.question}
+                  answer={item.answer}
+                  img={item.img}
+                  index={index}
+                />
+              );
+            })}
+          </Stack>
         </Stack>
-      </Stack>
-    </StyledMainContent>
+      </StyledMainContent>
+    </Container>
   );
 };
 

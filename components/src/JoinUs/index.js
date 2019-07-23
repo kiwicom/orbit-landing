@@ -2,10 +2,8 @@
 
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import Button from '@kiwicom/orbit-components/lib/Button';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Text from '@kiwicom/orbit-components/lib/Text';
-import TextLink from '@kiwicom/orbit-components/lib/TextLink';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Hide from '@kiwicom/orbit-components/lib/Hide';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
@@ -19,6 +17,7 @@ const StyledJoinUs = styled.div`
   width: 100%;
   height: 44.73vw;
   min-height: 430px;
+  max-height: 850px;
   background-image: ${({ img }) => `url(${img})`};
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,51 +60,63 @@ ContentWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const StyledSpan = styled.span`
-  display: block;
+const StyledCenter = styled.span`
+  text-align: center;
 `;
 
-const JoinUs = ({ img, pattern, pattern2 }) => {
+const JoinUs = ({
+  backgroundImage,
+  title,
+  patterns,
+  descrtiption,
+  actions,
+  additionalInformation,
+  additionalActions,
+}) => {
   return (
-    <StyledJoinUs img={img}>
+    <StyledJoinUs img={backgroundImage}>
       <Hide on={['smallMobile', 'mediumMobile', 'largeMobile', 'tablet']}>
-        <StyledPattern
-          width="21.73vw"
-          height="14.26vw"
-          bottom="6.47vw"
-          left="9.21vw"
-          pattern={pattern}
-        />
-        <StyledPattern
-          width="21.73vw"
-          height="14.26vw"
-          top="5.16vw"
-          right="12vw"
-          pattern={pattern2}
-        />
+        {patterns.length >= 1 && (
+          <StyledPattern
+            width="21.73vw"
+            height="14.26vw"
+            bottom="6.47vw"
+            left="9.21vw"
+            pattern={patterns[0]}
+          />
+        )}
+
+        {patterns.length >= 2 && (
+          <StyledPattern
+            width="21.73vw"
+            height="14.26vw"
+            top="5.16vw"
+            right="12vw"
+            pattern={patterns[1]}
+          />
+        )}
       </Hide>
       <Stack direction="column" justify="center" align="center">
         <ContentWrapper>
           <Stack direction="column" justify="center" align="center" basis="70%">
             <Heading inverted type="title1">
-              Join Us
+              {title}
             </Heading>
             <Text type="white" size="large" align="center">
-              The participants will be selected based on their solution of entry
-              task
+              {descrtiption}
             </Text>
-            <Button>Register</Button>
+            {actions}
           </Stack>
-          <Stack direction="column" justify="center" align="center">
-            <Text type="white" size="small" align="center">
-              We value the participation of each member and we want all
-              attendees to have an enjoying and fulfilling experience.
-              <StyledSpan>
-                <TextLink external href="https://kiwi.com" type="primary">
-                  Check our Code of Conduct
-                </TextLink>
-              </StyledSpan>
+          <Stack
+            direction="column"
+            justify="center"
+            align="center"
+            spacing="none"
+          >
+            <Text type="white" size="small" align="center" spaceAfter="none">
+              {additionalInformation}
             </Text>
+            <StyledCenter>{additionalActions}</StyledCenter>
           </Stack>
         </ContentWrapper>
       </Stack>

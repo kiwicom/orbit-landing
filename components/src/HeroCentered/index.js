@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import Button from '@kiwicom/orbit-components/lib/Button';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 
@@ -11,7 +10,7 @@ import defaultTheme from '../defaultTheme';
 const StyledHero = styled.div`
   background: black;
   height: 100%;
-  height: 50vw;
+  height: 65vw;
 
   min-height: 400px;
   background-image: ${({ img }) => `url(${img})`};
@@ -68,7 +67,7 @@ HeroImageWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const Hero = ({ backgroundImage, heroImage, navBar }) => {
+const Hero = ({ backgroundImage, heroImage, navBar, actions }) => {
   return (
     <StyledHero img={backgroundImage}>
       <StyledStack>
@@ -77,8 +76,7 @@ const Hero = ({ backgroundImage, heroImage, navBar }) => {
           <HeroImageWrapper>
             <HeroImage img={heroImage} />
           </HeroImageWrapper>
-
-          <Button>Register</Button>
+          {actions}
         </Stack>
       </StyledStack>
     </StyledHero>

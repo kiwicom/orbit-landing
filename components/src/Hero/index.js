@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import Button from '@kiwicom/orbit-components/lib/Button';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
@@ -14,16 +13,19 @@ import defaultTheme from '../defaultTheme';
 const StyledHero = styled.div`
   background: black;
   height: 100%;
-  height: 100vh;
-  min-height: 790px;
+  height: 70vh;
+  min-height: 500px;
   background-image: ${({ img }) => `url(${img})`};
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
   position: relative;
   overflow: hidden;
+  max-height: 1000px;
 
   ${media.tablet(css`
+    height: 100vh;
+    max-height: 100vh;
     &:after {
       content: '';
       width: 69px;
@@ -120,9 +122,24 @@ const StyledStack = styled.div`
   height: 100%;
 `;
 
-const Hero = ({ img, pattern, navBar }) => {
+const Hero = ({
+  backgroundImage,
+  pattern,
+  navBar,
+  date,
+  location,
+  description,
+  title,
+  actions,
+}) => {
+  // Slices the string from title prop to half and joins it back so patter can be positioned within component using just title prop.
+  const splitTitle = title.split(' ');
+  const halfway = Math.floor(splitTitle.length / 2);
+  const left = splitTitle.slice(0, halfway).join(' ');
+  const right = splitTitle.slice(halfway, splitTitle.length).join(' ');
+
   return (
-    <StyledHero img={img}>
+    <StyledHero img={backgroundImage}>
       <StyledStack>
         <StyledWrapper>
           {navBar && <StyledNavBarWrapper>{navBar}</StyledNavBarWrapper>}
@@ -130,9 +147,9 @@ const Hero = ({ img, pattern, navBar }) => {
             <Heading inverted type="display">
               <StyledSpan>
                 <StyledTextWithPattern pattern={pattern}>
-                  Travel
+                  {left}
                 </StyledTextWithPattern>
-                Hackathon
+                {right}
               </StyledSpan>
             </Heading>
           </HeadingWrapper>
@@ -147,16 +164,12 @@ const Hero = ({ img, pattern, navBar }) => {
             <Stack flex shrink direction="column">
               <Stack flex shrink>
                 <Text type="white" size="large">
-                  Join us in making travel better and win your share of 1.000
-                  EUR for flight tickets
+                  {description}
                 </Text>
               </Stack>
 
               <Stack flex shrink>
-                <Button>Register</Button>
-                <Button type="white" bordered>
-                  Share
-                </Button>
+                {actions}
               </Stack>
             </Stack>
             <Stack
@@ -168,7 +181,7 @@ const Hero = ({ img, pattern, navBar }) => {
             >
               <Heading inverted type="title2" element="h2">
                 <StyledAlign>
-                  <StyledDate>10 may</StyledDate> ljubljana
+                  <StyledDate>{date}</StyledDate> {location}
                 </StyledAlign>
               </Heading>
             </Stack>

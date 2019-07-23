@@ -7,34 +7,33 @@ import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Grid from '@kiwicom/orbit-components/lib/utils/Grid';
 
+import Container from '../utils/Container';
 // import defaultTheme from '../defaultTheme';
 
-const StyledMainContent = styled.div`
-  padding-left: 5.2vw;
-  padding-right: 7.8vw;
-  box-sizing: border-box;
-`;
+const StyledMainContent = styled.div``;
 
 const Wrapper = styled.div``;
 
 const Panel = ({ items }) => {
   return (
-    <StyledMainContent>
-      <Grid
-        rows="repeat(3,  1fr)"
-        tablet={{ columns: 'repeat(3,  1fr)', rows: 'none' }}
-        columns={null}
-        gap="6vw"
-      >
-        {items.map((item, index) => {
-          return (
-            <PanelItem key={index} title={item.title} img={item.img}>
-              {item.content}
-            </PanelItem>
-          );
-        })}
-      </Grid>
-    </StyledMainContent>
+    <Container>
+      <StyledMainContent>
+        <Grid
+          rows="repeat(3,  1fr)"
+          tablet={{ columns: 'repeat(3,  1fr)', rows: 'none' }}
+          columns={null}
+          gap="6vw"
+        >
+          {items.map((item, index) => {
+            return (
+              <PanelItem key={index} title={item.title} img={item.img}>
+                {item.content}
+              </PanelItem>
+            );
+          })}
+        </Grid>
+      </StyledMainContent>
+    </Container>
   );
 };
 
