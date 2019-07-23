@@ -21,9 +21,11 @@ const StyledHero = styled.div`
   background-position: bottom right;
   position: relative;
   overflow: hidden;
+  max-height: 1000px;
 
   ${media.tablet(css`
     height: 100vh;
+    max-height: 100vh;
     &:after {
       content: '';
       width: 69px;

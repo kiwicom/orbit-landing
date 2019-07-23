@@ -24,8 +24,9 @@ const StyledImage = styled.div`
   overflow: hidden;
   width: 100%;
   height: 100%;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  /* border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; */
+  border-radius: 8px;
   display: none !important;
 
   ${media.largeMobile(css`
@@ -38,7 +39,6 @@ StyledImage.defaultProps = {
 };
 
 const StyledMainContent = styled.div`
-  padding-left: 5.2vw;
   padding-right: 7.8vw;
   box-sizing: border-box;
 `;

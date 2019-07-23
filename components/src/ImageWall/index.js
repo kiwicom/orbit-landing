@@ -37,7 +37,7 @@ const StyledImageWall = styled.div`
   overflow: hidden;
 
   ${media.tablet(css`
-    min-height: none;
+    min-height: auto;
   `)};
 `;
 

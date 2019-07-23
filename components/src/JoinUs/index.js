@@ -17,6 +17,7 @@ const StyledJoinUs = styled.div`
   width: 100%;
   height: 44.73vw;
   min-height: 430px;
+  max-height: 850px;
   background-image: ${({ img }) => `url(${img})`};
   background-repeat: no-repeat;
   background-size: cover;

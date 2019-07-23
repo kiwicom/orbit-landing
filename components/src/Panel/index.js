@@ -10,11 +10,7 @@ import Grid from '@kiwicom/orbit-components/lib/utils/Grid';
 import Container from '../utils/Container';
 // import defaultTheme from '../defaultTheme';
 
-const StyledMainContent = styled.div`
-  padding-left: 5.2vw;
-  padding-right: 7.8vw;
-  box-sizing: border-box;
-`;
+const StyledMainContent = styled.div``;
 
 const Wrapper = styled.div``;
 
