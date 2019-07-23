@@ -3,6 +3,12 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
+import Button from '@kiwicom/orbit-components/lib/Button';
+import TextLink from '@kiwicom/orbit-components/lib/TextLink';
+import Facebook from '@kiwicom/orbit-components/lib/icons/Facebook';
+import Instagram from '@kiwicom/orbit-components/lib/icons/Instagram';
+import Twitter from '@kiwicom/orbit-components/lib/icons/Twitter';
+import Linkedin from '@kiwicom/orbit-components/lib/icons/Linkedin';
 
 // Components
 import Faq from './Faq';
@@ -15,6 +21,7 @@ import Panel from './Panel';
 import Locations from './Locations';
 import HeroCentered from './HeroCentered';
 import Timeline from './Timeline';
+import Footer from './Footer';
 // Images
 import logo from '../static/kiwi.svg';
 import heroImg from '../static/hero.jpg';
@@ -62,8 +69,21 @@ const StyledStack = styled.div`
 storiesOf('KitchenSink', module).add('Default', () => (
   <StyledStack>
     <Hero
-      img={heroImg}
+      title="Tavel Hackathon"
+      date="10 May"
+      location="Ljubljana"
+      description="Join us in making travel better and win your share of 1.000
+      EUR for flight tickets"
+      backgroundImage={heroImg}
       pattern={heroPattern}
+      actions={
+        <>
+          <Button>Register</Button>
+          <Button type="white" bordered>
+            Share
+          </Button>
+        </>
+      }
       navBar={
         <NavBar
           title="Travel Hackathon"
@@ -100,6 +120,7 @@ storiesOf('KitchenSink', module).add('Default', () => (
     <HeroCentered
       backgroundImage={heroImg2}
       heroImage={heroSvg}
+      actions={<Button>Register</Button>}
       navBar={
         <NavBar
           title="Travel Hackathon"
@@ -165,7 +186,16 @@ storiesOf('KitchenSink', module).add('Default', () => (
       ]}
       locationsHeading="Choose your destination"
     />
-    <Mission img={missionImage} />
+    <Mission
+      category="Our Mission"
+      title="Making Travel Better"
+      subTitle="by travellers, for travellers"
+      description="How? We want to engage people by organising hackathons all over the
+    world on 27 September. We will bring together engineers, designers,
+    travel innovators, and others, offer them a creative and supportive
+    environment, and encourage their ideas on how to hack travel."
+      sideImage={missionImage}
+    />
     <Panel
       items={[
         {
@@ -218,6 +248,35 @@ storiesOf('KitchenSink', module).add('Default', () => (
         },
       ]}
     />
-    <JoinUs img={joinUsImg} pattern={joinUsPattern} pattern2={heroPattern} />
+    <JoinUs
+      title="Join Us"
+      descrtiption="The participants will be selected based on their solution of entry
+    task"
+      additionalInformation="We value the participation of each member and we want all
+    attendees to have an enjoying and fulfilling experience."
+      actions={<Button>Register</Button>}
+      additionalActions={
+        <TextLink external href="https://kiwi.com" type="primary">
+          Check our Code of Conduct
+        </TextLink>
+      }
+      backgroundImage={joinUsImg}
+      patterns={[joinUsPattern, joinUsPattern]}
+    />
+    <Footer
+      shareTitle="Share us with your friends"
+      shareLinks={[
+        { icon: <Facebook />, title: 'Facebook', href: '#' },
+        { icon: <Instagram />, title: 'Instagram', href: '#' },
+        { icon: <Twitter />, title: 'Twitter', href: '#' },
+        { icon: <Linkedin />, title: 'Linkedin', href: '#' },
+      ]}
+      navigationLinks={[
+        { title: 'Privacy Policy', href: '#' },
+        { title: 'Code of Conduct', href: '#' },
+        { title: 'Legal', href: '#' },
+        { title: 'Site Map', href: '#' },
+      ]}
+    />
   </StyledStack>
 ));

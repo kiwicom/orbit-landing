@@ -34,29 +34,24 @@ const StyledMainContent = styled.div`
 
 const Wrapper = styled.div``;
 
-const Mission = ({ img }) => {
+const Mission = ({ sideImage, title, subTitle, description, category }) => {
   return (
     <Grid columns="70% auto">
       <StyledMainContent>
         <Stack spacing="condensed">
-          <Text type="warning">Our Mission</Text>
+          <Text type="warning">{category}</Text>
           <Heading type="title1" element="h2">
-            Making Travel Better
+            {title}
           </Heading>
           <Wrapper>
             <Text type="secondary" size="large" spaceAfter="largest">
-              by travellers, for travellers
+              {subTitle}
             </Text>
           </Wrapper>
-          <Text size="large">
-            How? We want to engage people by organising hackathons all over the
-            world on 27 September. We will bring together engineers, designers,
-            travel innovators, and others, offer them a creative and supportive
-            environment, and encourage their ideas on how to hack travel.
-          </Text>
+          <Text size="large">{description}</Text>
         </Stack>
       </StyledMainContent>
-      <StyledImage img={img} />
+      <StyledImage img={sideImage} />
     </Grid>
   );
 };
