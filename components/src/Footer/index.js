@@ -13,9 +13,16 @@ import defaultTheme from '../defaultTheme';
 
 const StyledFooter = styled.div`
   width: 100%;
-  padding-right: 2.32vw;
+
   box-sizing: border-box;
+  ${media.largeMobile(css`
+    padding-right: 2.32vw;
+  `)};
 `;
+
+StyledFooter.defaultProps = {
+  theme: defaultTheme,
+};
 
 const FooterWrapper = styled.div`
   width: 100%;
@@ -53,9 +60,9 @@ const Footer = ({ shareTitle, shareLinks, navigationLinks }) => {
         direction="column-reverse"
         align="center"
         justify="end"
-        spacing="compact"
+        spacing="none"
         grow={false}
-        largeDesktop={{ direction: 'row' }}
+        largeDesktop={{ direction: 'row', spacing: 'compact' }}
         shrink
       >
         <FooterWrapper>

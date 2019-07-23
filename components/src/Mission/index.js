@@ -1,11 +1,12 @@
 // @flow
 
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Grid from '@kiwicom/orbit-components/lib/utils/Grid';
+import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 
 import defaultTheme from '../defaultTheme';
 
@@ -20,6 +21,11 @@ const StyledImage = styled.div`
   height: 100%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  display: none !important;
+
+  ${media.largeMobile(css`
+    display: block !important;
+  `)};
 `;
 
 StyledImage.defaultProps = {
@@ -36,7 +42,7 @@ const Wrapper = styled.div``;
 
 const Mission = ({ sideImage, title, subTitle, description, category }) => {
   return (
-    <Grid columns="70% auto">
+    <Grid columns="100%" largeMobile={{ columns: '70% auto' }}>
       <StyledMainContent>
         <Stack spacing="condensed">
           <Text type="warning">{category}</Text>

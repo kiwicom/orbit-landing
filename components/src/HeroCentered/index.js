@@ -10,7 +10,7 @@ import defaultTheme from '../defaultTheme';
 const StyledHero = styled.div`
   background: black;
   height: 100%;
-  height: 50vw;
+  height: 65vw;
 
   min-height: 400px;
   background-image: ${({ img }) => `url(${img})`};

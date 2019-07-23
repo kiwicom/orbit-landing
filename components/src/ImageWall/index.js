@@ -29,12 +29,21 @@ StyledImage.defaultProps = {
 
 const StyledImageWall = styled.div`
   height: 100vh;
+  min-height: 900px;
   width: 100vw;
   padding-top: 5vw;
   padding-bottom: 5vw;
   position: relative;
   overflow: hidden;
+
+  ${media.tablet(css`
+    min-height: none;
+  `)};
 `;
+
+StyledImageWall.defaultProps = {
+  theme: defaultTheme,
+};
 
 const StyledGrid = styled.div`
   background-color: #121212;
@@ -80,6 +89,12 @@ const StyledGrid = styled.div`
     grid-column-start: 2;
     grid-column-end: 3;
     height: 100%;
+  }
+
+  & > :nth-child(9) {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    height: 140px;
   }
 
   ${media.tablet(css`

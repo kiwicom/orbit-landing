@@ -28,7 +28,12 @@ const StyledStack = styled.div`
   max-height: 50%;
   flex-wrap: wrap;
   justify-content: start;
-  padding: 50px 0;
+  padding: 50px 5.2vw;
+`;
+
+const Wrapper = styled.div`
+  padding-left: 5.2vw;
+  padding-right: 5.2vw;
 `;
 
 const StyledHeaderWrapper = styled.div`
@@ -45,12 +50,6 @@ StyledHeaderWrapper.defaultProps = {
 };
 
 const StyledTypoSection = styled.div`
-  padding-left: 5.2vw;
-  padding-right: 5.2vw;
-
-  /* height: 100vw;
-  max-height: 100vh;
-  min-height: 400px; */
   height: 100%;
   max-height: 100%;
   min-height: 400px;
@@ -64,18 +63,30 @@ const StyledTypoSection = styled.div`
     background-size: cover;
     background-position: center top;
     width: 100%;
-    height: 70vw;
-    max-height: 70%;
+    height: 100vw;
+    max-height: 100%;
     position: absolute;
     left: 0;
     top: 0;
+
+    ${media.mediumMobile(
+      css`
+        height: 70vw;
+        max-height: 70%;
+      `,
+    )}
   }
 `;
+
+StyledTypoSection.defaultProps = {
+  theme: defaultTheme,
+};
 
 const StyledTile = styled.div`
   width: 100%;
   height: 22vw;
   max-width: 260px;
+  min-width: 180px;
   max-height: 360px;
   min-height: 200px;
   border-radius: 25px;
@@ -85,7 +96,6 @@ const StyledTile = styled.div`
   box-sizing: content-box;
 
 
-  display: ${({ hide }) => (hide ? 'none' : 'block')};
   ${media.desktop(
     css`
       display: block;
@@ -156,7 +166,7 @@ StyledTile.defaultProps = {
 };
 
 const TileHeading = styled.div`
-  font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (1920 - 320)));
+  font-size: ${({ theme }) => theme.orbit.fontSizeHeadingTitle2};
   font-family: ${({ theme }) => theme.orbit.fontFamily};
   font-weight: 800;
   color: #fff;
@@ -172,10 +182,10 @@ const LocationsWrapper = styled.div`
   flex-wrap: nowrap;
   flex-direction: row;
   width: 100%;
-  display: none;
+  overflow-x: scroll;
+  box-sizing: border-box;
 
   & > * {
-    display: none;
     margin-left: 20px;
   }
 
@@ -183,29 +193,11 @@ const LocationsWrapper = styled.div`
     margin-left: 0;
   }
 
-  ${media.mediumMobile(
-    css`
-      display: flex;
-      & > :nth-child(1),
-      & > :nth-child(2) {
-        display: block;
-      }
-    `,
-  )}
-
-  ${media.tablet(
-    css`
-      & > :nth-child(3) {
-        display: block;
-      }
-    `,
-  )}
-
   ${media.desktop(
     css`
-      & > * {
-        display: block;
-      }
+      overflow-x: hidden;
+      padding-left: 5.2vw;
+      padding-right: 5.2vw;
     `,
   )}
 `;
@@ -254,7 +246,11 @@ const Locations = ({
         </StyledStack>
         {locations && (
           <Stack>
-            <Text type="white">{locationsHeading}</Text>
+            <Wrapper>
+              <Text size="large" type="white">
+                {locationsHeading}
+              </Text>
+            </Wrapper>
             <LocationsWrapper>
               {locations.map((el, i) => {
                 return (

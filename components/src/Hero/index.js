@@ -13,8 +13,8 @@ import defaultTheme from '../defaultTheme';
 const StyledHero = styled.div`
   background: black;
   height: 100%;
-  height: 100vh;
-  min-height: 790px;
+  height: 70vh;
+  min-height: 500px;
   background-image: ${({ img }) => `url(${img})`};
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,6 +23,7 @@ const StyledHero = styled.div`
   overflow: hidden;
 
   ${media.tablet(css`
+    height: 100vh;
     &:after {
       content: '';
       width: 69px;

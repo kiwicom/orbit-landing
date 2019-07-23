@@ -59,6 +59,10 @@ ContentWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
+const StyledCenter = styled.span`
+  text-align: center;
+`;
+
 const JoinUs = ({
   backgroundImage,
   title,
@@ -111,7 +115,7 @@ const JoinUs = ({
             <Text type="white" size="small" align="center" spaceAfter="none">
               {additionalInformation}
             </Text>
-            {additionalActions}
+            <StyledCenter>{additionalActions}</StyledCenter>
           </Stack>
         </ContentWrapper>
       </Stack>
