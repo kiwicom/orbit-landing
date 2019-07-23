@@ -6,6 +6,8 @@ import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 
+import Container from '../utils/Container';
+
 const StyledMainContent = styled.div`
   padding-left: 5.2vw;
   padding-right: 7.8vw;
@@ -33,21 +35,23 @@ const TimelineItem = ({ time, title }) => {
 
 const Timeline = ({ title, content, items }) => {
   return (
-    <StyledMainContent>
-      <Stack spacing="natural">
-        <Heading type="title1" element="h2">
-          {title}
-        </Heading>
-        <Wrapper>
-          <Text size="large">{content}</Text>
-        </Wrapper>
-        <Stack spacing="comfy">
-          {items.map((el, i) => {
-            return <TimelineItem key={i} title={el.title} time={el.time} />;
-          })}
+    <Container>
+      <StyledMainContent>
+        <Stack spacing="natural">
+          <Heading type="title1" element="h2">
+            {title}
+          </Heading>
+          <Wrapper>
+            <Text size="large">{content}</Text>
+          </Wrapper>
+          <Stack spacing="comfy">
+            {items.map((el, i) => {
+              return <TimelineItem key={i} title={el.title} time={el.time} />;
+            })}
+          </Stack>
         </Stack>
-      </Stack>
-    </StyledMainContent>
+      </StyledMainContent>
+    </Container>
   );
 };
 

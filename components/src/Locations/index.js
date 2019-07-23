@@ -85,7 +85,7 @@ StyledTypoSection.defaultProps = {
 const StyledTile = styled.div`
   width: 100%;
   height: 22vw;
-  max-width: 260px;
+  /* max-width: 260px; */
   min-width: 180px;
   max-height: 360px;
   min-height: 200px;
