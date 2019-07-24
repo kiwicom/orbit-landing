@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import Stack from '@kiwicom/orbit-components/lib/Stack';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 
 import defaultTheme from '../defaultTheme';
@@ -63,6 +62,14 @@ const HeroImageWrapper = styled.div`
   `)};
 `;
 
+const StackWrapper = styled.div`
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
 HeroImageWrapper.defaultProps = {
   theme: defaultTheme,
 };
@@ -72,12 +79,12 @@ const Hero = ({ backgroundImage, heroImage, navBar, actions }) => {
     <StyledHero img={backgroundImage}>
       <StyledStack>
         {navBar && <StyledNavBarWrapper>{navBar}</StyledNavBarWrapper>}
-        <Stack flex justify="center" align="center" direction="column">
+        <StackWrapper>
           <HeroImageWrapper>
             <HeroImage img={heroImage} />
           </HeroImageWrapper>
           {actions}
-        </Stack>
+        </StackWrapper>
       </StyledStack>
     </StyledHero>
   );

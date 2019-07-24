@@ -9,6 +9,7 @@ import Grid from '@kiwicom/orbit-components/lib/utils/Grid';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 import Hide from '@kiwicom/orbit-components/lib/Hide';
 
+import Panel from '../Panel';
 import Container from '../utils/Container';
 import Pattern from '../utils/Pattern';
 import pattern02 from '../../static/pattern02.svg';
@@ -24,8 +25,6 @@ const StyledImage = styled.div`
   overflow: hidden;
   width: 100%;
   height: 100%;
-  /* border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px; */
   border-radius: 8px;
   display: none !important;
 
@@ -51,9 +50,15 @@ const StyledImageWrapper = styled.div`
 
 const Wrapper = styled.div``;
 
-const Mission = ({ sideImage, title, subTitle, description, category }) => {
+const MissionTitle = ({
+  sideImage,
+  title,
+  subTitle,
+  description,
+  category,
+}) => {
   return (
-    <Container>
+    <Container noSpacing>
       <Grid columns="100%" largeMobile={{ columns: '70% auto' }}>
         <StyledMainContent>
           <Stack spacing="condensed">
@@ -89,6 +94,34 @@ const Mission = ({ sideImage, title, subTitle, description, category }) => {
           </Hide>
         </StyledImageWrapper>
       </Grid>
+    </Container>
+  );
+};
+
+const StyledSpace = styled.div`
+  margin-bottom: 4vw;
+`;
+
+const Mission = ({
+  sideImage,
+  title,
+  subTitle,
+  description,
+  category,
+  items,
+}) => {
+  return (
+    <Container>
+      <StyledSpace>
+        <MissionTitle
+          sideImage={sideImage}
+          title={title}
+          subTitle={subTitle}
+          description={description}
+          category={category}
+        />
+      </StyledSpace>
+      <Panel items={items} />
     </Container>
   );
 };

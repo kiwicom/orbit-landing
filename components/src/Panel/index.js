@@ -8,7 +8,6 @@ import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Grid from '@kiwicom/orbit-components/lib/utils/Grid';
 
 import Container from '../utils/Container';
-// import defaultTheme from '../defaultTheme';
 
 const StyledMainContent = styled.div``;
 
@@ -16,7 +15,7 @@ const Wrapper = styled.div``;
 
 const Panel = ({ items }) => {
   return (
-    <Container>
+    <Container noSpacing>
       <StyledMainContent>
         <Grid
           rows="repeat(3,  1fr)"
