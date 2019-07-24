@@ -144,7 +144,7 @@ InfoTextInnerWrapper.defaultProps = {
 const Prizes = ({ title, description, prizes, infoText }) => {
   return (
     <Container>
-      <Stack direction="column">
+      <Stack direction="column" spaceAfter="largest">
         <Heading type="title1" element="h2">
           {title}
         </Heading>

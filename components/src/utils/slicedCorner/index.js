@@ -21,7 +21,7 @@ const slicedCorner = ({ backgroundColor }) => {
     &:before {
       top: -40px;
       left: 0;
-      transform: translate(-10%, 2vh) rotate(1.2deg);
+      transform: translate(-2px, 2vh) rotate(1.2deg);
     }
   `;
 };
