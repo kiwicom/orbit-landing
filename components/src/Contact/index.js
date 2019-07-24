@@ -34,7 +34,12 @@ const Timeline = ({
         <Heading type="title1" element="h2">
           {title}
         </Heading>
-        <Stack flex spacing="extraLoose">
+        <Stack
+          flex
+          spacing="extraLoose"
+          direction="column"
+          tablet={{ direction: 'row' }}
+        >
           <Half>
             <Stack>
               <Heading type="title3" element="h3">
