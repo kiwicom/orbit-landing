@@ -7,6 +7,7 @@ import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 
+import Container from '../utils/Container';
 import StyledPattern from '../utils/Pattern';
 import PatternTop from '../../static/pattern06.svg';
 import PatternTop2 from '../../static/pattern08.svg';
@@ -39,11 +40,6 @@ function prizeBoxStyle(theme, place) {
   }
   return `0px 4px 8px 0px rgba(37, 42, 49, 0.16), 0px 8px 24px 0px rgba(37, 42, 49, 0.24)`;
 }
-
-const StyledMainContent = styled.div`
-  padding: 0 5.2vw;
-  box-sizing: border-box;
-`;
 
 const PrizesWrapper = styled.div`
   width: 100%;
@@ -147,7 +143,7 @@ InfoTextInnerWrapper.defaultProps = {
 
 const Prizes = ({ title, description, prizes, infoText }) => {
   return (
-    <StyledMainContent>
+    <Container>
       <Stack direction="column">
         <Heading type="title1" element="h2">
           {title}
@@ -206,7 +202,7 @@ const Prizes = ({ title, description, prizes, infoText }) => {
           <Text size="large">{infoText}</Text>
         </InfoTextInnerWrapper>
       </InfoTextWrapper>
-    </StyledMainContent>
+    </Container>
   );
 };
 
