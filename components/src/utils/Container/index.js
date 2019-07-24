@@ -11,8 +11,8 @@ const StyledContainer = styled.div`
   ${({ noSpacing }) =>
     !noSpacing &&
     css`
-      padding-top: 7.9vw;
-      padding-bottom: 7.9vw;
+      padding-top: calc(1rem + 7.02vw);
+      padding-bottom: calc(1rem + 7.02vw);
       padding-left: 5.2vw;
       padding-right: 5.2vw;
     `};
