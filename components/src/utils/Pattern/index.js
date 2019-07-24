@@ -15,6 +15,7 @@ const StyledPattern = styled.div`
   background-size: contain;
   background-position: center;
   position: ${({ relative }) => (relative ? 'relative' : 'absolute')};
+  z-index: ${({ zindex }) => zindex};
 `;
 
 const Pattern = ({
@@ -25,6 +26,7 @@ const Pattern = ({
   right,
   width,
   height,
+  zindex,
   relative,
 }) => {
   return (
@@ -37,6 +39,7 @@ const Pattern = ({
       height={height}
       pattern={pattern}
       relative={relative}
+      zindex={zindex}
     />
   );
 };

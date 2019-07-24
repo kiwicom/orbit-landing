@@ -1,11 +1,16 @@
 // @flow
 
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
+import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 
+import StyledPattern from '../utils/Pattern';
+import PatternTop from '../../static/pattern06.svg';
+import PatternTop2 from '../../static/pattern08.svg';
+import PatternBottom from '../../static/pattern07.svg';
 import defaultTheme from '../defaultTheme';
 
 function prizeBoxOrder(place) {
@@ -28,6 +33,13 @@ function prizeBoxAlignment(place) {
   return 'flex-end';
 }
 
+function prizeBoxStyle(theme, place) {
+  if (place === 1) {
+    return `0px 4px 8px 0px rgba(37, 42, 49, 0.16), 0px 8px 24px 0px rgba(37, 42, 49, 0.24), inset 0px 0px 0px 4px ${theme.orbit.paletteOrangeNormal}`;
+  }
+  return `0px 4px 8px 0px rgba(37, 42, 49, 0.16), 0px 8px 24px 0px rgba(37, 42, 49, 0.24)`;
+}
+
 const StyledMainContent = styled.div`
   padding: 0 5.2vw;
   box-sizing: border-box;
@@ -35,36 +47,46 @@ const StyledMainContent = styled.div`
 
 const PrizesWrapper = styled.div`
   width: 100%;
-  min-height: 300px;
+  min-height: 15.79vw;
   display: flex;
   justify-content: center;
   margin-top: 52px;
 `;
 
+const PrizeBoxWrapper = styled.div`
+  flex: 1 0 auto;
+  margin: 0 1.26vw;
+  position: relative;
+  width: 100%;
+
+  ${media.largeMobile(css`
+    width: auto;
+    max-width: 300px;
+    align-self: ${({ place }) => prizeBoxAlignment(place)};
+    order: ${({ place }) => prizeBoxOrder(place)};
+  `)};
+
+  ${media.tablet(css`
+    margin: 0 3.15vw;
+  `)};
+`;
+
+PrizeBoxWrapper.defaultProps = {
+  theme: defaultTheme,
+};
+
 const PrizeBox = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: between;
   align-items: center;
-  align-self: ${({ place }) => prizeBoxAlignment(place)};
-  flex: 1 0 auto;
   max-height: 360px;
   padding: calc(20px + (44 - 20) * ((100vw - 320px) / (1920 - 320)));
-  margin-right: 80px;
   box-sizing: border-box;
+  box-shadow: ${({ theme, place }) => prizeBoxStyle(theme, place)};
   border-radius: 30px;
-  box-shadow: ${({ theme, place }) =>
-    place === 1
-      ? `0px 4px 8px 0px rgba(37, 42, 49, 0.16),
-    0px 8px 24px 0px rgba(37, 42, 49, 0.24), inset 0px 0px 0px 4px ${theme.orbit.paletteOrangeNormal}`
-      : `0px 4px 8px 0px rgba(37, 42, 49, 0.16),
-    0px 8px 24px 0px rgba(37, 42, 49, 0.24)`};
-  order: ${({ place }) => prizeBoxOrder(place)};
   background: ${({ theme }) => theme.orbit.paletteWhite};
-
-  &:last-child {
-    margin: 0;
-  }
+  position: relative;
+  z-index: 2;
 `;
 
 PrizeBox.defaultProps = {
@@ -75,7 +97,7 @@ const HeadingWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 1.26vw;
 `;
 
 const Prize = styled.span`
@@ -97,9 +119,17 @@ Prize.defaultProps = {
 const InfoTextWrapper = styled.span`
   display: flex;
   justify-content: center;
-  margin-top: 32px;
+  margin: 3.16vw;
   font-weight: 500;
+
+  ${media.largeMobile(css`
+    margin-top: 1.68vw;
+  `)};
 `;
+
+InfoTextWrapper.defaultProps = {
+  theme: defaultTheme,
+};
 
 const InfoTextInnerWrapper = styled.span`
   &::before {
@@ -125,20 +155,48 @@ const Prizes = ({ title, description, prizes, infoText }) => {
         <Text size="large">{description}</Text>
       </Stack>
       <PrizesWrapper>
-        <Stack direction="row" spacing="none" basis="70%" grow={false}>
+        <Stack
+          align="center"
+          direction="column"
+          spacing="loose"
+          largeMobile={{
+            direction: 'row',
+            justify: 'between',
+            align: 'start',
+          }}
+          desktop={{ basis: '80%', spacing: 'none' }}
+          grow={false}
+        >
           {prizes.map(({ place, prize }, index) => {
             return (
-              <PrizeBox key={index} place={place}>
-                <HeadingWrapper>
-                  <Heading type="title3" element="h3">
-                    {place}st
+              <PrizeBoxWrapper key={index} place={place}>
+                <PrizeBox place={place}>
+                  <StyledPattern
+                    width="6.53vw"
+                    height="5.26vw"
+                    top="-1.58vw"
+                    left="-1.05vw"
+                    pattern={place === 1 ? PatternTop2 : PatternTop}
+                  />
+                  <HeadingWrapper>
+                    <Heading type="title3" element="h3">
+                      {place}st
+                    </Heading>
+                    <Text type="secondary">place</Text>
+                  </HeadingWrapper>
+                  <Heading type="title3" element="h4">
+                    <Prize>{prize}</Prize>
                   </Heading>
-                  <Text type="secondary">place</Text>
-                </HeadingWrapper>
-                <Heading type="title3" element="h4">
-                  <Prize>{prize}</Prize>
-                </Heading>
-              </PrizeBox>
+                </PrizeBox>
+                <StyledPattern
+                  width="7.05vw"
+                  height="10.42vw"
+                  bottom="-2.37vw"
+                  right="-2.47vw"
+                  zindex="1"
+                  pattern={PatternBottom}
+                />
+              </PrizeBoxWrapper>
             );
           })}
         </Stack>
