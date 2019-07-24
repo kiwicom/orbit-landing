@@ -7,6 +7,7 @@ import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 
+import slicedCorner from '../utils/slicedCorner';
 import defaultTheme from '../defaultTheme';
 import Container from '../utils/Container';
 
@@ -14,9 +15,14 @@ const StyledMainContent = styled.div`
   text-align: center;
 `;
 
-const Faq = ({ items }) => {
+const StyledContainer = styled(Container)`
+  ${slicedCorner}
+  background-color: ${({ backgroundColor }) => backgroundColor};
+`;
+
+const Faq = ({ items, theme }) => {
   return (
-    <Container>
+    <StyledContainer backgroundColor={theme.orbit.paletteInkNormal}>
       <StyledMainContent>
         <Stack
           flex
@@ -25,7 +31,7 @@ const Faq = ({ items }) => {
           spacing="natural"
           tablet={{ spacing: 'loose' }}
         >
-          <Heading style="title1" element="h2">
+          <Heading style="title1" element="h2" inverted>
             FAQ
           </Heading>
           <Stack spacing="none" flex wrap>
@@ -43,8 +49,12 @@ const Faq = ({ items }) => {
           </Stack>
         </Stack>
       </StyledMainContent>
-    </Container>
+    </StyledContainer>
   );
+};
+
+Faq.defaultProps = {
+  theme: defaultTheme,
 };
 
 const BubbleWrapper = styled.div`
@@ -53,6 +63,7 @@ const BubbleWrapper = styled.div`
   padding: 32px 24px;
   display: inline-block;
   cursor: pointer;
+  background-color: #fff;
 `;
 
 const FaqWrapper = styled.div`
@@ -97,7 +108,7 @@ const FaqItem = ({ question, answer, index }) => {
             setExpanded(!expanded);
           }}
         >
-          <Text weight="bold" spacing="natural">
+          <Text weight="bold" spacing="natural" inverted>
             {question}
           </Text>
           <StyledContent expanded={expanded}>

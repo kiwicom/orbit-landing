@@ -12,5 +12,7 @@ import Uber from '../../static/uber.svg';
 import Sponsors from './index';
 
 storiesOf('Sponsors', module).add('Default', () => (
-  <Sponsors logos={[Google, Cnn, Airbnb, Cisco, Uber, Google, Airbnb, Cisco, Cnn]} />
+  <Sponsors
+    logos={[Google, Cnn, Airbnb, Cisco, Uber, Google, Airbnb, Cisco, Cnn]}
+  />
 ));

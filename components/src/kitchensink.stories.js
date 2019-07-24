@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import styled from 'styled-components';
 import Button from '@kiwicom/orbit-components/lib/Button';
 import TextLink from '@kiwicom/orbit-components/lib/TextLink';
 import Facebook from '@kiwicom/orbit-components/lib/icons/Facebook';
@@ -17,11 +16,11 @@ import NavBar from './NavBar';
 import Mission from './Mission';
 import Imagewall from './ImageWall';
 import JoinUs from './JoinUs';
-import Panel from './Panel';
 import Locations from './Locations';
 import HeroCentered from './HeroCentered';
 import Timeline from './Timeline';
 import Footer from './Footer';
+import Sponsors from './Sponsors';
 // Images
 import logo from '../static/kiwi.svg';
 import heroImg from '../static/hero.jpg';
@@ -43,6 +42,11 @@ import joinUsPattern from '../static/pattern03.svg';
 import icChallenge from '../static/ic-challenge.svg';
 import icConnected from '../static/ic-connected.svg';
 import icTequila from '../static/ic-tequila.svg';
+import Google from '../static/sponsor01.svg';
+import Cnn from '../static/cnn.svg';
+import Cisco from '../static/cisco.svg';
+import Airbnb from '../static/airbnb.svg';
+import Uber from '../static/uber.svg';
 
 const images = [
   grid01,
@@ -56,18 +60,8 @@ const images = [
   grid06,
 ];
 
-const StyledStack = styled.div`
-  & > * {
-    margin: 0 0 5.26vh 0;
-  }
-  & > :nth-child(1),
-  & > :nth-child(2) {
-    margin: 0;
-  }
-`;
-
 storiesOf('KitchenSink', module).add('Default', () => (
-  <StyledStack>
+  <>
     <Hero
       title="Tavel Hackathon"
       date="10 May"
@@ -195,8 +189,6 @@ storiesOf('KitchenSink', module).add('Default', () => (
     travel innovators, and others, offer them a creative and supportive
     environment, and encourage their ideas on how to hack travel."
       sideImage={missionImage}
-    />
-    <Panel
       items={[
         {
           title: 'Two travel challenges',
@@ -263,6 +255,9 @@ storiesOf('KitchenSink', module).add('Default', () => (
       backgroundImage={joinUsImg}
       patterns={[joinUsPattern, joinUsPattern]}
     />
+    <Sponsors
+      logos={[Google, Cnn, Airbnb, Cisco, Uber, Google, Airbnb, Cisco, Cnn]}
+    />
     <Footer
       shareTitle="Share us with your friends"
       shareLinks={[
@@ -278,5 +273,5 @@ storiesOf('KitchenSink', module).add('Default', () => (
         { title: 'Site Map', href: '#' },
       ]}
     />
-  </StyledStack>
+  </>
 ));

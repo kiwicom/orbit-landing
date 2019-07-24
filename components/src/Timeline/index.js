@@ -5,7 +5,9 @@ import styled from 'styled-components';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
+import defaultTheme from '@kiwicom/orbit-components/lib/defaultTheme';
 
+import slicedCorner from '../utils/slicedCorner';
 import Container from '../utils/Container';
 
 const StyledMainContent = styled.div``;
@@ -29,9 +31,14 @@ const TimelineItem = ({ time, title }) => {
   );
 };
 
-const Timeline = ({ title, content, items }) => {
+const StyledContainer = styled(Container)`
+  ${slicedCorner}
+  background-color: ${({ backgroundColor }) => backgroundColor};
+`;
+
+const Timeline = ({ title, content, items, theme }) => {
   return (
-    <Container>
+    <StyledContainer backgroundColor={theme.orbit.paletteCloudLight}>
       <StyledMainContent>
         <Stack spacing="natural">
           <Heading type="title1" element="h2">
@@ -47,8 +54,12 @@ const Timeline = ({ title, content, items }) => {
           </Stack>
         </Stack>
       </StyledMainContent>
-    </Container>
+    </StyledContainer>
   );
+};
+
+Timeline.defaultProps = {
+  theme: defaultTheme,
 };
 
 export default Timeline;
