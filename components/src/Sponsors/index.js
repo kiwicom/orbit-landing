@@ -59,9 +59,9 @@ const SponsorLogo = styled.img`
   max-height: 50px;
 `;
 
-const Sponsors = ({ logos }) => {
+const Sponsors = ({ logos, id }) => {
   return (
-    <StyledSponsors>
+    <StyledSponsors id={id}>
       <StyledText>
         <Text size="large" type="secondary">
           Sponsors
@@ -71,7 +71,7 @@ const Sponsors = ({ logos }) => {
         {logos.map((logo, index) => {
           return (
             <SponsorWrapper key={index} index={index}>
-              <SponsorLogo src={logo} />
+              <SponsorLogo src={logo} alt="" />
             </SponsorWrapper>
           );
         })}

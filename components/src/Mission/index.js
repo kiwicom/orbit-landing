@@ -109,9 +109,10 @@ const Mission = ({
   description,
   category,
   items,
+  id,
 }) => {
   return (
-    <Container>
+    <Container id={id}>
       <StyledSpace>
         <MissionTitle
           sideImage={sideImage}

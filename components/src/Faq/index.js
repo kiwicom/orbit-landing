@@ -20,9 +20,9 @@ const StyledContainer = styled(Container)`
   background-color: ${({ backgroundColor }) => backgroundColor};
 `;
 
-const Faq = ({ items, theme }) => {
+const Faq = ({ items, theme, id }) => {
   return (
-    <StyledContainer backgroundColor={theme.orbit.paletteInkNormal}>
+    <StyledContainer id={id} backgroundColor={theme.orbit.paletteInkNormal}>
       <StyledMainContent>
         <Stack
           flex

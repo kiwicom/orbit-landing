@@ -1,10 +1,11 @@
 {
   "name": "globalhackaton",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Global hackaton event page",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "kiwi.com",
   "dependencies": {
+    "@kiwicom/orbit-components": "^0.51.0",
     "gatsby": "^2.13.3",
     "gatsby-image": "^2.2.4",
     "gatsby-plugin-manifest": "^2.2.1",

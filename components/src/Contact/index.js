@@ -27,9 +27,10 @@ const Timeline = ({
   leftSectionDescription,
   rightSectionHeading,
   rightSectionDescription,
+  id,
 }) => {
   return (
-    <Container>
+    <Container id={id}>
       <Stack spacing="extraLoose">
         <Heading type="title1" element="h2">
           {title}
