@@ -65,7 +65,7 @@ const HeroImageWrapper = styled.div`
 const StackWrapper = styled.div`
   height: 100%;
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 `;

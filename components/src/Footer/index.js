@@ -106,7 +106,7 @@ const Footer = ({ shareTitle, shareLinks, navigationLinks }) => {
         >
           {navigationLinks.map((el, i) => {
             return (
-              <ButtonLink key={i} href={el.href} size="small" type="secondary">
+              <ButtonLink key={i} href={el.href} type="secondary">
                 {el.title}
               </ButtonLink>
             );

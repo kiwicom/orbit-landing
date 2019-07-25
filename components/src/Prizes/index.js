@@ -141,9 +141,9 @@ InfoTextInnerWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const Prizes = ({ title, description, prizes, infoText }) => {
+const Prizes = ({ title, description, prizes, infoText, id }) => {
   return (
-    <Container>
+    <Container id={id}>
       <Stack direction="column" spaceAfter="largest">
         <Heading type="title1" element="h2">
           {title}

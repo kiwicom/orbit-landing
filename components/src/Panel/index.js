@@ -46,7 +46,7 @@ const PanelItem = ({ title, children, img }) => {
         spacing="condensed"
         desktop={{ spacing: 'natural' }}
       >
-        {img && <StyledImg height="33px" src={img} />}
+        {img && <StyledImg height="50px" src={img} alt="" />}
         <Heading type="title4" element="h3">
           {title}
         </Heading>

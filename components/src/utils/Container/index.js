@@ -18,10 +18,10 @@ const StyledContainer = styled.div`
     `};
 `;
 
-const Container = ({ children, noSpacing, ...props }) => {
+const Container = ({ children, noSpacing, id, ...props }) => {
   return (
     <Stack justify="center">
-      <StyledContainer noSpacing={noSpacing} {...props}>
+      <StyledContainer id={id} noSpacing={noSpacing} {...props}>
         {children}
       </StyledContainer>
     </Stack>
