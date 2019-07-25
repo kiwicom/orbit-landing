@@ -170,6 +170,8 @@ const Prizes = ({ title, description, prizes, infoText }) => {
                   <StyledPattern
                     width="6.53vw"
                     height="5.26vw"
+                    minWidth="69px"
+                    minHeight="55px"
                     top="-1.58vw"
                     left="-1.05vw"
                     pattern={place === 1 ? PatternTop2 : PatternTop}

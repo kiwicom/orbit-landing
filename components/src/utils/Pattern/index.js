@@ -10,6 +10,8 @@ const StyledPattern = styled.div`
   right: ${({ right }) => right};
   width: ${({ width }) => width};
   height: ${({ height }) => height};
+  min-height: ${({ minHeight }) => minHeight};
+  min-width: ${({ minWidth }) => minWidth};
   background-image: ${({ pattern }) => `url(${pattern})`};
   background-repeat: no-repeat;
   background-size: contain;
@@ -26,6 +28,8 @@ const Pattern = ({
   right,
   width,
   height,
+  minHeight,
+  minWidth,
   zindex,
   relative,
 }) => {
@@ -37,6 +41,8 @@ const Pattern = ({
       right={right}
       width={width}
       height={height}
+      minHeight={minHeight}
+      minWidth={minWidth}
       pattern={pattern}
       relative={relative}
       zindex={zindex}

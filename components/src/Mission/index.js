@@ -13,7 +13,7 @@ import Panel from '../Panel';
 import Container from '../utils/Container';
 import Pattern from '../utils/Pattern';
 import pattern02 from '../../static/pattern02.svg';
-import pattern06 from '../../static/pattern06.svg';
+import pattern09 from '../../static/pattern09.svg';
 import defaultTheme from '../defaultTheme';
 
 const StyledImage = styled.div`
@@ -85,7 +85,7 @@ const MissionTitle = ({
               bottom="-20px"
             />
             <Pattern
-              pattern={pattern06}
+              pattern={pattern09}
               width="100px"
               height="180px"
               right="-20px"
@@ -99,7 +99,7 @@ const MissionTitle = ({
 };
 
 const StyledSpace = styled.div`
-  margin-bottom: 4vw;
+  margin-bottom: calc(1rem + 3.15vw);
 `;
 
 const Mission = ({
