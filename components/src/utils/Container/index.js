@@ -4,24 +4,38 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 
+import defaultTheme from '../../defaultTheme';
+
 const StyledContainer = styled.div`
   max-width: 1920px;
   width: 100%;
+  box-sizing: border-box;
 
   ${({ noSpacing }) =>
     !noSpacing &&
     css`
-      padding-top: calc(1rem + 7.02vw);
-      padding-bottom: calc(1rem + 7.02vw);
-      padding-left: 5.2vw;
-      padding-right: 5.2vw;
+      padding: ${({ theme }) => theme.landing.bodyPadding};
+    `};
+  ${({ hasSlicedCorner }) =>
+    hasSlicedCorner &&
+    css`
+      padding-top: calc(1rem + 4vw);
     `};
 `;
 
-const Container = ({ children, noSpacing, id, ...props }) => {
+StyledContainer.defaultProps = {
+  theme: defaultTheme,
+};
+
+const Container = ({ children, noSpacing, hasSlicedCorner, id, ...props }) => {
   return (
     <Stack justify="center">
-      <StyledContainer id={id} noSpacing={noSpacing} {...props}>
+      <StyledContainer
+        id={id}
+        hasSlicedCorner={hasSlicedCorner}
+        noSpacing={noSpacing}
+        {...props}
+      >
         {children}
       </StyledContainer>
     </Stack>

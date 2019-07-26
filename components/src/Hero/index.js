@@ -48,10 +48,14 @@ const HeadingWrapper = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  padding-left: 5.2vw;
-  padding-right: 5.2vw;
+  padding-left: ${({ theme }) => theme.landing.bodyPadding};
+  padding-right: ${({ theme }) => theme.landing.bodyPadding};
   box-sizing: border-box;
 `;
+
+HeadingWrapper.defaultProps = {
+  theme: defaultTheme,
+};
 
 const StyledDate = styled.span`
   color: ${({ theme }) => theme.orbit.colorTextWarning};

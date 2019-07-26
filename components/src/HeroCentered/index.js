@@ -20,7 +20,7 @@ const StyledHero = styled.div`
   overflow: hidden;
 
   ${media.tablet(css`
-    max-height: 100%;
+    max-height: 100vh;
   `)};
 `;
 
@@ -52,7 +52,7 @@ const HeroImage = styled.div`
 `;
 
 const HeroImageWrapper = styled.div`
-  padding-top: 5.2vw;
+  padding-top: 4.5vw;
   height: 60%;
   width: 90%;
 
@@ -62,6 +62,10 @@ const HeroImageWrapper = styled.div`
   `)};
 `;
 
+HeroImageWrapper.defaultProps = {
+  theme: defaultTheme,
+};
+
 const StackWrapper = styled.div`
   height: 100%;
   display: flex;
@@ -69,10 +73,6 @@ const StackWrapper = styled.div`
   align-items: center;
   flex-direction: column;
 `;
-
-HeroImageWrapper.defaultProps = {
-  theme: defaultTheme,
-};
 
 const Hero = ({ backgroundImage, heroImage, navBar, actions }) => {
   return (

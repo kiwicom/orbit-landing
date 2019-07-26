@@ -11,11 +11,11 @@ defaultTokens.fontSizeHeadingTitle1 =
 defaultTokens.fontWeightHeadingTitle1 = '600';
 
 defaultTokens.fontSizeHeadingTitle2 =
-  'calc(30px + (58 - 30) * ((100vw - 320px) / (1920 - 320)))';
+  'calc(22px + (58 - 30) * ((100vw - 320px) / (1920 - 320)))';
 defaultTokens.fontWeightHeadingTitle2 = '600';
 
 defaultTokens.fontSizeHeadingTitle3 =
-  'calc(30px + (40 - 30) * ((100vw - 320px) / (1920 - 320)))';
+  'calc(19px + (40 - 30) * ((100vw - 320px) / (1920 - 320)))';
 defaultTokens.fontWeightHeadingTitle3 = '600';
 
 defaultTokens.fontSizeHeadingTitle4 =
@@ -46,7 +46,12 @@ defaultTokens.widthIconMedium = `calc(24px + (32 - 24) * ((100vw - 320px) / (192
 defaultTokens.paddingButtonWithoutText =
   'calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)))';
 
+const landing = {
+  bodyPadding: 'calc(1rem + 7.02vw)',
+};
+
 export default {
   orbit: defaultTokens,
   rtl: false,
+  landing: landing,
 };
