@@ -3,17 +3,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
-import defaultTheme from '@kiwicom/orbit-components/lib/defaultTheme';
 import Hide from '@kiwicom/orbit-components/lib/Hide';
 
+import defaultTheme from '../defaultTheme';
 import logo from '../../static/kiwi-white.svg';
 
 const StyledMainContent = styled.div`
-  padding-left: 5.2vw;
-  padding-right: 7.8vw;
+  padding: 0 ${({ theme }) => theme.landing.bodyPadding};
   box-sizing: border-box;
   text-align: center;
 `;
+
+StyledMainContent.defaultProps = {
+  theme: defaultTheme,
+};
 
 const StyledText = styled.div`
   font-family: ${({ theme }) => theme.orbit.fontFamily};

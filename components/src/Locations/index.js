@@ -28,19 +28,32 @@ const StyledStack = styled.div`
   max-height: 50%;
   flex-wrap: wrap;
   justify-content: start;
-  padding: 50px 5.2vw;
+  padding: 50px ${({ theme }) => theme.landing.bodyPadding};
+
+  ${media.tablet(
+    css`
+      height: 20vw;
+    `,
+  )}
 `;
 
+StyledStack.defaultProps = {
+  theme: defaultTheme,
+};
+
 const Wrapper = styled.div`
-  padding-left: 5.2vw;
-  padding-right: 5.2vw;
+  padding-left: ${({ theme }) => theme.landing.bodyPadding};
+  padding-right: ${({ theme }) => theme.landing.bodyPadding};
 `;
+Wrapper.defaultProps = {
+  theme: defaultTheme,
+};
 
 const StyledHeaderWrapper = styled.div`
   flex-basis: 100%;
   ${media.desktop(
     css`
-      flex-basis: 75%;
+      flex-basis: 72%;
     `,
   )}
 `;
@@ -84,7 +97,7 @@ StyledTypoSection.defaultProps = {
 
 const StyledTile = styled.div`
   width: 100%;
-  height: 22vw;
+  height: 18vw;
   /* max-width: 260px; */
   min-width: 180px;
   max-height: 360px;
@@ -196,8 +209,8 @@ const LocationsWrapper = styled.div`
   ${media.desktop(
     css`
       overflow-x: hidden;
-      padding-left: 5.2vw;
-      padding-right: 5.2vw;
+      padding-left: ${({ theme }) => theme.landing.bodyPadding};
+      padding-right: ${({ theme }) => theme.landing.bodyPadding};
     `,
   )}
 `;
