@@ -11,11 +11,11 @@ import slicedCorner from '../utils/slicedCorner';
 import defaultTheme from '../defaultTheme';
 import Container from '../utils/Container';
 
-const StyledMainContent = styled.div`
+const StyledMainContent = styled(Container)`
   text-align: center;
 `;
 
-const StyledContainer = styled(Container)`
+const StyledContainer = styled.div`
   ${slicedCorner}
   background-color: ${({ backgroundColor }) => backgroundColor};
 `;
@@ -23,7 +23,7 @@ const StyledContainer = styled(Container)`
 const Faq = ({ items, theme, id }) => {
   return (
     <StyledContainer id={id} backgroundColor={theme.orbit.paletteInkNormal}>
-      <StyledMainContent>
+      <StyledMainContent hasSlicedCorner>
         <Stack
           flex
           align="center"

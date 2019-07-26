@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './reset.css';
+import styled from 'styled-components';
 
 // @flow
 
@@ -76,8 +77,12 @@ const faqExternal = (
   </>
 );
 
+const StyledWrapper = styled.div`
+  overflow: hidden;
+`;
+
 const IndexPage = () => (
-  <>
+  <StyledWrapper>
     <Seo
       description="We’re inviting everyone to redefine the travel experience."
       lang="en"
@@ -345,7 +350,7 @@ const IndexPage = () => (
         { title: 'Site Map', href: '#' },
       ]}
     />
-  </>
+  </StyledWrapper>
 );
 
 export default IndexPage;
