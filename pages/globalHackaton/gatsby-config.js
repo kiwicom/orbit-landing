@@ -2,7 +2,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Global Travel Hackathon`,
+    title: `Global Hackathon by Kiwi.com`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@kiwicom`,
     siteUrl: 'https://hack.travel',

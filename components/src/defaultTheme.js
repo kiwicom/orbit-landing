@@ -11,16 +11,20 @@ defaultTokens.fontSizeHeadingTitle1 =
 defaultTokens.fontWeightHeadingTitle1 = '600';
 
 defaultTokens.fontSizeHeadingTitle2 =
-  'calc(22px + (58 - 30) * ((100vw - 320px) / (1920 - 320)))';
+  'calc(22px + (58 - 22) * ((100vw - 320px) / (1920 - 320)))';
 defaultTokens.fontWeightHeadingTitle2 = '600';
 
 defaultTokens.fontSizeHeadingTitle3 =
-  'calc(19px + (40 - 30) * ((100vw - 320px) / (1920 - 320)))';
+  'calc(19px + (40 - 19) * ((100vw - 320px) / (1920 - 320)))';
 defaultTokens.fontWeightHeadingTitle3 = '600';
 
 defaultTokens.fontSizeHeadingTitle4 =
   'calc(16px + (28 - 16) * ((100vw - 320px) / (1920 - 320)))';
 defaultTokens.fontWeightHeadingTitle4 = '600';
+
+defaultTokens.fontSizeHeadingTitle5 =
+  'calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)))';
+defaultTokens.fontWeightHeadingTitle5 = '600';
 
 defaultTokens.fontSizeTextSmall =
   'calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)))';
