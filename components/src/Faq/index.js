@@ -59,8 +59,8 @@ Faq.defaultProps = {
 
 const BubbleWrapper = styled.div`
   box-shadow: 0 0px 90px 0 rgba(37, 42, 49, 0.12);
-  border-radius: 20px;
-  padding: 32px 24px;
+  border-radius: 12px;
+  padding: 16px 24px;
   display: inline-block;
   cursor: pointer;
   background-color: #fff;

@@ -102,10 +102,10 @@ const StyledTile = styled.div`
   min-width: 180px;
   max-height: 360px;
   min-height: 200px;
-  border-radius: 25px;
+  border-radius: 12px;
   position: relative;
   overflow: hidden;
-  padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
+  padding: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
   box-sizing: content-box;
 
 
@@ -179,7 +179,7 @@ StyledTile.defaultProps = {
 };
 
 const TileHeading = styled.div`
-  font-size: ${({ theme }) => theme.orbit.fontSizeHeadingTitle2};
+  font-size: ${({ theme }) => theme.orbit.fontSizeHeadingTitle3};
   font-family: ${({ theme }) => theme.orbit.fontFamily};
   font-weight: 800;
   color: #fff;
@@ -224,7 +224,7 @@ const LocationTile = ({ eventName, location, logo, backgroundImage, hide }) => {
     <StyledTile hide={hide} backgroundImage={backgroundImage}>
       <StyledTileContent>
         <StyledLogo logo={logo} />
-        <Stack spacing="natural">
+        <Stack spacing="none">
           <Text type="white" size="large">
             {eventName}
           </Text>

@@ -31,12 +31,12 @@ const FooterWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 2.32vw;
-  border-radius: 24px 24px 0 0;
+  border-radius: 12px 12px 0 0;
   background: #252a31;
   box-sizing: border-box;
 
   ${media.largeMobile(css`
-    border-radius: 0 24px 0 0;
+    border-radius: 0 12px 0 0;
   `)};
 `;
 

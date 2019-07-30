@@ -25,7 +25,7 @@ const StyledImage = styled.div`
   overflow: hidden;
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 12px;
   display: none !important;
 
   ${media.largeMobile(css`

@@ -105,27 +105,22 @@ const IndexPage = () => (
           items={[
             {
               title: 'About',
-              onClick: '',
               href: '#about',
             },
             {
               title: 'Prizes',
-              onClick: '',
               href: '#prizes',
             },
             {
               title: 'FAQ',
-              onClick: '',
               href: '#faq',
             },
             {
               title: 'Contact',
-              onClick: '',
               href: '#contact',
             },
             {
               title: 'Sponsors',
-              onClick: '',
               href: '#sponsors',
             },
           ]}
@@ -139,25 +134,25 @@ const IndexPage = () => (
       locations={[
         {
           backgroundImage: grid01,
-          eventName: 'Travel Hack',
-          location: 'Barcelona',
+          eventName: '',
+          location: 'Brno',
           logo: logo,
         },
         {
           backgroundImage: grid01,
-          eventName: 'Travel Hack',
-          location: 'Barcelona',
+          eventName: '',
+          location: 'Ljublana',
           logo: logo,
         },
         {
           backgroundImage: grid01,
-          eventName: 'Travel Hack',
-          location: 'Barcelona',
+          eventName: '',
+          location: 'Zagreb',
           logo: logo,
         },
         {
           backgroundImage: grid01,
-          eventName: 'Travel Hack',
+          eventName: '',
           location: 'Barcelona',
           logo: logo,
         },
@@ -324,7 +319,7 @@ const IndexPage = () => (
     attendees to have an enjoying and fulfilling experience."
       actions={<Button>Register</Button>}
       additionalActions={
-        <TextLink external href="https://kiwi.com" type="primary">
+        <TextLink external href="/code-of-conduct/" type="primary">
           Check our Code of Conduct
         </TextLink>
       }
@@ -339,15 +334,12 @@ const IndexPage = () => (
       shareTitle="Share us with your friends"
       shareLinks={[
         { icon: <Facebook />, title: 'Facebook', href: '#' },
-        { icon: <Instagram />, title: 'Instagram', href: '#' },
         { icon: <Twitter />, title: 'Twitter', href: '#' },
         { icon: <Linkedin />, title: 'Linkedin', href: '#' },
       ]}
       navigationLinks={[
-        { title: 'Privacy Policy', href: '#' },
-        { title: 'Code of Conduct', href: '#' },
-        { title: 'Legal', href: '#' },
-        { title: 'Site Map', href: '#' },
+        { title: 'Privacy Policy', href: '/privacy-policy/' },
+        { title: 'Code of Conduct', href: '/code-of-conduct/' },
       ]}
     />
   </StyledWrapper>

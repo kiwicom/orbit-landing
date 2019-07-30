@@ -79,7 +79,7 @@ const PrizeBox = styled.div`
   padding: calc(20px + (44 - 20) * ((100vw - 320px) / (1920 - 320)));
   box-sizing: border-box;
   box-shadow: ${({ theme, place }) => prizeBoxStyle(theme, place)};
-  border-radius: 30px;
+  border-radius: 12px;
   background: ${({ theme }) => theme.orbit.paletteWhite};
   position: relative;
   z-index: 2;
