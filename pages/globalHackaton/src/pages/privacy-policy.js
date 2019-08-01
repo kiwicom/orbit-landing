@@ -4,7 +4,7 @@ import React from 'react';
 import './reset.css';
 import styled from 'styled-components';
 // Components
-import Page from '@kiwicom/orbit-landing-components/src/Page';
+import Page from '../components/pageTracked';
 
 import Seo from '../components/seo';
 
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 
 const privacy = () => (
   <>
-    <Seo description="Privacy policy" lang="en" title="Privacy policy" />
+    <Seo title="Privacy policy" />
     <Page title="Privacy policy">
       <Wrapper>
         <p>Welcome to the Privacy Policy of Kiwi.com Events and Community.</p>

@@ -19,11 +19,11 @@ const customTheme = {
   fontWeightHeadingTitle1: '600',
 
   fontSizeHeadingTitle2:
-    'calc(22px + (58 - 30) * ((100vw - 320px) / (1920 - 320)))',
+    'calc(22px + (58 - 22) * ((100vw - 320px) / (1920 - 320)))',
   fontWeightHeadingTitle2: '600',
 
   fontSizeHeadingTitle3:
-    'calc(19px + (40 - 30) * ((100vw - 320px) / (1920 - 320)))',
+    'calc(19px + (40 - 19) * ((100vw - 320px) / (1920 - 320)))',
   fontWeightHeadingTitle3: '600',
 
   fontSizeHeadingTitle4:

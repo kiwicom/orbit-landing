@@ -4,15 +4,12 @@ import React from 'react';
 import './reset.css';
 import styled from 'styled-components';
 // Components
-import Page from '@kiwicom/orbit-landing-components/src/Page';
-
+import Page from '../components/pageTracked';
 import Seo from '../components/seo';
 
 const atendee = () => (
   <>
     <Seo
-      description="Attendee Procedure For Reporting Code of Conduct Incidents"
-      lang="en"
       title="Attendee Procedure For Reporting Code of Conduct Incidents"
     />
     <Page title="Attendee Procedure For Reporting Code of Conduct Incidents">
