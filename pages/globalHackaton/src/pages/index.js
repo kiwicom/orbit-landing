@@ -115,7 +115,7 @@ const IndexPage = () => {
                   }
                 }}
               >
-                Register
+                Register as participant
               </Button>
               <Button
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfiqeXYsVUS5Q17QZT5GB4botBn-BKU2hzkOjlFxRJVfewdxA/viewform"
