@@ -75,6 +75,10 @@ function SEO({ description, lang, meta, title }) {
         href="https://images.kiwi.com/fonts/circular-pro/style.css"
         rel="stylesheet"
       />
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-29345084-23"
+      />
     </Helmet>
   );
 }
@@ -82,7 +86,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `Join the hackathon to redefine the travel experience and travel the world`,
 };
 
 SEO.propTypes = {

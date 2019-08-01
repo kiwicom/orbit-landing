@@ -4,8 +4,7 @@ import React from 'react';
 import './reset.css';
 import styled from 'styled-components';
 // Components
-import Page from '@kiwicom/orbit-landing-components/src/Page';
-
+import Page from '../components/pageTracked';
 import Seo from '../components/seo';
 
 const incidentReport = () => (
