@@ -27,6 +27,7 @@ import OrbitLanding from '@kiwicom/orbit-landing-components/src/OrbitLanding';
 import Seo from '../components/seo';
 // Images
 import logo from '../images/kiwi.svg';
+import logoSab from '../images/sab.png';
 import heroPattern from '../images/pattern04.svg';
 import heroImg2 from '../images/hero02.jpg';
 import heroSvg from '../images/hero2.svg';
@@ -171,7 +172,7 @@ const IndexPage = () => {
               backgroundImage: evBrno,
               eventName: '',
               location: 'Brno',
-              logo: logo,
+              logo: logoSab,
             },
             {
               backgroundImage: evLjublana,
