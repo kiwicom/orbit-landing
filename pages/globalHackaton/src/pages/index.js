@@ -50,11 +50,10 @@ import Cnn from '../images/cnn.svg';
 import Cisco from '../images/cisco.svg';
 import Airbnb from '../images/airbnb.svg';
 import Uber from '../images/uber.svg';
-import evBrno from "../images/ev-brno.jpg";
-import evBarcelona from "../images/ev-barcelona.jpg";
-import evZagreb from "../images/ev-zagreb.jpg";
-import evLjublana from "../images/ev-ljublana.jpg";
-
+import evBrno from '../images/ev-brno.jpg';
+import evBarcelona from '../images/ev-barcelona.jpg';
+import evZagreb from '../images/ev-zagreb.jpg';
+import evLjublana from '../images/ev-ljublana.jpg';
 
 const images = [
   grid01,
@@ -83,7 +82,6 @@ const StyledWrapper = styled.div`
 `;
 
 const IndexPage = () => {
-
   function gtag() {
     // eslint-disable-next-line no-undef
     dataLayer.push(arguments);
@@ -92,36 +90,46 @@ const IndexPage = () => {
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
     gtag('js', new Date());
-    gtag('config', 'UA-144928158-1');
+    gtag('config', 'UA-29345084-23');
   });
 
   return (
     <OrbitLanding>
       <StyledWrapper>
-        <Seo
-          title="Home"
-        />
+        <Seo title="Home" />
         <HeroCentered
           backgroundImage={heroImg2}
           heroImage={heroSvg}
           actions={
             <Stack justify="center" grow={false}>
-              <Button href="https://docs.google.com/forms/d/e/1FAIpQLSeTYxsYCYCkExYyUuTX0IDB0gmr2UUtWXIyX4iMK-Jc_X0U6w/viewform" external onClick={(e)=>{
-                // eslint-disable-next-line no-undef
-                if(gtag) {
-                  gtag('event', "register_clicked", {
-                    'event_label': "Register",
-                  });
-                }
-              }}>Register</Button>
-              <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfiqeXYsVUS5Q17QZT5GB4botBn-BKU2hzkOjlFxRJVfewdxA/viewform" external type="white" bordered onClick={(e)=>{
-                // eslint-disable-next-line no-undef
-                if(gtag) {
-                  gtag('event', "partner_clicked", {
-                    'event_label': "Partner Hackaton",
-                  });
-                }
-              }}>
+              <Button
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeTYxsYCYCkExYyUuTX0IDB0gmr2UUtWXIyX4iMK-Jc_X0U6w/viewform"
+                external
+                onClick={e => {
+                  // eslint-disable-next-line no-undef
+                  if (gtag) {
+                    gtag('event', 'register_clicked', {
+                      event_label: 'Register',
+                    });
+                  }
+                }}
+              >
+                Register
+              </Button>
+              <Button
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfiqeXYsVUS5Q17QZT5GB4botBn-BKU2hzkOjlFxRJVfewdxA/viewform"
+                external
+                type="white"
+                bordered
+                onClick={e => {
+                  // eslint-disable-next-line no-undef
+                  if (gtag) {
+                    gtag('event', 'partner_clicked', {
+                      event_label: 'Partner Hackaton',
+                    });
+                  }
+                }}
+              >
                 Add your hackathon
               </Button>
             </Stack>
@@ -361,9 +369,24 @@ const IndexPage = () => {
         <Footer
           shareTitle="Share us with your friends"
           shareLinks={[
-            { icon: <Facebook />, title: 'Facebook', href: 'http://www.facebook.com/sharer/sharer.php?u=https://hack.travel' },
-            { icon: <Twitter />, title: 'Twitter', href: 'https://twitter.com/share?url=https://hack.travel&text=Hack the travel and discover the world from a whole new perspective.' },
-            { icon: <Linkedin />, title: 'Linkedin', href: 'https://www.linkedin.com/shareArticle?url=https://hack.travel&title=Global Travel Hackaton by Kiwi.com' },
+            {
+              icon: <Facebook />,
+              title: 'Facebook',
+              href:
+                'http://www.facebook.com/sharer/sharer.php?u=https://hack.travel',
+            },
+            {
+              icon: <Twitter />,
+              title: 'Twitter',
+              href:
+                'https://twitter.com/share?url=https://hack.travel&text=Hack the travel and discover the world from a whole new perspective.',
+            },
+            {
+              icon: <Linkedin />,
+              title: 'Linkedin',
+              href:
+                'https://www.linkedin.com/shareArticle?url=https://hack.travel&title=Global Travel Hackaton by Kiwi.com',
+            },
           ]}
           navigationLinks={[
             { title: 'Privacy Policy', href: '/privacy-policy/' },

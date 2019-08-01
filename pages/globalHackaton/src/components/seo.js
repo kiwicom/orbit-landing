@@ -77,7 +77,7 @@ function SEO({ description, lang, meta, title }) {
       />
       <script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-144928158-1"
+        src="https://www.googletagmanager.com/gtag/js?id=UA-29345084-23"
       />
     </Helmet>
   );
