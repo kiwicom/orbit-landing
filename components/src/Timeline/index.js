@@ -14,15 +14,21 @@ const Wrapper = styled.div`
   max-width: 780px;
 `;
 
+const TimeWrapper = styled.div`
+  min-width: 100px;
+`;
+
 const StyledTimelineItem = styled.div``;
 
 const TimelineItem = ({ time, title }) => {
   return (
     <StyledTimelineItem>
       <Stack flex>
-        <Text type="secondary" size="large">
-          {time}
-        </Text>
+        <TimeWrapper>
+          <Text type="secondary" size="large">
+            {time}
+          </Text>
+        </TimeWrapper>
         <Text size="large">{title}</Text>
       </Stack>
     </StyledTimelineItem>
@@ -38,7 +44,12 @@ const Timeline = ({ title, content, items, theme }) => {
   return (
     <StyledTimeline backgroundColor={theme.orbit.paletteCloudLight}>
       <Container hasSlicedCorner>
-        <Stack spacing="loose">
+        <Stack
+          spacing="loose"
+          spaceAfter="large"
+          direction="column"
+          tablet={{ spaceAfter: 'none' }}
+        >
           <Heading type="title1" element="h2">
             {title}
           </Heading>

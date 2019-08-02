@@ -49,6 +49,9 @@ const StyledImageWrapper = styled.div`
 `;
 
 const Wrapper = styled.div``;
+const StyledTextWrapper = styled.div`
+  max-width: 100%;
+`;
 
 const MissionTitle = ({
   sideImage,
@@ -71,7 +74,9 @@ const MissionTitle = ({
                 {subTitle}
               </Text>
             </Wrapper>
-            <Text size="large">{description}</Text>
+            <StyledTextWrapper>
+              <Text size="large">{description}</Text>
+            </StyledTextWrapper>
           </Stack>
         </StyledMainContent>
         <StyledImageWrapper>

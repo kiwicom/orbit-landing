@@ -3,15 +3,14 @@
 import React from 'react';
 import './reset.css';
 import styled from 'styled-components';
+
 // Components
 import Page from '../components/pageTracked';
 import Seo from '../components/seo';
 
 const atendee = () => (
   <>
-    <Seo
-      title="Attendee Procedure For Reporting Code of Conduct Incidents"
-    />
+    <Seo title="Attendee Procedure For Reporting Code of Conduct Incidents" />
     <Page title="Attendee Procedure For Reporting Code of Conduct Incidents">
       <p>
         If you believe someone is in physical danger, consult with a volunteer
@@ -46,14 +45,12 @@ const atendee = () => (
 
       <ul>
         <li>
-          Paulina Montes <br />
-          <a href="mailto:paulina.montes@kiwi.com">paulina.montes@kiwi.com</a>
+          Alzbeta Vackova <br />
+          <a href="mailto:alzbeta.vackova@kiwi.com">alzbeta.vackova@kiwi.com</a>
         </li>
         <li>
-          Kseniya Miantsiuk <br />
-          <a href="mailto:kseniya.miantsiuk@kiwi.com">
-            kseniya.miantsiuk@kiwi.com
-          </a>
+          Jan Bleha <br />
+          <a href="mailto:jan.bleha@kiwi.com">Jan Bleha</a>
         </li>
       </ul>
 
@@ -122,8 +119,8 @@ const atendee = () => (
 
       <p>
         After an incident responder takes the report, they will immediately
-        consult with the lead incident responders (Jona Azizaj, Paulina Montes
-        and Kseniya Miantsiuk).
+        consult with the lead incident responders (Jona Azizaj, Alzbeta Vackova
+        and Jan Bleha).
       </p>
 
       <p>

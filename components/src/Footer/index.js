@@ -44,7 +44,7 @@ FooterWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const StyledText = styled.span`
+const StyledText = styled.div`
   margin-right: 0.63vw;
 `;
 
@@ -66,7 +66,9 @@ const Footer = ({ shareTitle, shareLinks, navigationLinks }) => {
         shrink
       >
         <FooterWrapper>
-          <Logo src={KiwiLogo} alt="" />
+          <a href="https://www.kiwi.com/">
+            <Logo src={KiwiLogo} alt="Kiwi.com logo" />
+          </a>
           <Stack
             justify="end"
             align="center"
@@ -101,7 +103,7 @@ const Footer = ({ shareTitle, shareLinks, navigationLinks }) => {
           grow={false}
           spacing="none"
           largeMobile={{ direction: 'row' }}
-          largeDesktop={{ justify: 'between' }}
+          largeDesktop={{ justify: 'start' }}
           shrink
         >
           {navigationLinks.map((el, i) => {

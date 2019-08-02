@@ -47,11 +47,17 @@ StyledImageWall.defaultProps = {
 
 const StyledGrid = styled.div`
   background-color: #121212;
+  display: -ms-grid;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
+  -ms-grid-rows: repeat(3, 1fr);
   grid-column-gap: 0.8vw;
   grid-row-gap: 0.8vw;
+
+  * > {
+    display: block;
+  }
 
   &:after,
   &:before {
@@ -78,21 +84,29 @@ const StyledGrid = styled.div`
   }
 
   & > :nth-child(1) {
+    -ms-grid-row: 1;
     grid-row-start: 1;
+    -ms-grid-row-span: 2;
     grid-row-end: span 2;
     height: 100%;
   }
 
   & > :nth-child(7) {
+    -ms-grid-row: 4;
     grid-row-start: 4;
+    -ms-grid-row-span: 2;
     grid-row-end: span 2;
+    -ms-grid-column: 2;
     grid-column-start: 2;
+    -ms-grid-column-span: 1;
     grid-column-end: 3;
     height: 100%;
   }
 
   & > :nth-child(9) {
+    -ms-grid-column: 1;
     grid-column-start: 1;
+    -ms-grid-column-span: 2;
     grid-column-end: span 2;
     height: 140px;
   }
@@ -101,13 +115,19 @@ const StyledGrid = styled.div`
     grid-template-columns: 2fr 1fr 1fr 2fr;
 
     & > :nth-child(7) {
+      -ms-grid-row: 2;
       grid-row-start: 2;
+      -ms-grid-row-span: 2;
       grid-row-end: span 2;
+      -ms-grid-column: 4;
       grid-column-start: 4;
+      -ms-grid-column-span: 1;
       grid-column-end: 5;
     }
     & > :nth-child(9) {
+      -ms-grid-column: 2;
       grid-column-start: 2;
+      -ms-grid-column-span: 2;
       grid-column-end: span 2;
       height: 100%;
     }
