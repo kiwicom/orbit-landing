@@ -208,7 +208,7 @@ const IndexPage = () => {
               the world on 27 September. We will bring together engineers,
               designers, travel innovators, and others, offer them a creative
               and supportive environment, and encourage their ideas on how to
-              hack travel. Together, we’ll make it
+              hack travel. Together, we’ll make it{' '}
               <b>better, smoother, and smarter for everyone.</b>
               <br />
               <br />
@@ -244,10 +244,10 @@ const IndexPage = () => {
           title="Prizes"
           description={
             <>
-              The winning team of each hackathon <b>organized by Kiwi.com</b>{' '}
-              will be awarded with travel vouchers. <br /> The winning team of
-              each location will be invited to the Kiwi.com Christmas party
-              (December 2019).
+              The winning team of each hackathon <b>organized by Kiwi.com</b>
+              <br /> will be awarded with travel vouchers. The winning team of
+              each <br /> location will be invited to the Kiwi.com Christmas
+              party (December 2019).
             </>
           }
           prizes={[
