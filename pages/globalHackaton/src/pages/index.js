@@ -212,8 +212,8 @@ const IndexPage = () => {
               <b>better, smoother, and smarter for everyone.</b>
               <br />
               <br />
-              We hope to trigger a global #HackTravel movement that would become
-              a platform for constant improvement in the world of travel.
+              We hope to trigger a global <b>#HackTravel</b> movement that would
+              become a platform for constant improvement in the world of travel.
             </>
           }
           sideImage={missionImage}
@@ -244,7 +244,7 @@ const IndexPage = () => {
           title="Prizes"
           description={
             <>
-              The winning team of each hackathon <b>organized by Kiwi.com</b>
+              The winning team of each hackathon <b>organized by Kiwi.com</b>{' '}
               will be awarded with travel vouchers. <br /> The winning team of
               each location will be invited to the Kiwi.com Christmas party
               (December 2019).
