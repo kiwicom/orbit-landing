@@ -44,7 +44,7 @@ FooterWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const StyledText = styled.span`
+const StyledText = styled.div`
   margin-right: 0.63vw;
 `;
 

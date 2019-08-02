@@ -57,7 +57,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: 'og:image',
-          content: shareImage,
+          content: 'https://hack.travel/shareImage.png',
         },
         {
           name: `twitter:card`,

@@ -215,9 +215,9 @@ const IndexPage = () => {
               img: icPlace,
             },
             {
-              title: 'Where?',
+              title: 'How?',
               content:
-                'How? We want to engage people by organising hackathons all over the world on 27 September. We will bring together engineers, designers, travel innovators and others.',
+                ' We want to engage people by organising hackathons all over the world on 27 September. We will bring together engineers, designers, travel innovators and others.',
               img: icGlobal,
             },
             {
