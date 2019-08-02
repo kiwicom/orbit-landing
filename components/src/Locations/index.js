@@ -95,6 +95,11 @@ StyledTypoSection.defaultProps = {
   theme: defaultTheme,
 };
 
+const StyledWrapper = styled.div`
+  opacity: 0;
+  transition: 150ms;
+`;
+
 const StyledTile = styled.div`
   width: 100%;
   height: 18vw;
@@ -107,7 +112,6 @@ const StyledTile = styled.div`
   overflow: hidden;
   padding: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
   box-sizing: content-box;
-
 
   ${media.desktop(
     css`
@@ -131,7 +135,7 @@ const StyledTile = styled.div`
     filter: grayscale(100%) brightness(50%);
   }
 
-  /* &:before {
+  &:before {
     content: '';
     position: absolute;
     left: 0;
@@ -146,7 +150,12 @@ const StyledTile = styled.div`
 
   &:hover:before {
     opacity: 0.3;
-  } */
+  }
+  &:hover {
+    ${StyledWrapper} {
+      opacity: 1;
+    }
+  }
 `;
 
 StyledTile.defaultProps = {
@@ -196,6 +205,7 @@ const LocationsWrapper = styled.div`
   flex-direction: row;
   width: 100%;
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
 
   & > * {
@@ -225,9 +235,11 @@ const LocationTile = ({ eventName, location, logo, backgroundImage, hide }) => {
       <StyledTileContent>
         <StyledLogo logo={logo} />
         <Stack spacing="none">
-          <Text type="white" size="large">
-            {eventName}
-          </Text>
+          <StyledWrapper>
+            <Text type="white" size="large">
+              {eventName}
+            </Text>
+          </StyledWrapper>
           <TileHeading type="white" size="large" inverted weight="bold">
             {location}
           </TileHeading>

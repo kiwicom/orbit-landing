@@ -46,11 +46,6 @@ import joinUsPattern from '../images/pattern03.svg';
 import icPlace from '../images/ic-place.svg';
 import icGlobal from '../images/ic-global.svg';
 import icTopic from '../images/ic-topic.svg';
-import Google from '../images/sponsor01.svg';
-import Cnn from '../images/cnn.svg';
-import Cisco from '../images/cisco.svg';
-import Airbnb from '../images/airbnb.svg';
-import Uber from '../images/uber.svg';
 import evBrno from '../images/ev-brno.jpg';
 import evBarcelona from '../images/ev-barcelona.jpg';
 import evZagreb from '../images/ev-zagreb.jpg';
@@ -106,7 +101,7 @@ const IndexPage = () => {
               <Button
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeTYxsYCYCkExYyUuTX0IDB0gmr2UUtWXIyX4iMK-Jc_X0U6w/viewform"
                 external
-                onClick={e => {
+                onClick={() => {
                   // eslint-disable-next-line no-undef
                   if (gtag) {
                     gtag('event', 'register_clicked', {
@@ -122,7 +117,7 @@ const IndexPage = () => {
                 external
                 type="white"
                 bordered
-                onClick={e => {
+                onClick={() => {
                   // eslint-disable-next-line no-undef
                   if (gtag) {
                     gtag('event', 'partner_clicked', {
@@ -169,31 +164,31 @@ const IndexPage = () => {
           pattern={heroPattern}
           locations={[
             {
-              backgroundImage: evBrno,
-              eventName: '',
-              location: 'Brno',
-              logo: logoSab,
-            },
-            {
               backgroundImage: evLjublana,
-              eventName: '',
-              location: 'Ljublana',
+              eventName: 'Comming soon',
+              location: 'Ljubljana',
               logo: logo,
             },
             {
               backgroundImage: evZagreb,
-              eventName: '',
+              eventName: 'Comming soon',
               location: 'Zagreb',
               logo: logo,
             },
             {
               backgroundImage: evBarcelona,
-              eventName: '',
+              eventName: 'Comming soon',
               location: 'Barcelona',
               logo: logo,
             },
+            {
+              backgroundImage: evBrno,
+              eventName: 'Comming soon',
+              location: 'Brno',
+              logo: logoSab,
+            },
           ]}
-          locationsHeading="Choose your destination"
+          locationsHeading="Future events"
         />
         <Mission
           id="about"
@@ -239,12 +234,10 @@ const IndexPage = () => {
           title="Prizes"
           description={
             <>
-              The winning team of each local hackathon will be invited to
-              explore Prague with Kiwi.com. <br /> Look forward to a weekend
-              full of fun activities and a party. The accommodation and travel
-              costs are on us.
-              <br />
-              <b>+ Invitation for the Kiwi.com party (December 2019)</b>
+              The winning team of each hackathon <b>organized by Kiwi.com</b>
+              will be awarded with travel vouchers. <br /> The winning team of
+              each location will be invited to the Kiwi.com Christmas party
+              (December 2019).
             </>
           }
           prizes={[
@@ -252,21 +245,15 @@ const IndexPage = () => {
             { place: 2, prize: '600 €' },
             { place: 3, prize: '400 €' },
           ]}
-          infoText={
-            <>
-              The main prizes for the Grand finale will be paid as Kiwi.com
-              vouchers.
-            </>
-          }
+          infoText={<>The main prizes will be paid as Kiwi.com vouchers.</>}
         />
         <Timeline
           title="Schedule"
-          content="We begin on Friday, 10th of May at 18:00 and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long"
+          content="We begin on Friday, 27th of September and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long"
           items={[
             { time: '25.08', title: 'Application deadline' },
             { time: '06.09', title: 'Confirmation of attendees' },
             { time: '27–28.09', title: 'Kiwi.com hackathons' },
-            { time: '18–19.10', title: 'Superfinals in Prague' },
           ]}
         />
         <Faq
@@ -337,24 +324,46 @@ const IndexPage = () => {
           leftSectionDescription={
             <>
               Do you have a question, an idea or another request? Don’t hesitate
-              to drop us a line at globalhack@kiwi.com.
+              to drop us a line at{' '}
+              <TextLink href="mailto:globalhack@kiwi.com">
+                globalhack@kiwi.com
+              </TextLink>
+              .
             </>
           }
           rightSectionHeading="Get involved"
           rightSectionDescription={
             <>
               Do you want to join us as Global Hackathon Ambassador, Partner or
-              Volunteer? Shoot us an e-mail at globalhack@kiwi.com.
+              Volunteer? Shoot us an e-mail at{' '}
+              <TextLink href="mailto:globalhack@kiwi.com">
+                globalhack@kiwi.com
+              </TextLink>
+              .
             </>
           }
         />
-
         <JoinUs
           title="Join Us"
           descrtiption="Please, fill in your application carefully and thoroughly, we'll be choosing the attendees based on what you write there."
           additionalInformation="We value the participation of each member and we want all
     attendees to have an enjoying and fulfilling experience."
-          actions={<Button>Register</Button>}
+          actions={
+            <Button
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeTYxsYCYCkExYyUuTX0IDB0gmr2UUtWXIyX4iMK-Jc_X0U6w/viewform"
+              external
+              onClick={() => {
+                // eslint-disable-next-line no-undef
+                if (gtag) {
+                  gtag('event', 'register_clicked', {
+                    event_label: 'Register',
+                  });
+                }
+              }}
+            >
+              Register as participant
+            </Button>
+          }
           additionalActions={
             <TextLink external href="/code-of-conduct/" type="primary">
               Check our Code of Conduct
@@ -362,10 +371,6 @@ const IndexPage = () => {
           }
           backgroundImage={joinUsImg}
           patterns={[joinUsPattern, joinUsPattern]}
-        />
-        <Sponsors
-          id="sponsors"
-          logos={[Google, Cnn, Airbnb, Cisco, Uber, Google, Airbnb, Cisco, Cnn]}
         />
         <Footer
           shareTitle="Share us with your friends"

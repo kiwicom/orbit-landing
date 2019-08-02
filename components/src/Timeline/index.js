@@ -14,15 +14,21 @@ const Wrapper = styled.div`
   max-width: 780px;
 `;
 
+const TimeWrapper = styled.div`
+  min-width: 100px;
+`;
+
 const StyledTimelineItem = styled.div``;
 
 const TimelineItem = ({ time, title }) => {
   return (
     <StyledTimelineItem>
       <Stack flex>
-        <Text type="secondary" size="large">
-          {time}
-        </Text>
+        <TimeWrapper>
+          <Text type="secondary" size="large">
+            {time}
+          </Text>
+        </TimeWrapper>
         <Text size="large">{title}</Text>
       </Stack>
     </StyledTimelineItem>

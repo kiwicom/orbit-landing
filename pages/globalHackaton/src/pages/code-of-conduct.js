@@ -3,9 +3,9 @@
 import React from 'react';
 import './reset.css';
 import styled from 'styled-components';
+
 // Components
 import Page from '../components/pageTracked';
-
 import Seo from '../components/seo';
 
 const codeofconduct = () => (
@@ -131,14 +131,12 @@ const codeofconduct = () => (
       <p>In case of a conflict of interest, you can individually contact:</p>
       <ul>
         <li>
-          Paulina Montes <br />
-          <a href="mailto:paulina.montes@kiwi.com">paulina.montes@kiwi.com</a>
+          Alzbeta Vackova <br />
+          <a href="mailto:alzbeta.vackova@kiwi.com">alzbeta.vackova@kiwi.com</a>
         </li>
         <li>
-          Kseniya Miantsiuk <br />
-          <a href="mailto:kseniya.miantsiuk@kiwi.com">
-            kseniya.miantsiuk@kiwi.com
-          </a>
+          Jan Bleha <br />
+          <a href="mailto:jan.bleha@kiwi.com">Jan Bleha</a>
         </li>
       </ul>
       <p>
