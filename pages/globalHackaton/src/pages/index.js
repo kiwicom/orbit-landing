@@ -165,25 +165,25 @@ const IndexPage = () => {
           locations={[
             {
               backgroundImage: evLjublana,
-              eventName: 'Comming soon',
+              eventName: 'Coming soon',
               location: 'Ljubljana',
               logo: logo,
             },
             {
               backgroundImage: evZagreb,
-              eventName: 'Comming soon',
+              eventName: 'Coming soon',
               location: 'Zagreb',
               logo: logo,
             },
             {
               backgroundImage: evBarcelona,
-              eventName: 'Comming soon',
+              eventName: 'Coming soon',
               location: 'Barcelona',
               logo: logo,
             },
             {
               backgroundImage: evBrno,
-              eventName: 'Comming soon',
+              eventName: 'Coming soon',
               location: 'Brno',
               logo: logoSab,
             },
@@ -395,7 +395,7 @@ const IndexPage = () => {
               icon: <Twitter />,
               title: 'Twitter',
               href:
-                'https://twitter.com/share?url=https://hack.travel&text=Hack the travel and discover the world from a whole new perspective.',
+                'https://twitter.com/share?url=https://hack.travel&text=Hack the travel and discover the world from a whole new perspective. #HackTravel',
             },
             {
               icon: <Linkedin />,
