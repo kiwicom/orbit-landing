@@ -208,7 +208,7 @@ const IndexPage = () => {
               the world on 27 September. We will bring together engineers,
               designers, travel innovators, and others, offer them a creative
               and supportive environment, and encourage their ideas on how to
-              hack travel. Together, we’ll make it{' '}
+              hack travel. Together, we’ll make it
               <b>better, smoother, and smarter for everyone.</b>
               <br />
               <br />
