@@ -44,7 +44,12 @@ const Timeline = ({ title, content, items, theme }) => {
   return (
     <StyledTimeline backgroundColor={theme.orbit.paletteCloudLight}>
       <Container hasSlicedCorner>
-        <Stack spacing="loose">
+        <Stack
+          spacing="loose"
+          spaceAfter="large"
+          direction="column"
+          tablet={{ spaceAfter: 'none' }}
+        >
           <Heading type="title1" element="h2">
             {title}
           </Heading>

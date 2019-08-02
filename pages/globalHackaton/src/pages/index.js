@@ -43,8 +43,8 @@ import grid08 from '../images/grid08.jpg';
 import grid09 from '../images/grid09.jpg';
 import joinUsImg from '../images/joinUsImg.jpg';
 import joinUsPattern from '../images/pattern03.svg';
-import icPlace from '../images/ic-place.svg';
-import icGlobal from '../images/ic-global.svg';
+import icAccessibility from '../images/ic-accessibility.svg';
+import icGlobe from '../images/ic-globe.svg';
 import icTopic from '../images/ic-topic.svg';
 import evBrno from '../images/ev-brno.jpg';
 import evBarcelona from '../images/ev-barcelona.jpg';
@@ -197,33 +197,43 @@ const IndexPage = () => {
           subTitle="by travellers, for travellers"
           description={
             <>
-              We’re inviting everyone to <b>redefine the travel experience.</b>{' '}
+              We’re inviting everyone to{' '}
+              <b>
+                redefine the travel experience <br />
+                to make it smarter, responsible and accessible for everyone.
+              </b>{' '}
+              <br />
+              <br />
               How? We want to engage people by organising hackathons all over
               the world on 27 September. We will bring together engineers,
               designers, travel innovators, and others, offer them a creative
               and supportive environment, and encourage their ideas on how to
-              hack travel. Together, we’ll make it{' '}
+              hack travel. Together, we’ll make it
               <b>better, smoother, and smarter for everyone.</b>
+              <br />
+              <br />
+              We hope to trigger a global #HackTravel movement that would become
+              a platform for constant improvement in the world of travel.
             </>
           }
           sideImage={missionImage}
           items={[
             {
-              title: 'Why Global hacking?',
+              title: 'Sustainability',
               content:
-                'We hope to trigger a global #HackTravel movement that would become a platform for constant improvement in the world of travel.',
-              img: icPlace,
+                'Do you have an idea about how to make travel more responsible? How to deal with mass tourism? Join us to make travel better.',
+              img: icGlobe,
             },
             {
-              title: 'How?',
+              title: 'Accessibility',
               content:
-                ' We want to engage people by organising hackathons all over the world on 27 September. We will bring together engineers, designers, travel innovators and others.',
-              img: icGlobal,
+                'How to make travel better for people with disabilities? How to find well-adapted hotel rooms or accessible restaurants?',
+              img: icAccessibility,
             },
             {
-              title: 'Topic & Challenges',
+              title: 'Community',
               content:
-                'We’ll focus on how to use technology to improve and redefine travel quality and experience. Specific challenges will be announced soon.',
+                'How to find one’s travel network? How to connect offline communities? Help us connect the unconnected.',
               img: icTopic,
             },
           ]}
