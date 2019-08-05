@@ -50,7 +50,7 @@ const atendee = () => (
         </li>
         <li>
           Jan Bleha <br />
-          <a href="mailto:jan.bleha@kiwi.com">Jan Bleha</a>
+          <a href="mailto:jan.bleha@kiwi.com">jan.bleha@kiwi.com</a>
         </li>
       </ul>
 
