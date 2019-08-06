@@ -98,8 +98,7 @@ const IndexPage = () => {
           actions={
             <Stack justify="center" grow={false}>
               <Button
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeTYxsYCYCkExYyUuTX0IDB0gmr2UUtWXIyX4iMK-Jc_X0U6w/viewform"
-                external
+                href="#locations"
                 onClick={() => {
                   // eslint-disable-next-line no-undef
                   if (gtag) {
@@ -112,8 +111,7 @@ const IndexPage = () => {
                 Register as participant
               </Button>
               <Button
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfiqeXYsVUS5Q17QZT5GB4botBn-BKU2hzkOjlFxRJVfewdxA/viewform"
-                external
+                href="#new-locations"
                 type="white"
                 bordered
                 onClick={() => {
@@ -131,7 +129,7 @@ const IndexPage = () => {
           }
           navBar={
             <NavBar
-              title="Travel Hackathon"
+              title="#HackTravel"
               items={[
                 {
                   title: 'About',
@@ -158,41 +156,93 @@ const IndexPage = () => {
           }
         />
         <Locations
+          id="locations"
           title="Hack travel and make it smarter, sustainable and accessible for
-    everyone."
+          everyone."
           pattern={heroPattern}
           locations={[
             {
               backgroundImage: evBarcelona,
-              eventName: 'Coming soon',
+              eventName: 'Register',
               location: 'Barcelona',
               logo: logo,
-            },
-            {
-              backgroundImage: evLjublana,
-              eventName: 'Click to register',
-              location: 'Belgrade',
-              logo: logo,
+              onClick: () => {
+                window.location.href =
+                  'https://www.eventbrite.com/e/global-travel-hackathon-barcelona-edition-tickets-68004219451';
+              },
             },
             {
               backgroundImage: evZagreb,
-              eventName: 'Coming soon',
+              eventName: 'Register',
               location: 'Zagreb',
               logo: logo,
+              onClick: () => {
+                window.location.href =
+                  'https://www.eventbrite.com/e/global-travel-hackathon-zagreb-edition-tickets-68284911007?aff=ZGRBwebregistration';
+              },
+            },
+            {
+              backgroundImage: evLjublana,
+              eventName: 'Register',
+              location: 'Belgrade',
+              logo: logo,
+              onClick: () => {
+                window.location.href =
+                  'https://www.eventbrite.com/e/global-travel-hackathon-belgrade-edition-tickets-68284501783?aff=BLGwebregistration';
+              },
             },
             {
               backgroundImage: evBrno,
-              eventName: 'Coming soon',
+              eventName: 'Register',
               location: 'Brno',
               logo: logoSab,
+              onClick: () => {
+                window.location.href = 'http://www.czechspaceyear.com/coha/';
+              },
             },
           ]}
-          locationsHeading="Future events"
+          locationsHeading="Choose event you want to attend"
+        />
+        <Timeline
+          id="new-locations"
+          background="white"
+          title="Locations we are working on"
+          content={
+            <>
+              <Stack>
+                <div>
+                  Where else can you expect a hackathon? Check the list below,{' '}
+                  <TextLink href="mailto:globalhack@kiwi.com">
+                    let us know
+                  </TextLink>{' '}
+                  if you wanna be a partner or sponsor some of them; or, help us
+                  expand the list by adding your event.
+                </div>
+                <Button type="secondary">Add your hackathon</Button>
+              </Stack>
+            </>
+          }
+          items={[
+            {
+              time: 'London',
+              title:
+                'We’re preparing the hackathon together with JS London, more info coming soon',
+            },
+            {
+              time: 'Vienna',
+              title:
+                'We are discussing the details with Ready2order, more info coming soon',
+            },
+            {
+              time: 'Budapest',
+              title: 'Our partners from Budapest.py will soon bring more info',
+            },
+          ]}
         />
         <Mission
           id="about"
           category="Join us in"
-          title="Making Travel Better"
+          title="Join us in making travel better "
           subTitle="by travellers, for travellers"
           description={
             <>
@@ -246,20 +296,32 @@ const IndexPage = () => {
             <>
               The winning team of each location is invited to{' '}
               <b>participate in a global round</b>,
-              <br /> in which top Kiwi.com developers and managers choose <br />{' '}
-              the project they like the best.
+              <br /> in which top Kiwi.com developers and managers choose the
+              project they like the best.
               <br /> The global prize is:
             </>
           }
           prizes={[
-            { place: 1, prize: '2000 €' },
-            { place: 2, prize: '600 €' },
-            { place: 3, prize: '400 €' },
+            { place: 1, prize: '4,000 € in Kiwi.com travel vouchers' },
+            { place: 2, prize: 'A weekend in Prague for the whole team' },
+            {
+              place: 3,
+              prize: 'Feedback session with top Kiwi.com developers',
+            },
           ]}
-          infoText={<>The main prizes will be paid as Kiwi.com vouchers.</>}
+          infoText={
+            <>
+              To see the particular prizes you can win at each of the
+              hackathons, please check the website of the specific event. .
+            </>
+          }
         />
         <Timeline
-          title="Schedule for Kiwi.com hackathons"
+          title={
+            <>
+              Schedule for <br /> Kiwi.com hackathons
+            </>
+          }
           content="We begin on Friday, 27 September and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long. Please note that for some hackathons, the schdule might differ. Check the event website."
           items={[
             { time: '8.09.', title: 'Application deadline' },
@@ -352,8 +414,7 @@ const IndexPage = () => {
     attendees to have an enjoying and fulfilling experience."
           actions={
             <Button
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeTYxsYCYCkExYyUuTX0IDB0gmr2UUtWXIyX4iMK-Jc_X0U6w/viewform"
-              external
+              href="#locations"
               onClick={() => {
                 // eslint-disable-next-line no-undef
                 if (gtag) {

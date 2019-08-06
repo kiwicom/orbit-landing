@@ -1,6 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
 import { configure, addDecorator, addParameters } from "@storybook/react";
-import { withKnobs } from "@storybook/addon-knobs";
+import { withKnobs } from "@storybook/addon-knobs"
+import LandingDecorator from "./landingDecorator";
 // import "loki/configure-react";
 
 addParameters({
@@ -9,6 +10,7 @@ addParameters({
   }
 });
 addDecorator(withKnobs);
+addDecorator(LandingDecorator);
 
 function requireAll(requireContext) {
   return requireContext.keys().map(requireContext);

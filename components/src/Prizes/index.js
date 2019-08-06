@@ -97,15 +97,16 @@ const HeadingWrapper = styled.div`
 `;
 
 const Prize = styled.span`
-  color: ${({ theme }) => theme.orbit.colorTextWarning};
-
-  &::after {
+  /* color: ${({ theme }) => theme.orbit.colorTextWarning}; */
+  text-align: center;
+  line-height: 1.4;
+  /* &::after {
     content: '*';
     position: relative;
     top: -12px;
     left: 4px;
     font-size: 24px;
-  }
+  } */
 `;
 
 Prize.defaultProps = {
@@ -182,7 +183,7 @@ const Prizes = ({ title, description, prizes, infoText, id }) => {
                     </Heading>
                     <Text type="secondary">place</Text>
                   </HeadingWrapper>
-                  <Heading type="title3" element="h4">
+                  <Heading type="title4" element="h4">
                     <Prize>{prize}</Prize>
                   </Heading>
                 </PrizeBox>

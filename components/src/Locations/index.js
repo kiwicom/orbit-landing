@@ -95,11 +95,6 @@ StyledTypoSection.defaultProps = {
   theme: defaultTheme,
 };
 
-const StyledWrapper = styled.div`
-  opacity: 0;
-  transition: 150ms;
-`;
-
 const StyledTile = styled.div`
   width: 100%;
   height: 18vw;
@@ -112,6 +107,7 @@ const StyledTile = styled.div`
   overflow: hidden;
   padding: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
   box-sizing: content-box;
+  cursor: pointer;
 
   ${media.desktop(
     css`
@@ -150,11 +146,6 @@ const StyledTile = styled.div`
 
   &:hover:before {
     opacity: 0.3;
-  }
-  &:hover {
-    ${StyledWrapper} {
-      opacity: 1;
-    }
   }
 `;
 
@@ -229,17 +220,22 @@ LocationsWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const LocationTile = ({ eventName, location, logo, backgroundImage, hide }) => {
+const LocationTile = ({
+  eventName,
+  location,
+  logo,
+  backgroundImage,
+  hide,
+  onClick,
+}) => {
   return (
-    <StyledTile hide={hide} backgroundImage={backgroundImage}>
+    <StyledTile hide={hide} backgroundImage={backgroundImage} onClick={onClick}>
       <StyledTileContent>
         <StyledLogo logo={logo} />
         <Stack spacing="none">
-          <StyledWrapper>
-            <Text type="white" size="large">
-              {eventName}
-            </Text>
-          </StyledWrapper>
+          <Text type="white" size="large">
+            {eventName}
+          </Text>
           <TileHeading type="white" size="large" inverted weight="bold">
             {location}
           </TileHeading>
@@ -250,6 +246,7 @@ const LocationTile = ({ eventName, location, logo, backgroundImage, hide }) => {
 };
 
 const Locations = ({
+  id,
   title,
   backgroundImage,
   pattern,
@@ -257,7 +254,7 @@ const Locations = ({
   locationsHeading,
 }) => {
   return (
-    <StyledLocations>
+    <StyledLocations id={id}>
       <StyledTypoSection img={backgroundImage}>
         <StyledStack>
           <StyledHeaderWrapper>

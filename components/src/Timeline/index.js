@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
@@ -40,10 +40,20 @@ const StyledTimeline = styled.div`
   background-color: ${({ backgroundColor }) => backgroundColor};
 `;
 
-const Timeline = ({ title, content, items, theme }) => {
+StyledTimeline.defaultProps = {
+  theme: defaultTheme,
+};
+
+const Timeline = ({ id, title, content, items, theme, background }) => {
   return (
-    <StyledTimeline backgroundColor={theme.orbit.paletteCloudLight}>
-      <Container hasSlicedCorner>
+    <StyledTimeline
+      backgroundColor={
+        background === 'white'
+          ? theme.orbit.palleteWhite
+          : theme.orbit.paletteCloudLight
+      }
+    >
+      <Container id={id} hasSlicedCorner={background !== 'white'}>
         <Stack
           spacing="loose"
           spaceAfter="large"

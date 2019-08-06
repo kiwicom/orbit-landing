@@ -8,6 +8,7 @@ const customTheme = {
   fontSizeHeadingDisplay:
     'calc(55px + (154 - 55) * ((100vw - 320px) / (1920 - 320)))',
   lineHeightHeading: '1.02',
+  lineHeightHeadingDisplay: '1.02',
   lineHeightHeadingTitle1: '1.02',
   lineHeightHeadingTitle2: '1.02',
   lineHeightHeadingTitle3: '1.02',
