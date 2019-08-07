@@ -12,8 +12,8 @@
   ],
   "scripts": {
     "build:components": "yarn workspace @kiwicom/orbit-landing-components build:lib",
-    "build:globalHackaton": "yarn workspace globalhackaton gatsby build",
-    "dev:globalHackaton": "yarn workspace globalhackaton gatsby develop",
+    "build:gh": "yarn workspace globalhackaton gatsby build",
+    "dev:gh": "yarn workspace globalhackaton gatsby develop",
     "dev:components": "yarn workspace @kiwicom/orbit-landing-components storybook",
     "eslint:fix": "eslint . --fix"
   },
