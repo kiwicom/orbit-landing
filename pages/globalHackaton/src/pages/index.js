@@ -205,7 +205,7 @@ const IndexPage = () => {
               <br />
               <br />
               How? We want to engage people by organising hackathons all over
-              the world on 27 September. We will bring together engineers,
+              the world on 27 September. We will bring together.. engineers,
               designers, travel innovators, and others, offer them a creative
               and supportive environment, and encourage their ideas on how to
               hack travel. Together, we’ll make it{' '}
