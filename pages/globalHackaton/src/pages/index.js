@@ -180,7 +180,7 @@ const IndexPage = () => {
               eventName: 'Coming soon',
               location: 'Zagreb',
               logo: logo,
-            }
+            },
             {
               backgroundImage: evBrno,
               eventName: 'Coming soon',
