@@ -69,7 +69,7 @@ const faqExternal = (
     projects, libraries, and frameworks as long as they are publicly available
     on the web. We offer our public API's that you can find on our B2B platform{' '}
     <a href="https://tequila.kiwi.com/">Tequila</a>, so you can use our
-    resources to take the travel experience to a new level.
+    resources to take the travel experience to a new level...
   </>
 );
 
