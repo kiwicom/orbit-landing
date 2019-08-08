@@ -231,7 +231,7 @@ const IndexPage = () => {
             {
               title: 'Community',
               content:
-                'How to find one's travel network? How to connect offline communities? Help us connect the unconnected.',
+                "How to find one's travel network? How to connect offline communities? Help us connect the unconnected.",
               img: icTopic,
             },
           ]}
