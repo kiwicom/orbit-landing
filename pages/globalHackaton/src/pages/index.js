@@ -167,8 +167,10 @@ const IndexPage = () => {
               location: 'Barcelona',
               logo: logo,
               onClick: () => {
-                window.location.href =
-                  'https://www.eventbrite.com/e/global-travel-hackathon-barcelona-edition-tickets-68004219451';
+                window.open(
+                  'https://www.eventbrite.com/e/global-travel-hackathon-barcelona-edition-tickets-68004219451',
+                  '_blank',
+                );
               },
             },
             {
@@ -177,8 +179,10 @@ const IndexPage = () => {
               location: 'Zagreb',
               logo: logo,
               onClick: () => {
-                window.location.href =
-                  'https://www.eventbrite.com/e/global-travel-hackathon-zagreb-edition-tickets-68284911007?aff=ZGRBwebregistration';
+                window.open(
+                  'https://www.eventbrite.com/e/global-travel-hackathon-zagreb-edition-tickets-68284911007?aff=ZGRBwebregistration',
+                  '_blank',
+                );
               },
             },
             {
@@ -187,8 +191,10 @@ const IndexPage = () => {
               location: 'Belgrade',
               logo: logo,
               onClick: () => {
-                window.location.href =
-                  'https://www.eventbrite.com/e/global-travel-hackathon-belgrade-edition-tickets-68284501783?aff=BLGwebregistration';
+                window.open(
+                  'https://www.eventbrite.com/e/global-travel-hackathon-belgrade-edition-tickets-68284501783?aff=BLGwebregistration',
+                  '_blank',
+                );
               },
             },
             {
@@ -197,7 +203,7 @@ const IndexPage = () => {
               location: 'Brno',
               logo: logoSab,
               onClick: () => {
-                window.location.href = 'http://www.czechspaceyear.com/coha/';
+                window.open('http://www.czechspaceyear.com/coha/', '_blank');
               },
             },
           ]}
@@ -218,7 +224,13 @@ const IndexPage = () => {
                   if you wanna be a partner or sponsor some of them; or, help us
                   expand the list by adding your event.
                 </div>
-                <Button type="secondary">Add your hackathon</Button>
+                <Button
+                  type="secondary"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfiqeXYsVUS5Q17QZT5GB4botBn-BKU2hzkOjlFxRJVfewdxA/viewform"
+                  external
+                >
+                  Add your hackathon
+                </Button>
               </Stack>
             </>
           }
@@ -312,7 +324,7 @@ const IndexPage = () => {
           infoText={
             <>
               To see the particular prizes you can win at each of the
-              hackathons, please check the website of the specific event. .
+              hackathons, please check the website of the specific event.
             </>
           }
         />
