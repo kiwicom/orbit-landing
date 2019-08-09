@@ -244,10 +244,10 @@ const IndexPage = () => {
           title="Prizes"
           description={
             <>
-              The winning team of each location is invited to{' '}
-              <b>participate in a global round</b>,
+              The winning project of each location is invited to{' '}
+              <b>send a demo for a global round</b>,
               <br /> in which top Kiwi.com developers and managers choose <br />{' '}
-              the project they like the best.
+              the winner of the global prize. This round is 100% remote, more information will be provided soon.
               <br /> The global prize is:
             </>
           }
@@ -260,7 +260,7 @@ const IndexPage = () => {
         />
         <Timeline
           title="Schedule for Kiwi.com hackathons"
-          content="We begin on Friday, 27 September and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long. Please note that for some hackathons, the schdule might differ. Check the event website."
+          content="We begin on Friday, 27 September and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long. Please note that for some hackathons, the schedule might differ. Check the event website."
           items={[
             { time: '8.09.', title: 'Application deadline' },
             { time: '14.09', title: 'Confirmation of attendees' },
