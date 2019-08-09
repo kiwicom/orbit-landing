@@ -63,13 +63,12 @@ const images = [
   grid06,
 ];
 
-const faqExternal = (
+const descriptionSupport = (
   <>
-    You are encouraged to use any 3rd party services, APIs, open-source
-    projects, libraries, and frameworks as long as they are publicly available
-    on the web. We offer our public API's that you can find on our B2B platform{' '}
-    <a href="https://tequila.kiwi.com/">Tequila</a>, so you can use our
-    resources to take the travel experience to a new level.
+    We do not provide travel support to attend a hackathon of your choice. You
+    are free to organize a hackathon in your city by yourself – if you would
+    like to, let us know
+    <TextLink href="mailto:globalhack@kiwi.com">here.</TextLink>
   </>
 );
 
@@ -159,26 +158,26 @@ const IndexPage = () => {
           }
         />
         <Locations
-          title="Hack the travel and discover the world from a whole new
-    perspective."
+          title="Hack travel and make it smarter, sustainable and accessible for
+    everyone."
           pattern={heroPattern}
           locations={[
             {
-              backgroundImage: evLjublana,
+              backgroundImage: evBarcelona,
               eventName: 'Coming soon',
-              location: 'Ljubljana',
+              location: 'Barcelona',
+              logo: logo,
+            },
+            {
+              backgroundImage: evLjublana,
+              eventName: 'Click to register',
+              location: 'Belgrade',
               logo: logo,
             },
             {
               backgroundImage: evZagreb,
               eventName: 'Coming soon',
               location: 'Zagreb',
-              logo: logo,
-            },
-            {
-              backgroundImage: evBarcelona,
-              eventName: 'Coming soon',
-              location: 'Barcelona',
               logo: logo,
             },
             {
@@ -192,28 +191,29 @@ const IndexPage = () => {
         />
         <Mission
           id="about"
-          category="Our Mission"
+          category="Join us in"
           title="Making Travel Better"
           subTitle="by travellers, for travellers"
           description={
             <>
-              We’re inviting everyone to{' '}
+              At Kiwi.com, we care. We love the world of travel, but we’re aware
+              of its dark side. That’s why we’re inviting everyone to{' '}
               <b>
-                redefine the travel experience <br />
-                to make it smarter, responsible and accessible for everyone.
+                help us reshape the way we travel <br />
+                to make it smarter, sustainable and accessible for everyone.
               </b>{' '}
               <br />
               <br />
-              How? We want to engage people by organising hackathons all over
-              the world on 27 September. We will bring together.. engineers,
-              designers, travel innovators, and others, offer them a creative
-              and supportive environment, and encourage their ideas on how to
-              hack travel. Together, we’ll make it{' '}
-              <b>better, smoother, and smarter for everyone.</b>
+              Let’s celebrate World Tourism Day by attending and organising
+              travel hackathons all over the globe on 27 September. We want to
+              bring together engineers, designers, and innovators: providing
+              them with a creative and supportive environment, and encouraging
+              their ideas on how to hack travel.
               <br />
               <br />
               We hope to trigger a global <b>#HackTravel</b> movement that would
-              become a platform for constant improvement in the world of travel.
+              become a platform for constant improvement in the travel industry.
+              Here are the main topics for this year.
             </>
           }
           sideImage={missionImage}
@@ -221,19 +221,19 @@ const IndexPage = () => {
             {
               title: 'Sustainability',
               content:
-                'Do you have an idea about how to make travel more responsible? How to deal with mass tourism? Join us to make travel better.',
+                'Do you have an idea on how to make travel more responsible? How to deal with mass tourism? Join us to make travel sustainable and bearable for everyone.',
               img: icGlobe,
             },
             {
               title: 'Accessibility',
               content:
-                'How to make travel better for people with disabilities? How to find well-adapted hotel rooms or accessible restaurants?',
+                'How to make travel better for people with disabilities? How to find well-adapted hotel rooms or accessible restaurants? Or how to make travel smoother for travelers flying with their musical instruments, bikes or surfboards? Accessibility can be perceived from different perspectives – help us find the one which will change the world of travel.',
               img: icAccessibility,
             },
             {
               title: 'Community',
               content:
-                'How to find one’s travel network? How to connect offline communities? Help us connect the unconnected.',
+                "How to find one's travel network? How to connect offline communities? Help us connect the unconnected.",
               img: icTopic,
             },
           ]}
@@ -244,10 +244,11 @@ const IndexPage = () => {
           title="Prizes"
           description={
             <>
-              The winning team of each hackathon <b>organized by Kiwi.com</b>
-              <br /> will be awarded with travel vouchers. The winning team of
-              each <br /> location will be invited to the Kiwi.com Christmas
-              party (December 2019).
+              The winning team of each location is invited to{' '}
+              <b>participate in a global round</b>,
+              <br /> in which top Kiwi.com developers and managers choose <br />{' '}
+              the project they like the best.
+              <br /> The global prize is:
             </>
           }
           prizes={[
@@ -258,12 +259,12 @@ const IndexPage = () => {
           infoText={<>The main prizes will be paid as Kiwi.com vouchers.</>}
         />
         <Timeline
-          title="Schedule"
-          content="We begin on Friday, 27th of September and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long"
+          title="Schedule for Kiwi.com hackathons"
+          content="We begin on Friday, 27 September and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long. Please note that for some hackathons, the schdule might differ. Check the event website."
           items={[
-            { time: '25.08', title: 'Application deadline' },
-            { time: '06.09', title: 'Confirmation of attendees' },
-            { time: '27–28.09', title: 'Kiwi.com hackathons' },
+            { time: '8.09.', title: 'Application deadline' },
+            { time: '14.09', title: 'Confirmation of attendees' },
+            { time: '27.–28.09', title: 'Kiwi.com hackathons' },
           ]}
         />
         <Faq
@@ -275,51 +276,42 @@ const IndexPage = () => {
                 'Hackathon is an unorthodox way to solve different kind problems. It is a competition that gathers programmers with different skill sets to work collaboratively, on a software project, which creatively solves various problems on a given topic. ',
             },
             {
-              question: 'What should I build?',
+              question: 'Who’s behind the Global Travel Hackathon?',
               answer:
-                "You can build web or mobile applications related to travel experience, using the programming language and platform of your choice. We're looking for apps that help people feel the excitement of travel to the fullest extent, so get creative and build something innovative and unique!",
+                'The idea was born at Kiwi.com, however, each of the hackathons has a different organiser. Please, consult the web page to see who’s the main organiser of the hackathon you are interested in. ',
             },
             {
-              question:
-                'In order to participate, do I need to stay for the whole 24 hours?',
+              question: 'What should I build?',
               answer:
-                'We do strongly encourage you to be present for the first few hours of the hackathon to see the idea pitches, as well as the final few hours for the presentations and judging. But of course, 24 hours is a long time and people may need to attend to other commitments, or just shower and sleep, so you can definitely schedule your work according to your needs',
+                'It depends on each location. The general theme of the Global Travel Hackathon is sustainability, accessibility and community in the world of travel; however, you can consult the particular event web page to see if there are some other topics. ',
             },
             {
               question: 'Can I join any of the hackathons?',
               answer:
-                'Yes, you can definitely join us in the location you prefer. The topic is common for all the locations, as well as the conditions for hacking we will provide. ',
-            },
-            {
-              question: 'How big can my team be?',
-              answer:
-                'Teams can be anywhere from two to four members. All members must register and RSVP for the event.',
-            },
-            {
-              question: 'Can I get a head start on my hack?',
-              answer:
-                "To ensure a level playing field for all participants, all code and assets must be created during the hackathon. Failure to comply with this rule may result in the offending team's disqualification. Nevertheless, feel free to make plans, create wireframes, and brainstorm ahead to the event.",
-            },
-            {
-              question: 'Can I use external APIs, services, and SDKs?',
-              answer: faqExternal,
+                'Yes, you can definitely join us in the location you prefer. If you miss a location close to you, you can add your own event.',
             },
             {
               question:
-                'Who owns the intellectual property generated during the hackathon?',
-              answer:
-                'What you create is yours. No one else, including Kiwi.com, has the rights to use it outside of the competition.',
+                'In order to participate, do I need to stay for the whole 24 hours?',
+              answer: 'It depends on each hackathon.',
             },
             {
-              question: "What if I don't know how to code?",
-              answer:
-                'You are still welcome! As long as you come willing to learn and ready to contribute ideas, you can contribute to a team. But your team must have at least one developer because you will be evaluated on the technical solution of a demo you deliver in those 24 hours.',
+              question: 'Can I get support to travel to a hackathon?',
+              answer: descriptionSupport,
             },
             {
-              question: 'What are the demos like?',
+              question: 'Who can organise a hackathon?',
               answer:
-                "You'll have 180 seconds to pitch your idea and demo to a panel of judges. You'll be provided with AV support, a microphone, and a projector. The specific criteria of the evaluation process will be presented during August 2019. What we know for sure is that one of the criteria would be the technical solution, please, make sure that at least one of your team member can code.",
+                'Anyone who wants to. For example, you might be a member of a hackerspace or a local meetup organiser who wants to become a part of a global event.',
             },
+
+            {
+              question:
+                'What support do the independently organized hackathons get?',
+              answer:
+                'We’re running a global campaign promoting the whole initiative. Additionally, the winner of your hackathon will get the chance to win the main prize – 4,000 € in travel vouchers and feedback from Kiwi.com engineers.',
+            },
+
             {
               question: 'How can I reach out to the organizers?',
               answer:
@@ -344,8 +336,8 @@ const IndexPage = () => {
           rightSectionHeading="Get involved"
           rightSectionDescription={
             <>
-              Do you want to join us as Global Hackathon Ambassador, Partner or
-              Volunteer? Shoot us an e-mail at{' '}
+              Do you want to join us as a Global Hackathon Ambassador, Partner
+              or Volunteer? Shoot us an e-mail at{' '}
               <TextLink href="mailto:globalhack@kiwi.com">
                 globalhack@kiwi.com
               </TextLink>
@@ -383,7 +375,7 @@ const IndexPage = () => {
           patterns={[joinUsPattern, joinUsPattern]}
         />
         <Footer
-          shareTitle="Share us with your friends"
+          shareTitle="Share the event with your friends"
           shareLinks={[
             {
               icon: <Facebook />,
