@@ -91,7 +91,7 @@ const IndexPage = () => {
   return (
     <OrbitLanding>
       <StyledWrapper>
-        <Seo title="Home" />
+        <Seo title="Global Hackathon by Kiwi.com" />
         <HeroCentered
           backgroundImage={heroImg2}
           heroImage={heroSvg}
