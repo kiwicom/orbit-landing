@@ -168,7 +168,7 @@ const IndexPage = () => {
               logo: logo,
               onClick: () => {
                 window.open(
-                  'https://www.eventbrite.com/e/global-travel-hackathon-barcelona-edition-tickets-68004219451',
+                  'https://www.eventbrite.com/e/global-travel-hackathon-barcelona-edition-tickets-68004219451?aff=BCNwebregistration',
                   '_blank',
                 );
               },
@@ -253,7 +253,7 @@ const IndexPage = () => {
         />
         <Mission
           id="about"
-          category="Join us in"
+          category=""
           title="Join us in making travel better "
           subTitle="by travellers, for travellers"
           description={
@@ -306,19 +306,29 @@ const IndexPage = () => {
           title="Prizes"
           description={
             <>
-              The winning team of each location is invited to{' '}
-              <b>participate in a global round</b>,
-              <br /> in which top Kiwi.com developers and managers choose the
-              project they like the best.
+              The winning project of each location is invited to{' '}
+              <b>send a demo for a global round</b>,
+              <br /> in which top Kiwi.com developers and managers choose <br />{' '}
+              the winner of the global prize. This round is 100% remote, more
+              information will be provided soon.
               <br /> The global prize is:
             </>
           }
           prizes={[
-            { place: 1, prize: '4,000 € in Kiwi.com travel vouchers' },
-            { place: 2, prize: 'A weekend in Prague for the whole team' },
+            {
+              place: 1,
+              prize: 'In Kiwi.com travel vouchers',
+              title: '4,000 €',
+            },
+            {
+              place: 2,
+              prize: 'A weekend in Prague for the whole team',
+              title: 'Weekend',
+            },
             {
               place: 3,
               prize: 'Feedback session with top Kiwi.com developers',
+              title: 'Feedback',
             },
           ]}
           infoText={
@@ -334,7 +344,7 @@ const IndexPage = () => {
               Schedule for <br /> Kiwi.com hackathons
             </>
           }
-          content="We begin on Friday, 27 September and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long. Please note that for some hackathons, the schdule might differ. Check the event website."
+          content="We begin on Friday, 27 September and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long. Please note that for some hackathons, the schedule might differ. Check the event website."
           items={[
             { time: '8.09.', title: 'Application deadline' },
             { time: '14.09', title: 'Confirmation of attendees' },
