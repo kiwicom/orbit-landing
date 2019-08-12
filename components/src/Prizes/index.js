@@ -50,7 +50,7 @@ const PrizesWrapper = styled.div`
 `;
 
 const PrizeBoxWrapper = styled.div`
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   margin: 0 1.26vw;
   position: relative;
   width: 100%;
@@ -93,19 +93,25 @@ const HeadingWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.26vw;
+  justify-content: center;
+  /* margin-bottom: 1.26vw; */
+  height: 100%;
+  padding: 8px;
+  box-sizing: content-box;
 `;
 
 const Prize = styled.span`
-  color: ${({ theme }) => theme.orbit.colorTextWarning};
+  /* color: ${({ theme }) => theme.orbit.colorTextWarning}; */
+  /* text-align: center;
+  line-height: 1.4; */
 
-  &::after {
+  /* &::after {
     content: '*';
     position: relative;
     top: -12px;
     left: 4px;
     font-size: 24px;
-  }
+  } */
 `;
 
 Prize.defaultProps = {
@@ -163,7 +169,7 @@ const Prizes = ({ title, description, prizes, infoText, id }) => {
           desktop={{ basis: '80%', spacing: 'none' }}
           grow={false}
         >
-          {prizes.map(({ place, prize }, index) => {
+          {prizes.map(({ place, prize, title }, index) => {
             return (
               <PrizeBoxWrapper key={index} place={place}>
                 <PrizeBox place={place}>
@@ -177,14 +183,13 @@ const Prizes = ({ title, description, prizes, infoText, id }) => {
                     pattern={place === 1 ? PatternTop2 : PatternTop}
                   />
                   <HeadingWrapper>
-                    <Heading type="title3" element="h3">
-                      {place}st
+                    <Heading type="title4" element="h3" spaceAfter="small">
+                      {title}
                     </Heading>
-                    <Text type="secondary">place</Text>
+                    <Text type="secondary" align="center">
+                      {prize}
+                    </Text>
                   </HeadingWrapper>
-                  <Heading type="title3" element="h4">
-                    <Prize>{prize}</Prize>
-                  </Heading>
                 </PrizeBox>
                 <StyledPattern
                   width="7.05vw"
