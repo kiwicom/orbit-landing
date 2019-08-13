@@ -36,7 +36,7 @@ const FooterWrapper = styled.div`
   box-sizing: border-box;
 
   ${media.largeMobile(css`
-    border-radius: 0 0 0 0;
+    border-radius: 0;
   `)};
 `;
 
@@ -52,6 +52,7 @@ const Logo = styled.img`
   height: 3.16vw;
   min-height: 40px;
 `;
+
 
 const Footer = ({ shareTitle, shareLinks, navigationLinks }) => {
   return (
@@ -84,6 +85,7 @@ const Footer = ({ shareTitle, shareLinks, navigationLinks }) => {
               </StyledText>
             </Hide>
             {shareLinks.map((el, i) => {
+              console.log(el.icon)
               return (
                 <ButtonLink
                   key={i}
