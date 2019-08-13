@@ -220,7 +220,7 @@ LocationsWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const LocationTile = ({
+const LocationCard = ({
   eventName,
   location,
   logo,
@@ -276,7 +276,7 @@ const Locations = ({
             <LocationsWrapper>
               {locations.map((el, i) => {
                 return (
-                  <LocationTile
+                  <LocationCard
                     key={i}
                     eventName={el.eventName}
                     location={el.location}
