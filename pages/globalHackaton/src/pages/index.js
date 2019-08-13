@@ -96,7 +96,7 @@ const IndexPage = () => {
           backgroundImage={heroImg2}
           heroImage={heroSvg}
           actions={
-            <Stack justify="center" grow={false}>
+            <Stack justify="center" grow={false}  direction="column" align="center" tablet={{ direction: "row", align: "center"}}>
               <Button
                 href="#locations"
                 onClick={() => {
@@ -225,7 +225,8 @@ const IndexPage = () => {
                   expand the list by adding your event.
                 </div>
                 <Button
-                  type="secondary"
+                  type="primary"
+                  bordered
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfiqeXYsVUS5Q17QZT5GB4botBn-BKU2hzkOjlFxRJVfewdxA/viewform"
                   external
                 >

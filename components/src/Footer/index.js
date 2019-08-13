@@ -36,7 +36,7 @@ const FooterWrapper = styled.div`
   box-sizing: border-box;
 
   ${media.largeMobile(css`
-    border-radius: 0 12px 0 0;
+    border-radius: 0 0 0 0;
   `)};
 `;
 
