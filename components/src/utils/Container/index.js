@@ -10,6 +10,7 @@ const StyledContainer = styled.div`
   max-width: 1920px;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 
   ${({ noSpacing }) =>
     !noSpacing &&
