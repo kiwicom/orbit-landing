@@ -96,7 +96,7 @@ const IndexPage = () => {
           backgroundImage={heroImg2}
           heroImage={heroSvg}
           actions={
-            <Stack justify="center" grow={false}>
+            <Stack justify="center" grow={false}  direction="column" align="center" tablet={{ direction: "row", align: "center"}}>
               <Button
                 href="#locations"
                 onClick={() => {
@@ -225,7 +225,8 @@ const IndexPage = () => {
                   expand the list by adding your event.
                 </div>
                 <Button
-                  type="secondary"
+                  type="primary"
+                  bordered
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfiqeXYsVUS5Q17QZT5GB4botBn-BKU2hzkOjlFxRJVfewdxA/viewform"
                   external
                 >
@@ -461,19 +462,19 @@ const IndexPage = () => {
           shareTitle="Share the event with your friends"
           shareLinks={[
             {
-              icon: <Facebook />,
+              icon: <Facebook customColor="#fff"/>,
               title: 'Facebook',
               href:
                 'http://www.facebook.com/sharer/sharer.php?u=https://hack.travel',
             },
             {
-              icon: <Twitter />,
+              icon: <Twitter customColor="#fff"/>,
               title: 'Twitter',
               href:
                 'https://twitter.com/share?url=https://hack.travel&text=Hack the travel and discover the world from a whole new perspective. #HackTravel',
             },
             {
-              icon: <Linkedin />,
+              icon: <Linkedin customColor="#fff"/>,
               title: 'Linkedin',
               href:
                 'https://www.linkedin.com/shareArticle?url=https://hack.travel&title=Global Travel Hackaton by Kiwi.com',

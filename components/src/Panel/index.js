@@ -18,7 +18,7 @@ const Panel = ({ items }) => {
     <Container noSpacing>
       <StyledMainContent>
         <Grid
-          rows="repeat(3,  1fr)"
+          rows="repeat(auto-fit,  minmax(100px, 1fr))"
           tablet={{ columns: 'repeat(3,  1fr)', rows: 'none' }}
           columns={null}
           gap="6vw"

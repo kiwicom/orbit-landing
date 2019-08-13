@@ -14,6 +14,7 @@ import Container from '../utils/Container';
 import Pattern from '../utils/Pattern';
 import pattern02 from '../../static/pattern02.svg';
 import pattern09 from '../../static/pattern09.svg';
+import patternImage from "../../static/pattern06.svg"
 import defaultTheme from '../defaultTheme';
 
 const StyledImage = styled.div`
@@ -118,6 +119,9 @@ const Mission = ({
 }) => {
   return (
     <Container id={id}>
+      <Hide on={['smallMobile', 'mediumMobile', 'largeMobile']}>
+        <Pattern pattern={patternImage} width="7vw" height="6vw" top="20px" left="20px" />
+      </Hide>
       <StyledSpace>
         <MissionTitle
           sideImage={sideImage}

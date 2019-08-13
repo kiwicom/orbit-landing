@@ -13,6 +13,9 @@ import PatternTop from '../../static/pattern06.svg';
 import PatternTop2 from '../../static/pattern08.svg';
 import PatternBottom from '../../static/pattern07.svg';
 import defaultTheme from '../defaultTheme';
+import Pattern from '../utils/Pattern';
+import patternImage from "../../static/pattern01.svg"
+import Hide from '@kiwicom/orbit-components/lib/Hide';
 
 function prizeBoxOrder(place) {
   if (place === 1) {
@@ -150,6 +153,9 @@ InfoTextInnerWrapper.defaultProps = {
 const Prizes = ({ title, description, prizes, infoText, id }) => {
   return (
     <Container id={id}>
+      <Hide on={['smallMobile', 'mediumMobile', 'largeMobile']}>
+        <Pattern pattern={patternImage} width="7vw" height="6vw" top="4px" left="10px" />
+      </Hide>
       <Stack direction="column" spaceAfter="largest">
         <Heading type="title1" element="h2">
           {title}
