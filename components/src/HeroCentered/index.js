@@ -3,9 +3,10 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
-import Pattern from '../utils/Pattern';
-import patternImage from "../../static/pattern01.svg"
 import Hide from '@kiwicom/orbit-components/lib/Hide';
+
+import Pattern from '../utils/Pattern';
+import patternImage from '../../static/pattern01.svg';
 import defaultTheme from '../defaultTheme';
 
 const StyledHero = styled.div`
@@ -26,10 +27,10 @@ const StyledHero = styled.div`
   `)};
 
   &:before {
-    content: "";
+    content: '';
     width: 100%;
     height: 20%;
-    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
     position: absolute;
     bottom: 0;
     left: 0;
@@ -99,7 +100,13 @@ const Hero = ({ backgroundImage, heroImage, navBar, actions }) => {
         </StackWrapper>
       </StyledStack>
       <Hide on={['smallMobile', 'mediumMobile', 'largeMobile']}>
-        <Pattern pattern={patternImage} width="7vw" height="6vw" bottom="0" left="0" />
+        <Pattern
+          pattern={patternImage}
+          width="7vw"
+          height="6vw"
+          bottom="0"
+          left="0"
+        />
       </Hide>
     </StyledHero>
   );

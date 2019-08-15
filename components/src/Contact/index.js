@@ -6,14 +6,13 @@ import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
+import Hide from '@kiwicom/orbit-components/lib/Hide';
 
 import defaultTheme from '../defaultTheme';
 import Container from '../utils/Container';
-
 import Pattern from '../utils/Pattern';
-import patternImage from "../../static/pattern06.svg"
-import patternImage2 from "../../static/pattern09.svg"
-import Hide from '@kiwicom/orbit-components/lib/Hide';
+import patternImage from '../../static/pattern06.svg';
+import patternImage2 from '../../static/pattern09.svg';
 
 const Half = styled.div`
   flex-basis: 100%;
@@ -37,8 +36,20 @@ const Timeline = ({
   return (
     <Container id={id}>
       <Hide on={['smallMobile', 'mediumMobile', 'largeMobile']}>
-        <Pattern pattern={patternImage} width="7vw" height="6vw" top="20px" left="20px" />
-        <Pattern pattern={patternImage2} width="7vw" height="6vw" right="0px" top="0"/>
+        <Pattern
+          pattern={patternImage}
+          width="7vw"
+          height="6vw"
+          top="20px"
+          left="20px"
+        />
+        <Pattern
+          pattern={patternImage2}
+          width="7vw"
+          height="6vw"
+          right="0px"
+          top="0"
+        />
       </Hide>
       <Stack spacing="extraLoose">
         <Heading type="title1" element="h2">

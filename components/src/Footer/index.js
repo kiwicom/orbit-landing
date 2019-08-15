@@ -53,7 +53,6 @@ const Logo = styled.img`
   min-height: 40px;
 `;
 
-
 const Footer = ({ shareTitle, shareLinks, navigationLinks }) => {
   return (
     <StyledFooter>
@@ -85,7 +84,6 @@ const Footer = ({ shareTitle, shareLinks, navigationLinks }) => {
               </StyledText>
             </Hide>
             {shareLinks.map((el, i) => {
-              console.log(el.icon)
               return (
                 <ButtonLink
                   key={i}

@@ -26,8 +26,6 @@ import OrbitLanding from '@kiwicom/orbit-landing-components/src/OrbitLanding';
 
 import Seo from '../components/seo';
 // Images
-import logo from '../images/kiwi.svg';
-import logoSab from '../images/sab.png';
 import heroPattern from '../images/pattern04.svg';
 import heroImg2 from '../images/hero02.jpg';
 import heroSvg from '../images/hero2.svg';
@@ -46,10 +44,7 @@ import joinUsPattern from '../images/pattern03.svg';
 import icAccessibility from '../images/ic-accessibility.svg';
 import icGlobe from '../images/ic-globe.svg';
 import icTopic from '../images/ic-topic.svg';
-import evBrno from '../images/ev-brno.jpg';
-import evBarcelona from '../images/ev-barcelona.jpg';
-import evZagreb from '../images/ev-zagreb.jpg';
-import evLjublana from '../images/ev-ljublana.jpg';
+import locationList from '../locations';
 
 const images = [
   grid01,
@@ -96,7 +91,13 @@ const IndexPage = () => {
           backgroundImage={heroImg2}
           heroImage={heroSvg}
           actions={
-            <Stack justify="center" grow={false}  direction="column" align="center" tablet={{ direction: "row", align: "center"}}>
+            <Stack
+              justify="center"
+              grow={false}
+              direction="column"
+              align="center"
+              tablet={{ direction: 'row', align: 'center' }}
+            >
               <Button
                 href="#locations"
                 onClick={() => {
@@ -147,10 +148,6 @@ const IndexPage = () => {
                   title: 'Contact',
                   href: '#contact',
                 },
-                {
-                  title: 'Sponsors',
-                  href: '#sponsors',
-                },
               ]}
             />
           }
@@ -160,53 +157,7 @@ const IndexPage = () => {
           title="Hack travel and make it smarter, sustainable and accessible for
           everyone."
           pattern={heroPattern}
-          locations={[
-            {
-              backgroundImage: evBarcelona,
-              eventName: 'Register',
-              location: 'Barcelona',
-              logo: logo,
-              onClick: () => {
-                window.open(
-                  'https://www.eventbrite.com/e/global-travel-hackathon-barcelona-edition-tickets-68004219451?aff=BCNwebregistration',
-                  '_blank',
-                );
-              },
-            },
-            {
-              backgroundImage: evZagreb,
-              eventName: 'Register',
-              location: 'Zagreb',
-              logo: logo,
-              onClick: () => {
-                window.open(
-                  'https://www.eventbrite.com/e/global-travel-hackathon-zagreb-edition-tickets-68284911007?aff=ZGRBwebregistration',
-                  '_blank',
-                );
-              },
-            },
-            {
-              backgroundImage: evLjublana,
-              eventName: 'Register',
-              location: 'Belgrade',
-              logo: logo,
-              onClick: () => {
-                window.open(
-                  'https://www.eventbrite.com/e/global-travel-hackathon-belgrade-edition-tickets-68284501783?aff=BLGwebregistration',
-                  '_blank',
-                );
-              },
-            },
-            {
-              backgroundImage: evBrno,
-              eventName: 'Register',
-              location: 'Brno',
-              logo: logoSab,
-              onClick: () => {
-                window.open('http://www.czechspaceyear.com/coha/', '_blank');
-              },
-            },
-          ]}
+          locations={locationList}
           locationsHeading="Choose event you want to attend"
         />
         <Timeline
@@ -462,19 +413,19 @@ const IndexPage = () => {
           shareTitle="Share the event with your friends"
           shareLinks={[
             {
-              icon: <Facebook customColor="#fff"/>,
+              icon: <Facebook customColor="#fff" />,
               title: 'Facebook',
               href:
                 'http://www.facebook.com/sharer/sharer.php?u=https://hack.travel',
             },
             {
-              icon: <Twitter customColor="#fff"/>,
+              icon: <Twitter customColor="#fff" />,
               title: 'Twitter',
               href:
                 'https://twitter.com/share?url=https://hack.travel&text=Hack the travel and discover the world from a whole new perspective. #HackTravel',
             },
             {
-              icon: <Linkedin customColor="#fff"/>,
+              icon: <Linkedin customColor="#fff" />,
               title: 'Linkedin',
               href:
                 'https://www.linkedin.com/shareArticle?url=https://hack.travel&title=Global Travel Hackaton by Kiwi.com',

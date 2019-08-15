@@ -8,16 +8,14 @@ import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Hide from '@kiwicom/orbit-components/lib/Hide';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
 
+import RouteNoStops from '../../static/arrow-right.svg';
+import LocationCard from '../LocationsCard';
 import Pattern from '../utils/Pattern';
 import defaultTheme from '../defaultTheme';
 
 const StyledLocations = styled.div`
   position: relative;
 `;
-
-StyledLocations.defaultProps = {
-  theme: defaultTheme,
-};
 
 const StyledStack = styled.div`
   display: flex;
@@ -95,100 +93,6 @@ StyledTypoSection.defaultProps = {
   theme: defaultTheme,
 };
 
-const StyledTile = styled.div`
-  width: 100%;
-  height: 18vw;
-  /* max-width: 260px; */
-  min-width: 180px;
-  max-height: 360px;
-  min-height: 200px;
-  border-radius: 12px;
-  position: relative;
-  overflow: hidden;
-  padding: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
-  box-sizing: content-box;
-  cursor: pointer;
-
-  ${media.desktop(
-    css`
-      display: block;
-    `,
-  )}
-
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    filter: grayscale(100%) brightness(50%);
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: ${({ theme }) => theme.orbit.paletteProductNormal};
-    z-index: 0;
-    opacity: 0;
-    transition: 150ms;
-  }
-
-  &:hover:before {
-    opacity: 0.3;
-  }
-`;
-
-StyledTile.defaultProps = {
-  theme: defaultTheme,
-};
-
-const StyledLogo = styled.div`
-  background-image: ${({ logo }) => `url(${logo})`};
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 80px;
-  height: 40px;
-  position: absolute;
-  right: 0;
-  top: 0;
-`;
-
-const StyledTileContent = styled.div`
-  z-index: 1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
-`;
-
-StyledTile.defaultProps = {
-  theme: defaultTheme,
-};
-
-const TileHeading = styled.div`
-  font-size: ${({ theme }) => theme.orbit.fontSizeHeadingTitle3};
-  font-family: ${({ theme }) => theme.orbit.fontFamily};
-  font-weight: 800;
-  color: #fff;
-`;
-
-TileHeading.defaultProps = {
-  theme: defaultTheme,
-};
-
 const LocationsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -220,31 +124,6 @@ LocationsWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const LocationCard = ({
-  eventName,
-  location,
-  logo,
-  backgroundImage,
-  hide,
-  onClick,
-}) => {
-  return (
-    <StyledTile hide={hide} backgroundImage={backgroundImage} onClick={onClick}>
-      <StyledTileContent>
-        <StyledLogo logo={logo} />
-        <Stack spacing="none">
-          <Text type="white" size="large">
-            {eventName}
-          </Text>
-          <TileHeading type="white" size="large" inverted weight="bold">
-            {location}
-          </TileHeading>
-        </Stack>
-      </StyledTileContent>
-    </StyledTile>
-  );
-};
-
 const Locations = ({
   id,
   title,
@@ -253,6 +132,10 @@ const Locations = ({
   locations,
   locationsHeading,
 }) => {
+  const featuredLocations = locations.filter(val => {
+    return !!val.featured;
+  });
+
   return (
     <StyledLocations id={id}>
       <StyledTypoSection img={backgroundImage}>
@@ -274,18 +157,44 @@ const Locations = ({
               </Text>
             </Wrapper>
             <LocationsWrapper>
-              {locations.map((el, i) => {
-                return (
+              {locations.length > 4 ? (
+                <>
+                  {featuredLocations.slice(0, 3).map((el, i) => {
+                    return (
+                      <LocationCard
+                        key={i}
+                        eventName={el.eventName}
+                        location={el.location}
+                        logo={el.logo}
+                        onClick={el.onClick}
+                        backgroundImage={el.backgroundImage}
+                      />
+                    );
+                  })}
                   <LocationCard
-                    key={i}
-                    eventName={el.eventName}
-                    location={el.location}
-                    logo={el.logo}
-                    onClick={el.onClick}
-                    backgroundImage={el.backgroundImage}
+                    logo={RouteNoStops}
+                    eventName="See another"
+                    location={`${locations.length - 3} events`}
+                    onClick={() => {
+                      window.location.href = '/locations/';
+                    }}
+                    backgroundColor="#00A991"
                   />
-                );
-              })}
+                </>
+              ) : (
+                featuredLocations.map((el, i) => {
+                  return (
+                    <LocationCard
+                      key={i}
+                      eventName={el.eventName}
+                      location={el.location}
+                      logo={el.logo}
+                      onClick={el.onClick}
+                      backgroundImage={el.backgroundImage}
+                    />
+                  );
+                })
+              )}
             </LocationsWrapper>
           </Stack>
         )}
