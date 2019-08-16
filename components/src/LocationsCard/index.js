@@ -105,7 +105,7 @@ const StyledLogo = styled.div`
   background-image: ${({ logo }) => `url(${logo})`};
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: right;
   width: 80px;
   height: 40px;
   position: absolute;
