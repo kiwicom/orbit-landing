@@ -198,12 +198,12 @@ const IndexPage = () => {
             },
             {
               time: 'Asia',
-              title: 'Moscow, Russia; Tel Aviv, Israel; Pune, India; Hong Kong, Hong Kong; Taiwan, Taiwan; Eskişehir, Turkey; Delhi, India; Chandigarh, India; Bangkok, Thailand; Ahmedabad, India; Greater Noida, India; Delhi NCR, India; Bangalore, India; Chennai, India; Jaipur, India',
+              title:
+                'Moscow, Russia; Tel Aviv, Israel; Pune, India; Hong Kong, Hong Kong; Taiwan, Taiwan; Eskişehir, Turkey; Delhi, India; Chandigarh, India; Bangkok, Thailand; Ahmedabad, India; Greater Noida, India; Delhi NCR, India; Bangalore, India; Chennai, India; Jaipur, India',
             },
             {
               time: 'Africa',
-              title:
-                'Lagos , Nigeria; Abuja, Nigeria',
+              title: 'Lagos , Nigeria; Abuja, Nigeria',
             },
           ]}
         />
@@ -217,8 +217,8 @@ const IndexPage = () => {
               At Kiwi.com, we care. We love the world of travel, but we’re aware
               of its dark side. That’s why we’re inviting everyone to{' '}
               <b>
-                help us reshape the way we travel 
-                to make it smarter, sustainable and accessible for everyone.
+                help us reshape the way we travel to make it smarter,
+                sustainable and accessible for everyone.
               </b>{' '}
               <br />
               <br />
@@ -239,8 +239,7 @@ const IndexPage = () => {
             {
               title: 'Sustainability',
               content:
-                'Do you have an idea on how to make travel more responsible? How to deal with mass tourism or how to support local economies, and opt for sustainable activities? Maybe you will have the right idea that will help the world of travellers leave a place better than they found it.
-Join us to make travel sustainable and bearable for everyone!',
+                'Do you have an idea on how to make travel more responsible? How to deal with mass tourism or how to support local economies, and opt for sustainable activities? Maybe you will have the right idea that will help the world of travellers leave a place better than they found it. Join us to make travel sustainable and bearable for everyone!',
               img: icGlobe,
             },
             {
@@ -252,7 +251,7 @@ Join us to make travel sustainable and bearable for everyone!',
             {
               title: 'Community',
               content:
-                "A growing number of travellers are increasingly interested in unique and authentic experiences and willing to pay extra for these, primarily if it benefits local communities. Safety, sustainability, and interaction with local people are essential to them. Help us connect the unconnected. Bring your ideas and let tourism become a tool for offline community development.",
+                'A growing number of travellers are increasingly interested in unique and authentic experiences and willing to pay extra for these, primarily if it benefits local communities. Safety, sustainability, and interaction with local people are essential to them. Help us connect the unconnected. Bring your ideas and let tourism become a tool for offline community development.',
               img: icTopic,
             },
           ]}
@@ -265,9 +264,9 @@ Join us to make travel sustainable and bearable for everyone!',
             <>
               The winning project of each location will be invited to{' '}
               <b>send a demo for a global round</b>,
-              <br /> in which top Kiwi.com developers and managers choose{' '}
-              the winner of the global prize. <br />This round is 100% remote, more
-              information will be provided soon.
+              <br /> in which top Kiwi.com developers and managers choose the
+              winner of the global prize. <br />
+              This round is 100% remote, more information will be provided soon.
               <br /> The global prize is:
             </>
           }
