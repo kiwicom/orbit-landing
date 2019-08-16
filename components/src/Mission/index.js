@@ -14,7 +14,7 @@ import Container from '../utils/Container';
 import Pattern from '../utils/Pattern';
 import pattern02 from '../../static/pattern02.svg';
 import pattern09 from '../../static/pattern09.svg';
-import patternImage from "../../static/pattern06.svg"
+import patternImage from '../../static/pattern06.svg';
 import defaultTheme from '../defaultTheme';
 
 const StyledImage = styled.div`
@@ -29,7 +29,7 @@ const StyledImage = styled.div`
   border-radius: 12px;
   display: none !important;
 
-  ${media.largeMobile(css`
+  ${media.tablet(css`
     display: block !important;
   `)};
 `;
@@ -63,7 +63,7 @@ const MissionTitle = ({
 }) => {
   return (
     <Container noSpacing>
-      <Grid columns="100%" largeMobile={{ columns: '70% auto' }}>
+      <Grid columns="100%" tablet={{ columns: '70% auto' }}>
         <StyledMainContent>
           <Stack spacing="condensed">
             <Text type="warning">{category}</Text>
@@ -82,7 +82,7 @@ const MissionTitle = ({
         </StyledMainContent>
         <StyledImageWrapper>
           <StyledImage img={sideImage} />
-          <Hide on={['smallMobile', 'mediumMobile']}>
+          <Hide on={['smallMobile', 'mediumMobile', 'largeMobile']}>
             <Pattern
               pattern={pattern02}
               width="68px"
@@ -120,7 +120,13 @@ const Mission = ({
   return (
     <Container id={id}>
       <Hide on={['smallMobile', 'mediumMobile', 'largeMobile']}>
-        <Pattern pattern={patternImage} width="7vw" height="6vw" top="20px" left="20px" />
+        <Pattern
+          pattern={patternImage}
+          width="7vw"
+          height="6vw"
+          top="20px"
+          left="20px"
+        />
       </Hide>
       <StyledSpace>
         <MissionTitle

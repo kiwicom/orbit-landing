@@ -18,7 +18,6 @@ function requireAll(requireContext) {
 
 function loadStories() {
   const req = require.context("../src", true, /.stories.js$/);
-  console.log(req);
   req.keys().forEach(req);
 }
 
