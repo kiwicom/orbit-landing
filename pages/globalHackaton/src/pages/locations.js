@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import './reset.css';
 import styled from 'styled-components';
 // Components
@@ -12,10 +12,9 @@ import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Text from '@kiwicom/orbit-components/lib/Text';
 
 import Seo from '../components/seo';
-import locations from '../locations';
+import locations from '../locationsList';
 
 // Images
-
 const StyledWrapper = styled.div`
   background-color: #f5f7f9;
   width: 100%;
@@ -26,16 +25,16 @@ const StyledWrapper = styled.div`
 `;
 
 const IndexPage = () => {
-  // function gtag() {
-  //   // eslint-disable-next-line no-undef
-  //   dataLayer.push(arguments);
-  // }
+  function gtag() {
+    // eslint-disable-next-line no-undef
+    dataLayer.push(arguments);
+  }
 
-  // useEffect(() => {
-  //   window.dataLayer = window.dataLayer || [];
-  //   gtag('js', new Date());
-  //   gtag('config', 'UA-29345084-23');
-  // });
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    gtag('js', new Date());
+    gtag('config', 'UA-29345084-23');
+  });
 
   return (
     <OrbitLanding>
@@ -66,6 +65,7 @@ const IndexPage = () => {
                   inverted
                   key={el.location + i}
                   href={el.href}
+                  external
                   eventName={el.eventName}
                   location={el.location}
                   logo={el.logoDark}

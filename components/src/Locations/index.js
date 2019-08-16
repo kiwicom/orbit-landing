@@ -163,6 +163,8 @@ const Locations = ({
                     return (
                       <LocationCard
                         key={i}
+                        href={el.href}
+                        external
                         eventName={el.eventName}
                         location={el.location}
                         logo={el.logo}
@@ -175,9 +177,7 @@ const Locations = ({
                     logo={RouteNoStops}
                     eventName=""
                     location={`See all events`}
-                    onClick={() => {
-                      window.location.href = '/locations/';
-                    }}
+                    href="/locations/"
                     backgroundColor="#00A991"
                   />
                 </>

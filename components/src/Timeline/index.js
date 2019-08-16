@@ -44,6 +44,15 @@ StyledTimeline.defaultProps = {
   theme: defaultTheme,
 };
 
+const StyledContentContainer = styled.div`
+  font-family: ${({ theme }) => theme.orbit.fontFamily};
+  font-size: ${({ theme }) => theme.orbit.fontSizeTextLarge};
+`;
+
+StyledContentContainer.defaultProps = {
+  theme: defaultTheme,
+};
+
 const Timeline = ({ id, title, content, items, theme, background }) => {
   return (
     <StyledTimeline
@@ -64,7 +73,9 @@ const Timeline = ({ id, title, content, items, theme, background }) => {
             {title}
           </Heading>
           <Wrapper>
-            <Text size="large">{content}</Text>
+            <StyledContentContainer size="large">
+              {content}
+            </StyledContentContainer>
           </Wrapper>
           <Stack spacing="comfy">
             {items.map((el, i) => {

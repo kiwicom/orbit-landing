@@ -16,7 +16,7 @@ StyledLocations.defaultProps = {
   theme: defaultTheme,
 };
 
-const StyledTile = styled.div`
+const StyledTile = styled.a`
   width: ${({ condensed }) => (condensed ? 'auto' : '100%')};
   height: 18vw;
   min-width:${({ condensed }) => (condensed ? 'none' : '180px')} ;
@@ -28,6 +28,9 @@ const StyledTile = styled.div`
   padding: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
   box-sizing: content-box;
   cursor: pointer;
+  text-decoration: none;
+
+
 
   ${media.desktop(
     css`
@@ -150,25 +153,21 @@ const LocationCard = ({
   logo,
   backgroundImage,
   hide,
-  onClick,
   href,
   inverted,
   backgroundColor,
+  external,
 }) => {
   return (
     <StyledTile
       hide={hide}
       backgroundImage={backgroundImage}
-      onClick={e => {
-        if (onClick) {
-          onClick(e);
-        } else if (href) {
-          window.open(href, '_blank');
-        }
-      }}
       condensed={condensed}
       inverted={inverted}
       backgroundColor={backgroundColor}
+      href={href}
+      target={href && external ? '_blank' : undefined}
+      rel={href && external ? 'noopener noreferrer' : undefined}
     >
       <StyledTileContent>
         <StyledLogo logo={logo} />

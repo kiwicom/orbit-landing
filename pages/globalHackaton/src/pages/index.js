@@ -44,7 +44,7 @@ import joinUsPattern from '../images/pattern03.svg';
 import icAccessibility from '../images/ic-accessibility.svg';
 import icGlobe from '../images/ic-globe.svg';
 import icTopic from '../images/ic-topic.svg';
-import locationList from '../locations';
+import locationList from '../locationsList';
 
 const images = [
   grid01,
