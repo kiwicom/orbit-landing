@@ -9,6 +9,7 @@ import OrbitLanding from '@kiwicom/orbit-landing-components/src/OrbitLanding';
 import LocationCard from '@kiwicom/orbit-landing-components/src/LocationsCard';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
+import Text from '@kiwicom/orbit-components/lib/Text';
 
 import Seo from '../components/seo';
 import locations from '../locations';
@@ -44,6 +45,10 @@ const IndexPage = () => {
           <Heading type="title2" element="h1">
             Register to one of our events
           </Heading>
+          <Text>
+            Celebrate World Tourism Day by attending one of the hackathons on 27
+            September
+          </Text>
           <Grid
             columns="repeat(1, 1fr)"
             gap="2vw"

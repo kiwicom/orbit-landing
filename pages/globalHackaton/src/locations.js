@@ -7,6 +7,7 @@ import evLjublana from './images/ev-ljublana.jpg';
 import logoSab from './images/sab.png';
 import logo from './images/kiwi.svg';
 import logoDark from './images/kiwi-dark.svg';
+import gdg from './images/gdg.png';
 
 const locations = [
   {
@@ -49,11 +50,22 @@ const locations = [
     href: 'http://www.czechspaceyear.com/coha/',
   },
   {
-    eventName: 'Czechia',
-    location: 'Brno',
-    logo: logoSab,
-    logoDark: logoDark,
-    href: 'http://www.czechspaceyear.com/coha/',
+    eventName: 'San José',
+    location: 'Costa Rica',
+    logoDark: gdg,
+    href: 'https://www.meetup.com/gdg-costarica/events/263957102/',
+  },
+  {
+    eventName: 'Chetumal',
+    location: 'Mexico',
+    logoDark: gdg,
+    href: 'https://www.meetup.com/es/GDGChetumal/events/263289321/',
+  },
+  {
+    eventName: 'Strasbourg',
+    location: 'France',
+    logoDark: gdg,
+    href: 'https://voicehackathon.gdgstrasbourg.fr/',
   },
 ];
 
