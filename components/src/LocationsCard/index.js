@@ -155,7 +155,6 @@ const LocationCard = ({
   inverted,
   backgroundColor,
 }) => {
-  console.log(backgroundColor);
   return (
     <StyledTile
       hide={hide}

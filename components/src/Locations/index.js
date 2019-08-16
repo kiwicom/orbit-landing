@@ -173,7 +173,7 @@ const Locations = ({
                   })}
                   <LocationCard
                     logo={RouteNoStops}
-                    eventName="See another"
+                    eventName=""
                     location={`See all events`}
                     onClick={() => {
                       window.location.href = '/locations/';
