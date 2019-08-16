@@ -42,13 +42,16 @@ const IndexPage = () => {
       <StyledWrapper>
         <Seo title="Locations of global hackathon by Kiwi.com" />
         <Stack spacing="loose">
-          <Heading type="title2" element="h1">
-            Register to one of our events
-          </Heading>
-          <Text>
-            Celebrate World Tourism Day by attending one of the hackathons on 27
-            September
-          </Text>
+          <Stack spacing="compact">
+            <Heading type="title2" element="h1">
+              Register to one of Global Travel Hackathon events
+            </Heading>
+            <Text>
+              Celebrate World Tourism Day by attending one of the hackathons on
+              27 September
+            </Text>
+          </Stack>
+
           <Grid
             columns="repeat(1, 1fr)"
             gap="2vw"
