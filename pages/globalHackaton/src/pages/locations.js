@@ -36,7 +36,7 @@ const StyledWrapper = styled.div`
 
 const StyledNavBarWrapper = styled.div`
   background-color: #000;
-  padding: 3rem 0 0rem;
+  padding: 3rem 0;
 `;
 
 const IndexPage = () => {
