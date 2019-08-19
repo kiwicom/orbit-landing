@@ -36,7 +36,7 @@ const StyledWrapper = styled.div`
 
 const StyledNavBarWrapper = styled.div`
   background-color: #000;
-  padding: 2rem 0;
+  padding: 3rem 0;
 `;
 
 const IndexPage = () => {
@@ -58,6 +58,7 @@ const IndexPage = () => {
         <StyledNavBarWrapper>
           <NavBar
             title="#HackTravel"
+            homeLink="/"
             items={[
               {
                 title: 'About',
