@@ -10,7 +10,6 @@ import LocationCard from '@kiwicom/orbit-landing-components/src/LocationsCard';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Text from '@kiwicom/orbit-components/lib/Text';
-
 import Facebook from '@kiwicom/orbit-components/lib/icons/Facebook';
 import Twitter from '@kiwicom/orbit-components/lib/icons/Twitter';
 import Linkedin from '@kiwicom/orbit-components/lib/icons/Linkedin';
@@ -25,8 +24,6 @@ import Seo from '../components/seo';
 import locationList from '../locationsList';
 import heroPattern from '../images/pattern04.svg';
 
-
-
 // Images
 const StyledWrapper = styled.div`
   background-color: #f5f7f9;
@@ -39,9 +36,8 @@ const StyledWrapper = styled.div`
 
 const StyledNavBarWrapper = styled.div`
   background-color: #000;
-  padding: 3rem 0;
+  padding: 3rem 0 0rem;
 `;
-
 
 const IndexPage = () => {
   function gtag() {
@@ -85,15 +81,14 @@ const IndexPage = () => {
         </StyledNavBarWrapper>
         <Locations
           id="locations"
-          title="Celebrate World Tourism Day by attending one of the hackathons on
-          27 September"
+          title="Register to one of Global Travel Hackathon events on 27 September"
           pattern={heroPattern}
           suppressed
         />
         <StyledWrapper>
           <Stack spacing="loose">
-            <Heading type="title3" element="h2">
-              Register to one of Global Travel Hackathon events
+            <Heading type="title4" element="h2">
+              Choose event you want to attend
             </Heading>
             <Grid
               columns="repeat(1, 1fr)"
@@ -150,7 +145,6 @@ const IndexPage = () => {
 
         <Footer />
       </>
-
     </OrbitLanding>
   );
 };
