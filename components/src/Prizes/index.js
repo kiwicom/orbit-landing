@@ -6,6 +6,7 @@ import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import media from '@kiwicom/orbit-components/lib/utils/mediaQuery';
+import Hide from '@kiwicom/orbit-components/lib/Hide';
 
 import Container from '../utils/Container';
 import StyledPattern from '../utils/Pattern';
@@ -14,8 +15,7 @@ import PatternTop2 from '../../static/pattern08.svg';
 import PatternBottom from '../../static/pattern07.svg';
 import defaultTheme from '../defaultTheme';
 import Pattern from '../utils/Pattern';
-import patternImage from "../../static/pattern01.svg"
-import Hide from '@kiwicom/orbit-components/lib/Hide';
+import patternImage from '../../static/pattern01.svg';
 
 function prizeBoxOrder(place) {
   if (place === 1) {
@@ -39,9 +39,9 @@ function prizeBoxAlignment(place) {
 
 function prizeBoxStyle(theme, place) {
   if (place === 1) {
-    return `0px 4px 8px 0px rgba(37, 42, 49, 0.16), 0px 8px 24px 0px rgba(37, 42, 49, 0.24), inset 0px 0px 0px 4px ${theme.orbit.paletteOrangeNormal}`;
+    return `0px 4px 29px 11px rgba(37, 42, 49, 0.14), inset 0px 0px 0px 4px ${theme.orbit.paletteOrangeNormal}`;
   }
-  return `0px 4px 8px 0px rgba(37, 42, 49, 0.16), 0px 8px 24px 0px rgba(37, 42, 49, 0.24)`;
+  return `0px 4px 29px 11px rgba(37, 42, 49, 0.14)`;
 }
 
 const PrizesWrapper = styled.div`
@@ -154,7 +154,13 @@ const Prizes = ({ title, description, prizes, infoText, id }) => {
   return (
     <Container id={id}>
       <Hide on={['smallMobile', 'mediumMobile', 'largeMobile']}>
-        <Pattern pattern={patternImage} width="7vw" height="6vw" top="4px" left="10px" />
+        <Pattern
+          pattern={patternImage}
+          width="7vw"
+          height="6vw"
+          top="4px"
+          left="10px"
+        />
       </Hide>
       <Stack direction="column" spaceAfter="largest">
         <Heading type="title1" element="h2">
