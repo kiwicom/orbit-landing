@@ -153,8 +153,7 @@ const IndexPage = () => {
         />
         <Locations
           id="locations"
-          title="Hack travel and make it smarter, sustainable and accessible for
-          everyone."
+          title="Hack travel and make it smarter, sustainable and accessible for everyone."
           pattern={heroPattern}
           locations={locationList}
           locationsHeading="Choose event you want to attend"
@@ -171,8 +170,8 @@ const IndexPage = () => {
               At Kiwi.com, we care. We love the world of travel, but we’re aware
               of its dark side. That’s why we’re inviting everyone to{' '}
               <b>
-                help us reshape the way we travel <br />
-                to make it smarter, sustainable and accessible for everyone.
+                help us reshape the way we travel to make it smarter,
+                sustainable and accessible for everyone.
               </b>{' '}
               <br />
               <br />
@@ -193,19 +192,19 @@ const IndexPage = () => {
             {
               title: 'Sustainability',
               content:
-                'Do you have an idea on how to make travel more responsible? How to deal with mass tourism? Join us to make travel sustainable and bearable for everyone.',
+                'Do you have an idea on how to make travel more responsible? How to deal with mass tourism or how to support local economies, and opt for sustainable activities? Maybe you will have the right idea that will help the world of travellers leave a place better than they found it. Join us to make travel sustainable and bearable for everyone!',
               img: icGlobe,
             },
             {
               title: 'Accessibility',
               content:
-                'How to make travel better for people with disabilities? How to find well-adapted hotel rooms or accessible restaurants? Or how to make travel smoother for travelers flying with their musical instruments, bikes or surfboards? Accessibility can be perceived from different perspectives – help us find the one which will change the world of travel.',
+                'How can we make travel better for people with disabilities? How to find well-adapted hotel rooms or accessible restaurants? Or how to make travel smoother for travellers flying with their musical instruments, bikes or surfboards? Accessibility can be perceived from different perspectives – help us find the one which will change the world of travel.',
               img: icAccessibility,
             },
             {
               title: 'Community',
               content:
-                "How to find one's travel network? How to connect offline communities? Help us connect the unconnected.",
+                'A growing number of travellers are increasingly interested in unique and authentic experiences and willing to pay extra for these, primarily if it benefits local communities. Safety, sustainability, and interaction with local people are essential to them. Help us connect the unconnected. Bring your ideas and let tourism become a tool for offline community development.',
               img: icTopic,
             },
           ]}
@@ -216,11 +215,11 @@ const IndexPage = () => {
           title="Prizes"
           description={
             <>
-              The winning project of each location is invited to{' '}
+              The winning project of each location will be invited to{' '}
               <b>send a demo for a global round</b>,
-              <br /> in which top Kiwi.com developers and managers choose <br />{' '}
-              the winner of the global prize. This round is 100% remote, more
-              information will be provided soon.
+              <br /> in which top Kiwi.com developers and managers choose the
+              winner of the global prize. <br />
+              This round is 100% remote, more information will be provided soon.
               <br /> The global prize is:
             </>
           }
@@ -228,7 +227,7 @@ const IndexPage = () => {
             {
               place: 1,
               prize: 'In Kiwi.com travel vouchers',
-              title: '4,000 €',
+              title: '€ 4,000',
             },
             {
               place: 2,
@@ -258,9 +257,9 @@ const IndexPage = () => {
           suppressed
           content="We begin on Friday, 27 September and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long. Please note that for some hackathons, the schedule might differ. Check the event website."
           items={[
-            { time: '8.09.', title: 'Application deadline' },
-            { time: '14.09', title: 'Confirmation of attendees' },
-            { time: '27.–28.09', title: 'Kiwi.com hackathons' },
+            { time: '8.9.', title: 'Application deadline' },
+            { time: '14.9.', title: 'Confirmation of attendees' },
+            { time: '27–28.9.', title: 'Kiwi.com hackathons' },
           ]}
         />
         <Faq
@@ -303,7 +302,7 @@ const IndexPage = () => {
 
             {
               question:
-                'What support do the independently organized hackathons get?',
+                'What support do the independently-organized hackathons get?',
               answer:
                 'We’re running a global campaign promoting the whole initiative. Additionally, the winner of your hackathon will get the chance to win the main prize – 4,000 € in travel vouchers and feedback from Kiwi.com engineers.',
             },
@@ -345,7 +344,7 @@ const IndexPage = () => {
           title="Join Us"
           descrtiption="Please, fill in your application carefully and thoroughly, we'll be choosing the attendees based on what you write there."
           additionalInformation="We value the participation of each member and we want all
-    attendees to have an enjoying and fulfilling experience."
+    attendees to have an enjoyable and fulfilling experience."
           actions={
             <Button
               href="#locations"
