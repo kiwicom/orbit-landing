@@ -42,7 +42,7 @@ StyledHero.defaultProps = {
 };
 
 const StyledNavBarWrapper = styled.div`
-  padding: 4.2vw 0 0 0;
+  padding: 3vw 0 0 0;
   position: absolute;
   top: 0;
   width: 100%;

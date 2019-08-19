@@ -36,7 +36,7 @@ const TimelineItem = ({ time, title }) => {
 };
 
 const StyledTimeline = styled.div`
-  ${slicedCorner}
+  ${({ hasSlicedCorner }) => hasSlicedCorner && slicedCorner}
   background-color: ${({ backgroundColor }) => backgroundColor};
 `;
 
@@ -53,16 +53,24 @@ StyledContentContainer.defaultProps = {
   theme: defaultTheme,
 };
 
-const Timeline = ({ id, title, content, items, theme, background }) => {
+
+const Timeline = ({
+  id,
+  title,
+  content,
+  items,
+  theme,
+  suppressed,
+  corner = false,
+}) => {
   return (
     <StyledTimeline
       backgroundColor={
-        background === 'white'
-          ? theme.orbit.palleteWhite
-          : theme.orbit.paletteCloudLight
+        suppressed ? theme.orbit.paletteCloudLight : theme.orbit.palleteWhite
       }
+      hasSlicedCorner={corner}
     >
-      <Container id={id} hasSlicedCorner={background !== 'white'}>
+      <Container id={id} hasSlicedCorner={corner}>
         <Stack
           spacing="loose"
           spaceAfter="large"

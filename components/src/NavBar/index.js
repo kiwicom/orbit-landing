@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Hide from '@kiwicom/orbit-components/lib/Hide';
+import TextLink from '@kiwicom/orbit-components/lib/TextLink';
 
 import defaultTheme from '../defaultTheme';
 import logo from '../../static/kiwi-white.svg';
@@ -22,11 +23,16 @@ const StyledText = styled.div`
   font-family: ${({ theme }) => theme.orbit.fontFamily};
   font-size: ${({ theme }) => theme.orbit.fontSizeTextNormal};
   color: #fff;
+  text-decoration: none !important;
 `;
 
 StyledText.defaultProps = {
   theme: defaultTheme,
 };
+
+const StyledAnchor = styled.a`
+  text-decoration: none;
+`;
 
 const StyledLink = styled.a`
   font-family: ${({ theme }) => theme.orbit.fontFamily};
@@ -62,13 +68,17 @@ const Link = ({ children, onClick, href }) => {
   );
 };
 
-const NavBar = ({ items, title }) => {
+const NavBar = ({ items, title, homeLink = '/#' }) => {
   return (
     <StyledMainContent>
       <Stack flex align="center" spacing="none">
         <Stack flex shrink align="center">
-          <StyledImage img={logo} />
-          <StyledText>{title}</StyledText>
+          <StyledAnchor href={homeLink}>
+            <Stack flex align="center">
+              <StyledImage img={logo} />
+              <StyledText>{title}</StyledText>
+            </Stack>
+          </StyledAnchor>
         </Stack>
         <Hide on={['smallMobile', 'mediumMobile', 'largeMobile']}>
           <Stack spacing="loose" flex shrink justify="end">

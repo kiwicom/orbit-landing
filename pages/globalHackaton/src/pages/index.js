@@ -5,10 +5,8 @@ import './reset.css';
 import styled from 'styled-components';
 import Button from '@kiwicom/orbit-components/lib/Button';
 import TextLink from '@kiwicom/orbit-components/lib/TextLink';
-import Facebook from '@kiwicom/orbit-components/lib/icons/Facebook';
-import Twitter from '@kiwicom/orbit-components/lib/icons/Twitter';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
-import Linkedin from '@kiwicom/orbit-components/lib/icons/Linkedin';
+
 // Components
 import Faq from '@kiwicom/orbit-landing-components/src/Faq';
 import NavBar from '@kiwicom/orbit-landing-components/src/NavBar';
@@ -18,12 +16,13 @@ import JoinUs from '@kiwicom/orbit-landing-components/src/JoinUs';
 import Locations from '@kiwicom/orbit-landing-components/src/Locations';
 import HeroCentered from '@kiwicom/orbit-landing-components/src/HeroCentered';
 import Timeline from '@kiwicom/orbit-landing-components/src/Timeline';
-import Footer from '@kiwicom/orbit-landing-components/src/Footer';
 import Sponsors from '@kiwicom/orbit-landing-components/src/Sponsors';
 import Prizes from '@kiwicom/orbit-landing-components/src/Prizes';
 import Contact from '@kiwicom/orbit-landing-components/src/Contact';
 import OrbitLanding from '@kiwicom/orbit-landing-components/src/OrbitLanding';
 
+import Footer from '../components/Footer';
+import NewLocations from '../components/NewLocations';
 import Seo from '../components/seo';
 // Images
 import heroPattern from '../images/pattern04.svg';
@@ -157,56 +156,10 @@ const IndexPage = () => {
           title="Hack travel and make it smarter, sustainable and accessible for everyone."
           pattern={heroPattern}
           locations={locationList}
-          locationsHeading="Choose the event you want to attend"
+          locationsHeading="Choose event you want to attend"
+          suppressed
         />
-        <Timeline
-          id="new-locations"
-          background="white"
-          title="Locations we are working on"
-          content={
-            <>
-              <Stack>
-                <div>
-                  Where else can you expect a hackathon? Check the list below,{' '}
-                  <TextLink href="mailto:globalhack@kiwi.com">
-                    let us know
-                  </TextLink>{' '}
-                  if you want to be a partner or sponsor some of them. Help us
-                  expand the list by adding your event.
-                </div>
-                <Button
-                  type="primary"
-                  bordered
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfiqeXYsVUS5Q17QZT5GB4botBn-BKU2hzkOjlFxRJVfewdxA/viewform"
-                  external
-                >
-                  Add your hackathon
-                </Button>
-              </Stack>
-            </>
-          }
-          items={[
-            {
-              time: 'Europe',
-              title:
-                'Amsterdam, Berlin, Bratislava, Bucharest, Budapest, Edinburgh, London, Tirana, Warsaw, Wien, Zagreb',
-            },
-            {
-              time: 'Americas',
-              title:
-                'New York City, USA; San Jose , Costa Rica; San Juan, Puerto Rico; Rochester, New York; São Paulo, Brazil',
-            },
-            {
-              time: 'Asia',
-              title:
-                'Moscow, Russia; Tel Aviv, Israel; Pune, India; Hong Kong, Hong Kong; Taiwan, Taiwan; Eskişehir, Turkey; Delhi, India; Chandigarh, India; Bangkok, Thailand; Ahmedabad, India; Greater Noida, India; Delhi NCR, India; Bangalore, India; Chennai, India; Jaipur, India',
-            },
-            {
-              time: 'Africa',
-              title: 'Lagos , Nigeria; Abuja, Nigeria',
-            },
-          ]}
-        />
+        <NewLocations />
         <Mission
           id="about"
           category=""
@@ -300,6 +253,8 @@ const IndexPage = () => {
               Schedule for <br /> Kiwi.com hackathons
             </>
           }
+          corner
+          suppressed
           content="We begin on Friday, 27 September and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long. Please note that for some hackathons, the schedule might differ. Check the event website."
           items={[
             { time: '8.9.', title: 'Application deadline' },
@@ -413,33 +368,7 @@ const IndexPage = () => {
           backgroundImage={joinUsImg}
           patterns={[joinUsPattern, joinUsPattern]}
         />
-        <Footer
-          shareTitle="Share the event with your friends"
-          shareLinks={[
-            {
-              icon: <Facebook customColor="#fff" />,
-              title: 'Facebook',
-              href:
-                'http://www.facebook.com/sharer/sharer.php?u=https://hack.travel',
-            },
-            {
-              icon: <Twitter customColor="#fff" />,
-              title: 'Twitter',
-              href:
-                'https://twitter.com/share?url=https://hack.travel&text=Hack the travel and discover the world from a whole new perspective. #HackTravel',
-            },
-            {
-              icon: <Linkedin customColor="#fff" />,
-              title: 'Linkedin',
-              href:
-                'https://www.linkedin.com/shareArticle?url=https://hack.travel&title=Global Travel Hackaton by Kiwi.com',
-            },
-          ]}
-          navigationLinks={[
-            { title: 'Privacy Policy', href: '/privacy-policy/' },
-            { title: 'Code of Conduct', href: '/code-of-conduct/' },
-          ]}
-        />
+        <Footer />
       </StyledWrapper>
     </OrbitLanding>
   );

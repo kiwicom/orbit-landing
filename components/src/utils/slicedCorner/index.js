@@ -2,7 +2,7 @@
 
 import { css } from 'styled-components';
 
-const slicedCorner = ({ backgroundColor }) => {
+const slicedCorner = ({ backgroundColor, corner }) => {
   return css`
     position: relative;
     z-index: 1;

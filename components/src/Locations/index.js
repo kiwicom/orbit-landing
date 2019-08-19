@@ -15,6 +15,8 @@ import defaultTheme from '../defaultTheme';
 
 const StyledLocations = styled.div`
   position: relative;
+  background-color: ${({ suppressed, theme }) =>
+    suppressed ? theme.orbit.paletteCloudLight : theme.orbit.palleteWhite};
 `;
 
 const StyledStack = styled.div`
@@ -64,6 +66,8 @@ const StyledTypoSection = styled.div`
   height: 100%;
   max-height: 100%;
   min-height: 400px;
+  position: relative;
+  z-index: 1;
 
   &:before {
     content: '';
@@ -83,7 +87,7 @@ const StyledTypoSection = styled.div`
     ${media.mediumMobile(
       css`
         height: 70vw;
-        max-height: 70%;
+        max-height: ${({ noneLocations }) => (noneLocations ? '100%' : '70%')};
       `,
     )}
   }
@@ -129,16 +133,19 @@ const Locations = ({
   title,
   backgroundImage,
   pattern,
-  locations,
+  locations = [],
   locationsHeading,
+  suppressed,
 }) => {
   const featuredLocations = locations.filter(val => {
     return !!val.featured;
   });
-
   return (
-    <StyledLocations id={id}>
-      <StyledTypoSection img={backgroundImage}>
+    <StyledLocations suppressed={suppressed} id={id}>
+      <StyledTypoSection
+        noneLocations={locations.length <= 0}
+        img={backgroundImage}
+      >
         <StyledStack>
           <StyledHeaderWrapper>
             <Heading inverted type="title1" element="h2">
@@ -157,7 +164,7 @@ const Locations = ({
               </Text>
             </Wrapper>
             <LocationsWrapper>
-              {locations.length > 4 ? (
+              {locations.length > 3 ? (
                 <>
                   {featuredLocations.slice(0, 3).map((el, i) => {
                     return (
