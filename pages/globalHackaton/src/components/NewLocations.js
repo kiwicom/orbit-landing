@@ -17,7 +17,7 @@ const NewLocations = () => {
             <div>
               Where else can you expect a hackathon? Check the list below,{' '}
               <TextLink href="mailto:globalhack@kiwi.com">let us know</TextLink>{' '}
-              if you wanna be a partner or sponsor some of them; or, help us
+              if you want to be a partner or sponsor some of them. Help us
               expand the list by adding your event.
             </div>
             <Button
@@ -33,18 +33,19 @@ const NewLocations = () => {
       }
       items={[
         {
-          time: 'London',
+          time: 'Europe',
           title:
-            'We’re preparing the hackathon together with JS London, more info coming soon',
+            'Amsterdam, Berlin, Bratislava, Bucharest, Budapest, Edinburgh, London, Tirana, Warsaw, Wien, Zagreb',
         },
         {
-          time: 'Vienna',
+          time: 'Americas',
           title:
-            'We are discussing the details with Ready2order, more info coming soon',
+            'New York City, USA; San Jose , Costa Rica; San Juan, Puerto Rico; Rochester, New York; São Paulo, Brazil',
         },
         {
-          time: 'Budapest',
-          title: 'Our partners from Budapest.py will soon bring more info',
+          time: 'Asia',
+          title:
+            'Moscow, Russia; Tel Aviv, Israel; Pune, India; Hong Kong, Hong Kong; Taiwan, Taiwan; Eskişehir, Turkey; Delhi, India; Chandigarh, India; Bangkok, Thailand; Ahmedabad, India; Greater Noida, India; Delhi NCR, India; Bangalore, India; Chennai, India; Jaipur, India',
         },
       ]}
     />
