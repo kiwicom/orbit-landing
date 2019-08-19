@@ -19,10 +19,6 @@ const StyledLocations = styled.div`
     suppressed ? theme.orbit.paletteCloudLight : theme.orbit.palleteWhite};
 `;
 
-StyledLocations.defaultProps = {
-  theme: defaultTheme,
-};
-
 const StyledStack = styled.div`
   display: flex;
   flex-direction: row;
@@ -193,7 +189,7 @@ const Locations = ({
                   />
                 </>
               ) : (
-                locations.map((el, i) => {
+                featuredLocations.map((el, i) => {
                   return (
                     <LocationCard
                       key={i}

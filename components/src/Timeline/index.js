@@ -53,6 +53,7 @@ StyledContentContainer.defaultProps = {
   theme: defaultTheme,
 };
 
+
 const Timeline = ({
   id,
   title,

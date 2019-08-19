@@ -10,6 +10,7 @@ import LocationCard from '@kiwicom/orbit-landing-components/src/LocationsCard';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Text from '@kiwicom/orbit-components/lib/Text';
+
 import Facebook from '@kiwicom/orbit-components/lib/icons/Facebook';
 import Twitter from '@kiwicom/orbit-components/lib/icons/Twitter';
 import Linkedin from '@kiwicom/orbit-components/lib/icons/Linkedin';
@@ -23,6 +24,8 @@ import NewLocations from '../components/NewLocations';
 import Seo from '../components/seo';
 import locationList from '../locationsList';
 import heroPattern from '../images/pattern04.svg';
+
+
 
 // Images
 const StyledWrapper = styled.div`
@@ -38,6 +41,7 @@ const StyledNavBarWrapper = styled.div`
   background-color: #000;
   padding: 2rem 0;
 `;
+
 
 const IndexPage = () => {
   function gtag() {
@@ -145,6 +149,7 @@ const IndexPage = () => {
 
         <Footer />
       </>
+
     </OrbitLanding>
   );
 };
