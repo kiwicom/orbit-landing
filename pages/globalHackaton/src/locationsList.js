@@ -34,12 +34,12 @@ const locations = [
   {
     featured: true,
     backgroundImage: evLjublana,
-    eventName: 'Serbia',
-    location: 'Belgrade',
+    eventName: 'United Kingdom',
+    location: 'London',
     logo: logo,
     logoDark: logoDark,
     href:
-      'https://www.eventbrite.com/e/global-travel-hackathon-belgrade-edition-tickets-68284501783?aff=BLGwebregistration',
+      'https://www.eventbrite.com/e/global-travel-hackathon-london-edition-tickets-70266963379?aff=LDNwebsite',
   },
   {
     featured: true,
@@ -49,6 +49,12 @@ const locations = [
     logo: logoSab,
     logoDark: logoSabDark,
     href: 'http://www.czechspaceyear.com/coha/',
+  },
+  {
+    eventName: 'Belgrade',
+    location: 'serbia',
+    logoDark: logo,
+    href: 'https://www.eventbrite.com/e/global-travel-hackathon-belgrade-edition-tickets-68284501783?aff=BLGwebregistration',
   },
   {
     eventName: 'Costa Rica',
