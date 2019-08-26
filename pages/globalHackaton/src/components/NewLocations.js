@@ -35,17 +35,17 @@ const NewLocations = () => {
         {
           time: 'Europe',
           title:
-            'Amsterdam, Berlin, Bratislava, Bucharest, Budapest, Edinburgh, London, Tirana, Warsaw, Wien, Zagreb',
+            'Amsterdam, Netherlands; Berlin, Germany; Bratislava, Slovakia; Bucharest, Romania; Budapest, Hungary; Edinburgh, United Kingdon; Tirana, Albania; Warsaw, Poland; Moscow, Russia' 
         },
         {
           time: 'Americas',
           title:
-            'New York City, USA; San Jose , Costa Rica; San Juan, Puerto Rico; Rochester, New York; São Paulo, Brazil',
+            'New York City, USA; San Juan, Puerto Rico; Rochester, New York; São Paulo, Brazil',
         },
         {
           time: 'Asia',
           title:
-            'Moscow, Russia; Tel Aviv, Israel; Pune, India; Hong Kong, Hong Kong; Taiwan, Taiwan; Eskişehir, Turkey; Delhi, India; Chandigarh, India; Bangkok, Thailand; Ahmedabad, India; Greater Noida, India; Delhi NCR, India; Bangalore, India; Chennai, India; Jaipur, India',
+            'Tel Aviv, Israel; Pune, India; Hong Kong, Hong Kong; Taiwan, Taiwan; Eskişehir, Turkey; Delhi, India; Chandigarh, India; Bangkok, Thailand; Ahmedabad, India; Greater Noida, India; Delhi NCR, India; Bangalore, India; Chennai, India; Jaipur, India',
         },
       ]}
     />
