@@ -52,8 +52,8 @@ const locations = [
   },
   {
     eventName: 'Belgrade',
-    location: 'serbia',
-    logoDark: logo,
+    location: 'Serbia',
+    logoDark: logoDark,
     href: 'https://www.eventbrite.com/e/global-travel-hackathon-belgrade-edition-tickets-68284501783?aff=BLGwebregistration',
   },
   {
