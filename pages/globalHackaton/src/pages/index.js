@@ -192,19 +192,19 @@ const IndexPage = () => {
             {
               title: 'Sustainability',
               content:
-                'Do you have an idea on how to make travel more responsible? How to deal with mass tourism or how to support local economies, and opt for sustainable activities? Maybe you will have the right idea that will help the world of travellers leave a place better than they found it. Join us to make travel sustainable and bearable for everyone!',
+                'Do you have an idea on how to make travel more responsible? How to deal with mass tourism or how to support local economies?',
               img: icGlobe,
             },
             {
               title: 'Accessibility',
               content:
-                'How can we make travel better for people with disabilities? How to find well-adapted hotel rooms or accessible restaurants? Or how to make travel smoother for travellers flying with their musical instruments, bikes or surfboards? Accessibility can be perceived from different perspectives – help us find the one which will change the world of travel.',
+                'How can we make travel better for people with disabilities? How to find well-adapted hotel rooms, accessible restaurants or how to travel easier with musical instruments or bikes?',
               img: icAccessibility,
             },
             {
               title: 'Community',
               content:
-                'A growing number of travellers are increasingly interested in unique and authentic experiences and willing to pay extra for these, primarily if it benefits local communities. Safety, sustainability, and interaction with local people are essential to them. Help us connect the unconnected. Bring your ideas and let tourism become a tool for offline community development.',
+                'People are getting more and more interested in authentic experiences that support local communities. Connect the unconnected and make tourism become a tool building online and offline communities.',
               img: icTopic,
             },
           ]}
