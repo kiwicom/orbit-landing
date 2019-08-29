@@ -2,7 +2,6 @@
 
 import React from 'react';
 import './reset.css';
-import styled from 'styled-components';
 
 // Components
 import Page from '../components/pageTracked';

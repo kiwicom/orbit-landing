@@ -71,17 +71,6 @@ const StyledWrapper = styled.div`
 `;
 
 const IndexPage = () => {
-  function gtag() {
-    // eslint-disable-next-line no-undef
-    dataLayer.push(arguments);
-  }
-
-  useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-    gtag('js', new Date());
-    gtag('config', 'UA-29345084-23');
-  });
-
   return (
     <OrbitLanding>
       <StyledWrapper>
@@ -97,32 +86,8 @@ const IndexPage = () => {
               align="center"
               tablet={{ direction: 'row', align: 'center' }}
             >
-              <Button
-                href="#locations"
-                onClick={() => {
-                  // eslint-disable-next-line no-undef
-                  if (gtag) {
-                    gtag('event', 'register_clicked', {
-                      event_label: 'Register',
-                    });
-                  }
-                }}
-              >
-                Register as participant
-              </Button>
-              <Button
-                href="#new-locations"
-                type="white"
-                bordered
-                onClick={() => {
-                  // eslint-disable-next-line no-undef
-                  if (gtag) {
-                    gtag('event', 'partner_clicked', {
-                      event_label: 'Partner Hackaton',
-                    });
-                  }
-                }}
-              >
+              <Button href="#locations">Register as participant</Button>
+              <Button href="#new-locations" type="white" bordered>
                 Add your hackathon
               </Button>
             </Stack>
@@ -345,21 +310,7 @@ const IndexPage = () => {
           descrtiption="Please, fill in your application carefully and thoroughly, we'll be choosing the attendees based on what you write there."
           additionalInformation="We value the participation of each member and we want all
     attendees to have an enjoyable and fulfilling experience."
-          actions={
-            <Button
-              href="#locations"
-              onClick={() => {
-                // eslint-disable-next-line no-undef
-                if (gtag) {
-                  gtag('event', 'register_clicked', {
-                    event_label: 'Register',
-                  });
-                }
-              }}
-            >
-              Register as participant
-            </Button>
-          }
+          actions={<Button href="#locations">Register as participant</Button>}
           additionalActions={
             <TextLink external href="/code-of-conduct/" type="primary">
               Check our Code of Conduct
