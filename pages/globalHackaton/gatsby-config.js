@@ -1,5 +1,10 @@
 // @flow
 
+// eslint-disable-next-line import/no-extraneous-dependencies
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Global Hackathon by Kiwi.com`,
@@ -48,6 +53,14 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-source-prismic`,
+      options: {
+        repositoryName: `globalhackathon`,
+        accessToken: `${process.env.API_KEY}`,
+        linkResolver: () => post => `/${post.uid}`,
       },
     },
 
