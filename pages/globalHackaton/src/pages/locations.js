@@ -40,17 +40,6 @@ const StyledNavBarWrapper = styled.div`
 `;
 
 const IndexPage = () => {
-  function gtag() {
-    // eslint-disable-next-line no-undef
-    dataLayer.push(arguments);
-  }
-
-  useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-    gtag('js', new Date());
-    gtag('config', 'UA-29345084-23');
-  });
-
   return (
     <OrbitLanding>
       <>

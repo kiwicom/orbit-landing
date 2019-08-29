@@ -80,10 +80,6 @@ function SEO({ description, lang, meta, title }) {
         href="https://images.kiwi.com/fonts/circular-pro/style.css"
         rel="stylesheet"
       />
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-29345084-23"
-      />
     </Helmet>
   );
 }
