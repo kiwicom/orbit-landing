@@ -15,12 +15,16 @@ import NavBar from '@kiwicom/orbit-landing-components/src/NavBar';
 import Locations from '@kiwicom/orbit-landing-components/src/Locations';
 import Prizes from '@kiwicom/orbit-landing-components/src/Prizes';
 import Faq from '@kiwicom/orbit-landing-components/src/Faq';
+import Mentors from '@kiwicom/orbit-landing-components/src/Mentors';
+import Mission from '@kiwicom/orbit-landing-components/src/Mission';
 
 import Footer from '../components/Footer';
 import NewLocations from '../components/NewLocations';
 import Seo from '../components/seo';
 import locationList from '../locationsList';
 import heroPattern from '../images/pattern04.svg';
+import chart from '../images/chart.png';
+import evaluation from '../images/evaluation.jpg';
 import About from '../components/About';
 import Images from '../components/Images';
 import Contact from '../components/Contact';
@@ -40,12 +44,67 @@ const descriptionSupport = (
   </>
 );
 
+const resolveSliceMapping = el => {
+  if (el.slice_type === 'prices') {
+    const prizesMapped = el.items.map(item => {
+      return {
+        place: item.place,
+        prize: item.prize_item_description && item.prize_item_description.text,
+        title: item.prize_item_title && item.prize_item_title.text,
+      };
+    });
+    return (
+      <Prizes
+        key={el.id}
+        id="prizes"
+        title={el.primary.prizes_title.text}
+        description={
+          <span
+            dangerouslySetInnerHTML={{
+              __html: el.primary.prize_description.html,
+            }}
+          />
+        }
+        prizes={prizesMapped}
+        infoText={el.primary.additional_info.text}
+      />
+    );
+  }
+
+  if (el.slice_type === 'mentors') {
+    const mentorsMapped = el.items.map(item => {
+      return {
+        name: item.mentor_item_name && item.mentor_item_name.text,
+        description:
+          item.mentor_item_description && item.mentor_item_description.text,
+        socials: {
+          linkedin: item.mentor_item_linkedin && item.mentor_item_linkedin.url,
+          facebook: item.mentor_item_facebook && item.mentor_item_facebook.url,
+          twitter: item.mentor_item_twitter && item.mentor_item_twitter.url,
+        },
+        profilePicture:
+          item.mentor_item_profile && item.mentor_item_profile.url,
+      };
+    });
+    return (
+      <Mentors
+        suppressed
+        key={el.id}
+        category={el.primary.category.text}
+        title={el.primary.mentors_title.text}
+        subTitle={el.primary.mentors_subtitle.text}
+        mentors={mentorsMapped}
+      />
+    );
+  }
+  return null;
+};
+
 const Location = ({
   data: {
     prismicLocations: { data },
   },
 }) => {
-  console.log(data);
   return (
     <OrbitLanding>
       <>
@@ -82,51 +141,36 @@ const Location = ({
         />
         <About />
         {data.body.map(el => {
-          switch (el.slice_type) {
-            case 'prices':
-              console.log(el);
-              return (
-                <Prizes
-                  key={el.id}
-                  id="prizes"
-                  title={el.primary.prizes_title.text}
-                  description={
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: el.primary.prize_description.html,
-                      }}
-                    />
-                  }
-                  prizes={[
-                    {
-                      place: 1,
-                      prize: 'In Kiwi.com travel vouchers',
-                      title: '€ 4,000',
-                    },
-                    {
-                      place: 2,
-                      prize: 'A weekend in Prague for the whole team',
-                      title: 'Weekend',
-                    },
-                    {
-                      place: 3,
-                      prize: 'Feedback session with top Kiwi.com developers',
-                      title: 'Feedback',
-                    },
-                  ]}
-                  infoText={
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: el.primary.prize_description.html,
-                      }}
-                    />
-                  }
-                />
-              );
-            default:
-              return null;
-          }
+          return resolveSliceMapping(el);
         })}
+        <Mission
+          id="about"
+          category=""
+          title="What do we evaluate?"
+          subTitle="Technical aspects 40%, Design 20%, Idea 30 %, Wow factor 10%"
+          description={
+            <>
+              <b>Technical aspects</b>: The judging team would like to hear the
+              answer to these questions when your team will present the final
+              work: Is the project demo ready? What data and API’s did you use
+              for your project? What technical challenges did your team have and
+              how did you solve them? Did you use a particularly clever
+              technique or did you use many different components?
+              <br />
+              <br />
+              <b>Design</b>: How well is it designed? Did you put thought into
+              the user experience? Idea: How creative is your idea? What
+              approach did you follow? How well is it aligned with the hackathon
+              topics?
+              <br />
+              <br />
+              <b>Wow! Factor</b>: show the jury what is unique about the
+              solution you provided, the way how your team worked or something
+              special about your project
+            </>
+          }
+          sideImage={evaluation}
+        />
         <Faq
           id="faq"
           items={[
@@ -171,7 +215,6 @@ const Location = ({
               answer:
                 'We’re running a global campaign promoting the whole initiative. Additionally, the winner of your hackathon will get the chance to win the main prize – 4,000 € in travel vouchers and feedback from Kiwi.com engineers.',
             },
-
             {
               question: 'How can I reach out to the organizers?',
               answer:
@@ -193,29 +236,59 @@ export const pageQuery = graphql`
   query locationPostBySlug($uid: String!) {
     prismicLocations(uid: { eq: $uid }) {
       uid
-      id
       data {
         body {
-          id
-          slice_type
-          items {
-            prize_item_place
-            prize_item_description {
-              text
+          ... on PrismicLocationsBodyPrices {
+            id
+            slice_type
+            items {
+              prize_item_place
+              prize_item_title {
+                text
+              }
+              prize_item_description {
+                text
+              }
             }
-            prize_item_title {
-              text
+            primary {
+              additional_info {
+                text
+              }
+              prize_description {
+                html
+              }
+              prizes_title {
+                text
+              }
             }
           }
-          primary {
-            additional_info {
-              text
+          ... on PrismicLocationsBodyMentors {
+            id
+            slice_type
+            primary {
+              category {
+                text
+              }
+              mentors_subtitle {
+                text
+              }
+              mentors_title {
+                text
+              }
             }
-            prize_description {
-              html
-            }
-            prizes_title {
-              text
+            items {
+              mentor_item_description {
+                text
+              }
+              mentor_item_name {
+                text
+              }
+              mentor_item_profile {
+                url
+              }
+              mentor_item_twitter {
+                url
+              }
             }
           }
         }

@@ -22,16 +22,31 @@ const StyledContainer = styled.div`
     css`
       padding-top: calc(1rem + 4vw);
     `};
+
+  ${({ suppressed }) =>
+    suppressed &&
+    css`
+      background-color: ${({ theme }) => theme.orbit.paletteCloudLight};
+    `};
 `;
 
 StyledContainer.defaultProps = {
   theme: defaultTheme,
 };
 
-const Container = ({ children, noSpacing, hasSlicedCorner, id, ...props }) => {
+const Container = ({
+  children,
+  noSpacing,
+  hasSlicedCorner,
+  suppressed,
+  id,
+  ...props
+}) => {
+  console.log(suppressed);
   return (
     <Stack justify="center">
       <StyledContainer
+        suppressed={suppressed}
         id={id}
         hasSlicedCorner={hasSlicedCorner}
         noSpacing={noSpacing}

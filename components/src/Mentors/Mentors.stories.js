@@ -3,26 +3,59 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 
+import profilePicture from '../../static/profileImage.png';
+
 import Mentors from './index';
 
 storiesOf('Mentors', module).add('Default', () => (
   <Mentors
-    items={[
+    category="Meet our"
+    title="Mentors"
+    subTitle="The mentors are top Kiwi.com Javascript engineers,"
+    mentors={[
       {
-        question: 'Do all the team members need to fill out the form?',
-        answer: 'Yes, all the team must fill out the form',
+        name: 'Luděk Vepřek',
+        description:
+          'Pavel aka Strajk likes planning, doing, and delivering useful things, mostly software. Knows a bit about programming, software architecture, and project management.',
+        socials: {
+          linkedin: 'https://linkedin.com',
+          twitter: 'https://twitter.com',
+          facebook: 'https://facebook.com',
+        },
+        profilePicture: profilePicture,
       },
       {
-        question: 'Based on what criteria will you choose the winning teams?',
-        answer: 'Yes, all the team must fill out the form',
+        name: 'Luděk Vepřek',
+        description:
+          'Pavel aka Strajk likes planning, doing, and delivering useful things, mostly software. Knows a bit about programming, software.',
+        socials: {
+          linkedin: 'https://linkedin.com',
+          twitter: 'https://twitter.com',
+          facebook: 'https://facebook.com',
+        },
+        profilePicture: profilePicture,
       },
       {
-        question: 'Do all the team members?',
-        answer: 'Yes, all the team must fill out the form',
+        name: 'Luděk Vepřek',
+        description:
+          'Pavel aka Strajk likes planning, doing, and delivering useful things, mostly software. Knows a bit about programming, software architecture, and project management. and project management.',
+        socials: {
+          linkedin: 'https://linkedin.com',
+          twitter: 'https://twitter.com',
+          facebook: 'https://facebook.com',
+        },
+        profilePicture: profilePicture,
       },
       {
-        question: 'Do all the team members need to form?',
-        answer: 'Yes, all the team must fill out the form',
+        name: 'Luděk Vepřek',
+        description:
+          'Pavel aka Strajk likes planning, doing, and delivering useful things, mostly software. Knows a bit about programming, software architecture, and project management.',
+        socials: {
+          linkedin: 'https://linkedin.com',
+          twitter: 'https://twitter.com',
+          facebook: 'https://facebook.com',
+        },
+        profilePicture: profilePicture,
       },
     ]}
   />
