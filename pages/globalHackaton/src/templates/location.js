@@ -1,4 +1,5 @@
 import React from 'react';
+import '../pages/reset.css';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Grid from '@kiwicom/orbit-components/lib/utils/Grid';
