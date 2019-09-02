@@ -74,6 +74,18 @@ const locations = [
     logoDark: gdg,
     href: 'https://voicehackathon.gdgstrasbourg.fr/',
   },
+  {
+    eventName: 'Nicaragua',
+    location: 'Managua',
+    logoDark: gdg,
+    href: 'https://www.meetup.com/gdgmanagua/events/264382451/',
+  },
+  {
+    eventName: 'India',
+    location: 'Gurugram, Haryana',
+    logoDark: gdg,
+    href: 'https://sites.google.com/view/indiavoicehackathon/home',
+  },
 ];
 
 export default locations;
