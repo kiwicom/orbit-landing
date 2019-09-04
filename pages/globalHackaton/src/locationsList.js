@@ -51,6 +51,12 @@ const locations = [
     href: 'http://www.czechspaceyear.com/coha/',
   },
   {
+    eventName: 'Slovakia',
+    location: 'Bratislava',
+    logoDark: logoDark,
+    href: 'https://www.eventbrite.com/e/global-travel-hackathon-bratislava-edition-tickets-71364411877?aff=BTSwebregistration',
+  },
+  {
     eventName: 'Serbia',
     location: 'Belgrade',
     logoDark: logoDark,
