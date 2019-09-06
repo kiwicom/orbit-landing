@@ -18,6 +18,11 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             id
             uid
+            data {
+              link_to_event {
+                url
+              }
+            }
           }
         }
       }
@@ -25,12 +30,14 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
   const template = path.resolve('./src/templates/location.js');
   pages.data.allPrismicLocations.edges.forEach(edge => {
-    createPage({
-      path: `/${edge.node.uid}`,
-      component: template,
-      context: {
-        uid: edge.node.uid,
-      },
-    });
+    if (!edge.node.data.link_to_event) {
+      createPage({
+        path: `/${edge.node.uid}`,
+        component: template,
+        context: {
+          uid: edge.node.uid,
+        },
+      });
+    }
   });
 };

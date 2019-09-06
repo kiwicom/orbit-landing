@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Button from '@kiwicom/orbit-components/lib/Button';
 import TextLink from '@kiwicom/orbit-components/lib/TextLink';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
+import { useStaticQuery, graphql } from 'gatsby';
 
 // Components
 import Faq from '@kiwicom/orbit-landing-components/src/Faq';
@@ -31,7 +32,6 @@ import heroImg2 from '../images/hero02.jpg';
 import heroSvg from '../images/hero2.svg';
 import joinUsImg from '../images/joinUsImg.jpg';
 import joinUsPattern from '../images/pattern03.svg';
-import locationList from '../locationsList';
 
 const descriptionSupport = (
   <>
@@ -47,15 +47,47 @@ const StyledWrapper = styled.div`
 `;
 
 const IndexPage = () => {
-  function gtag() {
-    // eslint-disable-next-line no-undef
-    dataLayer.push(arguments);
-  }
+  const data = useStaticQuery(graphql`
+    query pagesAllPosts {
+      allPrismicLocations {
+        nodes {
+          id
+          uid
+          data {
+            logo {
+              url
+            }
+            logo_dark {
+              url
+            }
+            background_image {
+              url
+            }
+            location_country {
+              text
+            }
+            location_city {
+              text
+            }
+            featured
+          }
+        }
+      }
+    }
+  `);
 
-  useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-    gtag('js', new Date());
-    gtag('config', 'UA-29345084-23');
+  const locationList = data.allPrismicLocations.nodes.map(el => {
+    return {
+      featured: el.data.featured === 'featured',
+      backgroundImage: el.data.background_image.url,
+      href:
+        el.data.link_to_event && el.data.link_to_event.url
+          ? el.data.link_to_event.url
+          : `/${el.uid}`,
+      location: el.data.location_city.text,
+      eventName: el.data.location_country.text,
+      logo: el.data.logo_dark.url,
+    };
   });
 
   return (
@@ -73,32 +105,8 @@ const IndexPage = () => {
               align="center"
               tablet={{ direction: 'row', align: 'center' }}
             >
-              <Button
-                href="#locations"
-                onClick={() => {
-                  // eslint-disable-next-line no-undef
-                  if (gtag) {
-                    gtag('event', 'register_clicked', {
-                      event_label: 'Register',
-                    });
-                  }
-                }}
-              >
-                Register as participant
-              </Button>
-              <Button
-                href="#new-locations"
-                type="white"
-                bordered
-                onClick={() => {
-                  // eslint-disable-next-line no-undef
-                  if (gtag) {
-                    gtag('event', 'partner_clicked', {
-                      event_label: 'Partner Hackaton',
-                    });
-                  }
-                }}
-              >
+              <Button href="#locations">Register as participant</Button>
+              <Button href="#new-locations" type="white" bordered>
                 Add your hackathon
               </Button>
             </Stack>
@@ -133,9 +141,7 @@ const IndexPage = () => {
           pattern={heroPattern}
           locations={locationList}
           locationsHeading="Choose event you want to attend"
-          suppressed
         />
-        <NewLocations />
         <About />
         <Images />
         <Prizes
@@ -234,21 +240,7 @@ const IndexPage = () => {
           descrtiption="Please, fill in your application carefully and thoroughly, we'll be choosing the attendees based on what you write there."
           additionalInformation="We value the participation of each member and we want all
     attendees to have an enjoyable and fulfilling experience."
-          actions={
-            <Button
-              href="#locations"
-              onClick={() => {
-                // eslint-disable-next-line no-undef
-                if (gtag) {
-                  gtag('event', 'register_clicked', {
-                    event_label: 'Register',
-                  });
-                }
-              }}
-            >
-              Register as participant
-            </Button>
-          }
+          actions={<Button href="#locations">Register as participant</Button>}
           additionalActions={
             <TextLink external href="/code-of-conduct/" type="primary">
               Check our Code of Conduct

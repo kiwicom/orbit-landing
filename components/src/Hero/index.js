@@ -23,9 +23,22 @@ const StyledHero = styled.div`
   overflow: hidden;
   max-height: 1000px;
 
+  ${({ condensed }) =>
+    condensed &&
+    css`
+      height: 50vw;
+    `}
+
   ${media.tablet(css`
     height: 100vh;
     max-height: 100vh;
+
+    ${({ condensed }) =>
+      condensed &&
+      css`
+        height: 50vw;
+      `}
+
     &:after {
       content: '';
       width: 69px;
@@ -114,10 +127,22 @@ StyledTextWithPattern.defaultProps = {
 
 const StyledNavBarWrapper = styled.div`
   padding: 4.2vw 0 0 0;
+
+  ${media.desktop(css`
+    padding: 80px 0 0 0;
+  `)};
 `;
 
 const StyledSpan = styled.span`
   word-break: break-all;
+
+  ${({ condensed }) =>
+    condensed &&
+    css`
+      word-break: break-word;
+      width: 65%;
+      display: block;
+    `}
 `;
 
 const StyledStack = styled.div`
@@ -135,6 +160,7 @@ const Hero = ({
   description,
   title,
   actions,
+  condensed = false,
 }) => {
   // Slices the string from title prop to half and joins it back so patter can be positioned within component using just title prop.
   const splitTitle = title.split(' ');
@@ -143,17 +169,23 @@ const Hero = ({
   const right = splitTitle.slice(halfway, splitTitle.length).join(' ');
 
   return (
-    <StyledHero img={backgroundImage}>
+    <StyledHero img={backgroundImage} condensed={condensed}>
       <StyledStack>
         <StyledWrapper>
           {navBar && <StyledNavBarWrapper>{navBar}</StyledNavBarWrapper>}
           <HeadingWrapper>
-            <Heading inverted type="display">
-              <StyledSpan>
-                <StyledTextWithPattern pattern={pattern}>
-                  {left}
-                </StyledTextWithPattern>
-                {right}
+            <Heading inverted type="title1">
+              <StyledSpan condensed={condensed}>
+                {condensed ? (
+                  <>{title}</>
+                ) : (
+                  <>
+                    <StyledTextWithPattern pattern={pattern}>
+                      {left}
+                    </StyledTextWithPattern>
+                    {right}
+                  </>
+                )}
               </StyledSpan>
             </Heading>
           </HeadingWrapper>

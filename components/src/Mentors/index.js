@@ -76,7 +76,7 @@ const StyledImageContainer = styled.div`
 const MentorItem = ({ name, description, socials, profilePicture }) => {
   return (
     <StyledMentor>
-      <Stack flex>
+      <Stack flex spacing="loose">
         <StyledImageContainer img={profilePicture} />
         <Stack>
           <Heading type="title4">{name}</Heading>

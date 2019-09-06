@@ -3,6 +3,8 @@
 import React, { useEffect } from 'react';
 import './reset.css';
 import styled from 'styled-components';
+import { useStaticQuery, graphql } from 'gatsby';
+
 // Components
 import Grid from '@kiwicom/orbit-components/lib/utils/Grid';
 import OrbitLanding from '@kiwicom/orbit-landing-components/src/OrbitLanding';
@@ -21,7 +23,6 @@ import Locations from '@kiwicom/orbit-landing-components/src/Locations';
 import Footer from '../components/Footer';
 import NewLocations from '../components/NewLocations';
 import Seo from '../components/seo';
-import locationList from '../locationsList';
 import heroPattern from '../images/pattern04.svg';
 
 // Images
@@ -40,15 +41,40 @@ const StyledNavBarWrapper = styled.div`
 `;
 
 const IndexPage = () => {
-  function gtag() {
-    // eslint-disable-next-line no-undef
-    dataLayer.push(arguments);
-  }
+  const data = useStaticQuery(graphql`
+    query locationsAllPosts {
+      allPrismicLocations {
+        nodes {
+          id
+          uid
+          data {
+            logo {
+              url
+            }
+            location_country {
+              text
+            }
+            location_city {
+              text
+            }
+            link_to_event {
+              url
+            }
+          }
+        }
+      }
+    }
+  `);
 
-  useEffect(() => {
-    window.dataLayer = window.dataLayer || [];
-    gtag('js', new Date());
-    gtag('config', 'UA-29345084-23');
+  const locationList = data.allPrismicLocations.nodes.map(el => {
+    return {
+      id: el.id,
+      internalHref: `/${el.uid}`,
+      href: el.data.link_to_event && el.data.link_to_event.url,
+      location: el.data.location_city.text,
+      eventName: el.data.location_country.text,
+      logo: el.data.logo.url,
+    };
   });
 
   return (
@@ -103,12 +129,11 @@ const IndexPage = () => {
                     condensed
                     inverted
                     key={el.location + i}
-                    href={el.href}
+                    href={el.href ? el.href : el.internalHref}
                     external
                     eventName={el.eventName}
                     location={el.location}
-                    logo={el.logoDark}
-                    onClick={el.onClick}
+                    logo={el.logo}
                   />
                 );
               })}

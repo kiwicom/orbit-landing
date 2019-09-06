@@ -2,39 +2,27 @@ import React from 'react';
 import '../pages/reset.css';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
-import Grid from '@kiwicom/orbit-components/lib/utils/Grid';
-import OrbitLanding from '@kiwicom/orbit-landing-components/src/OrbitLanding';
-import LocationCard from '@kiwicom/orbit-landing-components/src/LocationsCard';
-import Heading from '@kiwicom/orbit-components/lib/Heading';
-import Stack from '@kiwicom/orbit-components/lib/Stack';
-import Text from '@kiwicom/orbit-components/lib/Text';
-import Facebook from '@kiwicom/orbit-components/lib/icons/Facebook';
-import Twitter from '@kiwicom/orbit-components/lib/icons/Twitter';
-import Linkedin from '@kiwicom/orbit-components/lib/icons/Linkedin';
 import TextLink from '@kiwicom/orbit-components/lib/TextLink';
+import OrbitLanding from '@kiwicom/orbit-landing-components/src/OrbitLanding';
 import NavBar from '@kiwicom/orbit-landing-components/src/NavBar';
-import Locations from '@kiwicom/orbit-landing-components/src/Locations';
 import Prizes from '@kiwicom/orbit-landing-components/src/Prizes';
 import Faq from '@kiwicom/orbit-landing-components/src/Faq';
 import Mentors from '@kiwicom/orbit-landing-components/src/Mentors';
 import Mission from '@kiwicom/orbit-landing-components/src/Mission';
+import Hero from '@kiwicom/orbit-landing-components/src/Hero';
+import JoinUs from '@kiwicom/orbit-landing-components/src/JoinUs';
 
 import Footer from '../components/Footer';
-import NewLocations from '../components/NewLocations';
 import Seo from '../components/seo';
-import locationList from '../locationsList';
 import heroPattern from '../images/pattern04.svg';
-import chart from '../images/chart.png';
 import evaluation from '../images/evaluation.jpg';
 import About from '../components/About';
 import Images from '../components/Images';
 import Contact from '../components/Contact';
 import Schedule from '../components/Schedule';
-
-const StyledNavBarWrapper = styled.div`
-  background-color: #000;
-  padding: 3rem 0 0;
-`;
+import background from '../images/hero02.jpg';
+import joinUsImg from '../images/joinUsImg.jpg';
+import joinUsPattern from '../images/pattern03.svg';
 
 const descriptionSupport = (
   <>
@@ -49,7 +37,7 @@ const resolveSliceMapping = el => {
   if (el.slice_type === 'prices') {
     const prizesMapped = el.items.map(item => {
       return {
-        place: item.place,
+        place: item.prize_item_place,
         prize: item.prize_item_description && item.prize_item_description.text,
         title: item.prize_item_title && item.prize_item_title.text,
       };
@@ -101,49 +89,125 @@ const resolveSliceMapping = el => {
   return null;
 };
 
+const CustomButton = styled.button`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  appearance: none;
+  text-decoration: none;
+  width: auto;
+  flex: 0 0 auto;
+  height: auto;
+  background: #00a991;
+  color: #ffffff !important;
+  border: 0;
+  border-radius: 6px;
+  padding: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)))
+    calc(24px + (32 - 24) * ((100vw - 320px) / (1920 - 320)));
+  font-family: 'Circular Pro', -apple-system, '.SFNSText-Regular',
+    'San Francisco', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-weight: 700 !important;
+  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+  cursor: pointer;
+  transition: all 0.15s ease-in-out !important;
+  outline: 0;
+
+  &:hover {
+    background: #009882;
+    color: #ffffff !important;
+  }
+
+  &:focus {
+    box-shadow: 0 0 1px 1px #ffffff, 0 0 1px 3px rgba(1, 114, 203, 0.6);
+  }
+
+  &:active {
+    background: #008f7b;
+    color: #ffffff !important;
+    box-shadow: inset 0 0 6px 3px rgba(37, 42, 49, 0.15);
+  }
+`;
+
 const Location = ({
   data: {
     prismicLocations: { data },
   },
 }) => {
+  if (typeof document !== 'undefined' && data.eventbrite_id) {
+    const aScript = document.createElement('script');
+    aScript.type = 'text/javascript';
+    aScript.src = 'https://www.eventbrite.com/static/widgets/eb_widgets.js';
+
+    document.head.appendChild(aScript);
+    aScript.onload = () => {
+      window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: data.eventbrite_id,
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger',
+      });
+
+      window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: data.eventbrite_id,
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger2',
+      });
+    };
+  }
+
   return (
     <OrbitLanding>
       <>
         <Seo title="Locations of global hackathon by Kiwi.com" />
-        <StyledNavBarWrapper>
-          <NavBar
-            title="#HackTravel"
-            homeLink="/"
-            items={[
-              {
-                title: 'About',
-                href: '/#about',
-              },
-              {
-                title: 'Prizes',
-                href: '/#prizes',
-              },
-              {
-                title: 'FAQ',
-                href: '/#faq',
-              },
-              {
-                title: 'Contact',
-                href: '/#contact',
-              },
-            ]}
-          />
-        </StyledNavBarWrapper>
-        <Locations
-          id="locations"
+        <Hero
           title={data.title.text}
+          backgroundImage={background}
           pattern={heroPattern}
-          suppressed
+          actions={
+            <>
+              <CustomButton id="eventbrite-widget-modal-trigger">
+                Register as participant
+              </CustomButton>
+            </>
+          }
+          condensed
+          navBar={
+            <NavBar
+              title="#HackTravel"
+              homeLink="/"
+              items={[
+                {
+                  title: 'Home',
+                  href: '/',
+                },
+                {
+                  title: 'About',
+                  href: '/#about',
+                },
+                {
+                  title: 'Prizes',
+                  href: '/#prizes',
+                },
+                {
+                  title: 'FAQ',
+                  href: '/#faq',
+                },
+                {
+                  title: 'Contact',
+                  href: '/#contact',
+                },
+              ]}
+            />
+          }
         />
         <About />
-        {data.body.map(el => {
-          return resolveSliceMapping(el);
-        })}
+        {data.body &&
+          data.body.map(el => {
+            return resolveSliceMapping(el);
+          })}
         <Mission
           id="about"
           category=""
@@ -226,6 +290,24 @@ const Location = ({
         <Schedule />
         <Images />
         <Contact />
+        <JoinUs
+          title="Join Us"
+          descrtiption="Please, fill in your application carefully and thoroughly, we'll be choosing the attendees based on what you write there."
+          additionalInformation="We value the participation of each member and we want all
+    attendees to have an enjoyable and fulfilling experience."
+          actions={
+            <CustomButton id="eventbrite-widget-modal-trigger2">
+              Register as participant
+            </CustomButton>
+          }
+          additionalActions={
+            <TextLink external href="/code-of-conduct/" type="primary">
+              Check our Code of Conduct
+            </TextLink>
+          }
+          backgroundImage={joinUsImg}
+          patterns={[joinUsPattern, joinUsPattern]}
+        />
         <Footer />
       </>
     </OrbitLanding>
@@ -236,7 +318,6 @@ export default Location;
 export const pageQuery = graphql`
   query locationPostBySlug($uid: String!) {
     prismicLocations(uid: { eq: $uid }) {
-      uid
       data {
         body {
           ... on PrismicLocationsBodyPrices {
@@ -296,6 +377,7 @@ export const pageQuery = graphql`
         title {
           text
         }
+        eventbrite_id
       }
     }
   }

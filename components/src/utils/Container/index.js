@@ -42,7 +42,6 @@ const Container = ({
   id,
   ...props
 }) => {
-  console.log(suppressed);
   return (
     <Stack justify="center">
       <StyledContainer
