@@ -140,7 +140,7 @@ const IndexPage = () => {
           title="Hack travel and make it smarter, sustainable and accessible for everyone."
           pattern={heroPattern}
           locations={locationList}
-          locationsHeading="Choose event you want to attend"
+          locationsHeading="Choose an event you want to attend"
         />
         <About />
         <Images />
