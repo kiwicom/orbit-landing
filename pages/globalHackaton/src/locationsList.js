@@ -51,8 +51,14 @@ const locations = [
     href: 'http://www.czechspaceyear.com/coha/',
   },
   {
-    eventName: 'Belgrade',
-    location: 'Serbia',
+    eventName: 'Slovakia',
+    location: 'Bratislava',
+    logoDark: logoDark,
+    href: 'https://www.eventbrite.com/e/global-travel-hackathon-bratislava-edition-tickets-71364411877?aff=BTSwebregistration',
+  },
+  {
+    eventName: 'Serbia',
+    location: 'Belgrade',
     logoDark: logoDark,
     href: 'https://www.eventbrite.com/e/global-travel-hackathon-belgrade-edition-tickets-68284501783?aff=BLGwebregistration',
   },
@@ -73,6 +79,18 @@ const locations = [
     location: 'Strasbourg',
     logoDark: gdg,
     href: 'https://voicehackathon.gdgstrasbourg.fr/',
+  },
+  {
+    eventName: 'Nicaragua',
+    location: 'Managua',
+    logoDark: gdg,
+    href: 'https://www.meetup.com/gdgmanagua/events/264382451/',
+  },
+  {
+    eventName: 'India',
+    location: 'Gurugram, Haryana',
+    logoDark: gdg,
+    href: 'https://sites.google.com/view/indiavoicehackathon/home',
   },
 ];
 

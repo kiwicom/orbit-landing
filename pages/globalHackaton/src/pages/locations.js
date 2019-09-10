@@ -41,6 +41,7 @@ const StyledNavBarWrapper = styled.div`
 `;
 
 const IndexPage = () => {
+
   const data = useStaticQuery(graphql`
     query locationsAllPosts {
       allPrismicLocations {
@@ -76,6 +77,7 @@ const IndexPage = () => {
       logo: el.data.logo.url,
     };
   });
+
 
   return (
     <OrbitLanding>

@@ -47,6 +47,7 @@ const StyledWrapper = styled.div`
 `;
 
 const IndexPage = () => {
+
   const data = useStaticQuery(graphql`
     query pagesAllPosts {
       allPrismicLocations {
