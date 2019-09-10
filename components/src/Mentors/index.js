@@ -77,7 +77,7 @@ const MentorItem = ({ name, description, socials, profilePicture }) => {
   return (
     <StyledMentor>
       <Stack flex spacing="loose">
-        <StyledImageContainer img={profilePicture} />
+        {profilePicture && <StyledImageContainer img={profilePicture} />}
         <Stack>
           <Heading type="title4">{name}</Heading>
           <Text>{description}</Text>

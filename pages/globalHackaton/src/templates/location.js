@@ -368,9 +368,6 @@ export const pageQuery = graphql`
               mentor_item_profile {
                 url
               }
-              mentor_item_twitter {
-                url
-              }
             }
           }
         }
