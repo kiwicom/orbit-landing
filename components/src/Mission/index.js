@@ -137,7 +137,7 @@ const Mission = ({
           category={category}
         />
       </StyledSpace>
-      <Panel items={items} />
+      {items && <Panel items={items} />}
     </Container>
   );
 };

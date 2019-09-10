@@ -47,6 +47,10 @@ const customTheme = {
     'calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320))) calc(24px + (32 - 24) * ((100vw - 320px) / (1920 - 320)))',
   heightButtonNormal: `auto`,
 
+  paddingButtonSmall:
+    'calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320))) calc(24px + (32 - 24) * ((100vw - 320px) / (1920 - 320)))',
+  heightButtonSmall: `auto`,
+
   // Font family
   fontFamily: `"Circular Pro", -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif`,
 

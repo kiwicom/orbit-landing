@@ -107,6 +107,9 @@ const LocationsWrapper = styled.div`
   -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
 
+  padding-left: ${({ theme }) => theme.landing.bodyPadding};
+  padding-right: ${({ theme }) => theme.landing.bodyPadding};
+
   & > * {
     margin-left: 20px;
   }
@@ -183,7 +186,7 @@ const Locations = ({
                   <LocationCard
                     logo={RouteNoStops}
                     eventName=""
-                    location={`See all events`}
+                    location={`See all ${locations.length} events`}
                     href="/locations/"
                     backgroundColor="#00A991"
                   />

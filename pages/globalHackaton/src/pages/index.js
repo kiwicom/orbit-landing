@@ -6,56 +6,32 @@ import styled from 'styled-components';
 import Button from '@kiwicom/orbit-components/lib/Button';
 import TextLink from '@kiwicom/orbit-components/lib/TextLink';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
+import { useStaticQuery, graphql } from 'gatsby';
 
 // Components
 import Faq from '@kiwicom/orbit-landing-components/src/Faq';
 import NavBar from '@kiwicom/orbit-landing-components/src/NavBar';
 import Mission from '@kiwicom/orbit-landing-components/src/Mission';
-import Imagewall from '@kiwicom/orbit-landing-components/src/ImageWall';
 import JoinUs from '@kiwicom/orbit-landing-components/src/JoinUs';
 import Locations from '@kiwicom/orbit-landing-components/src/Locations';
 import HeroCentered from '@kiwicom/orbit-landing-components/src/HeroCentered';
-import Timeline from '@kiwicom/orbit-landing-components/src/Timeline';
 import Sponsors from '@kiwicom/orbit-landing-components/src/Sponsors';
 import Prizes from '@kiwicom/orbit-landing-components/src/Prizes';
-import Contact from '@kiwicom/orbit-landing-components/src/Contact';
 import OrbitLanding from '@kiwicom/orbit-landing-components/src/OrbitLanding';
 
 import Footer from '../components/Footer';
 import NewLocations from '../components/NewLocations';
 import Seo from '../components/seo';
+import About from '../components/About';
+import Images from '../components/Images';
+import Contact from '../components/Contact';
+import Schedule from '../components/Schedule';
 // Images
 import heroPattern from '../images/pattern04.svg';
 import heroImg2 from '../images/hero02.jpg';
 import heroSvg from '../images/hero2.svg';
-import missionImage from '../images/mission.jpg';
-import grid01 from '../images/grid01.jpg';
-import grid02 from '../images/grid02.jpg';
-import grid03 from '../images/grid03.jpg';
-import grid04 from '../images/grid04.jpg';
-import grid05 from '../images/grid05.jpg';
-import grid06 from '../images/grid06.jpg';
-import grid07 from '../images/grid07.jpg';
-import grid08 from '../images/grid08.jpg';
-import grid09 from '../images/grid09.jpg';
 import joinUsImg from '../images/joinUsImg.jpg';
 import joinUsPattern from '../images/pattern03.svg';
-import icAccessibility from '../images/ic-accessibility.svg';
-import icGlobe from '../images/ic-globe.svg';
-import icTopic from '../images/ic-topic.svg';
-import locationList from '../locationsList';
-
-const images = [
-  grid01,
-  grid02,
-  grid03,
-  grid08,
-  grid04,
-  grid05,
-  grid09,
-  grid07,
-  grid06,
-];
 
 const descriptionSupport = (
   <>
@@ -71,6 +47,50 @@ const StyledWrapper = styled.div`
 `;
 
 const IndexPage = () => {
+
+  const data = useStaticQuery(graphql`
+    query pagesAllPosts {
+      allPrismicLocations {
+        nodes {
+          id
+          uid
+          data {
+            logo {
+              url
+            }
+            logo_dark {
+              url
+            }
+            background_image {
+              url
+            }
+            location_country {
+              text
+            }
+            location_city {
+              text
+            }
+            featured
+          }
+        }
+      }
+    }
+  `);
+
+  const locationList = data.allPrismicLocations.nodes.map(el => {
+    return {
+      featured: el.data.featured === 'featured',
+      backgroundImage: el.data.background_image.url,
+      href:
+        el.data.link_to_event && el.data.link_to_event.url
+          ? el.data.link_to_event.url
+          : `/${el.uid}`,
+      location: el.data.location_city.text,
+      eventName: el.data.location_country.text,
+      logo: el.data.logo_dark.url,
+    };
+  });
+
   return (
     <OrbitLanding>
       <StyledWrapper>
@@ -121,60 +141,10 @@ const IndexPage = () => {
           title="Hack travel and make it smarter, sustainable and accessible for everyone."
           pattern={heroPattern}
           locations={locationList}
-          locationsHeading="Choose event you want to attend"
-          suppressed
+          locationsHeading="Choose an event you want to attend"
         />
-        <NewLocations />
-        <Mission
-          id="about"
-          category=""
-          title="Join us in making travel better "
-          subTitle="by travellers, for travellers"
-          description={
-            <>
-              At Kiwi.com, we care. We love the world of travel, but we’re aware
-              of its dark side. That’s why we’re inviting everyone to{' '}
-              <b>
-                help us reshape the way we travel to make it smarter,
-                sustainable and accessible for everyone.
-              </b>{' '}
-              <br />
-              <br />
-              Let’s celebrate World Tourism Day by attending and organising
-              travel hackathons all over the globe on 27 September. We want to
-              bring together engineers, designers, and innovators: providing
-              them with a creative and supportive environment, and encouraging
-              their ideas on how to hack travel.
-              <br />
-              <br />
-              We hope to trigger a global <b>#HackTravel</b> movement that would
-              become a platform for constant improvement in the travel industry.
-              Here are the main topics for this year.
-            </>
-          }
-          sideImage={missionImage}
-          items={[
-            {
-              title: 'Sustainability',
-              content:
-                'Do you have an idea on how to make travel more responsible? How to deal with mass tourism or how to support local economies?',
-              img: icGlobe,
-            },
-            {
-              title: 'Accessibility',
-              content:
-                'How can we make travel better for people with disabilities? How to find well-adapted hotel rooms, accessible restaurants or how to travel easier with musical instruments or bikes?',
-              img: icAccessibility,
-            },
-            {
-              title: 'Community',
-              content:
-                'People are getting more and more interested in authentic experiences that support local communities. Connect the unconnected and make tourism become a tool building online and offline communities.',
-              img: icTopic,
-            },
-          ]}
-        />
-        <Imagewall images={images} />
+        <About />
+        <Images />
         <Prizes
           id="prizes"
           title="Prizes"
@@ -212,21 +182,7 @@ const IndexPage = () => {
             </>
           }
         />
-        <Timeline
-          title={
-            <>
-              Schedule for <br /> Kiwi.com hackathons
-            </>
-          }
-          corner
-          suppressed
-          content="We begin on Friday, 27 September and we will be hacking for 24 hours. Don’t worry, we will provide everything you need so you can last all night long. Please note that for some hackathons, the schedule might differ. Check the event website."
-          items={[
-            { time: '8.9.', title: 'Application deadline' },
-            { time: '14.9.', title: 'Confirmation of attendees' },
-            { time: '27–28.9.', title: 'Kiwi.com hackathons' },
-          ]}
-        />
+        <Schedule />
         <Faq
           id="faq"
           items={[
@@ -279,32 +235,7 @@ const IndexPage = () => {
             },
           ]}
         />
-        <Contact
-          id="contact"
-          title="Contact"
-          leftSectionHeading="Questions"
-          leftSectionDescription={
-            <>
-              Do you have a question, an idea or another request? Don’t hesitate
-              to drop us a line at{' '}
-              <TextLink href="mailto:globalhack@kiwi.com">
-                globalhack@kiwi.com
-              </TextLink>
-              .
-            </>
-          }
-          rightSectionHeading="Get involved"
-          rightSectionDescription={
-            <>
-              Do you want to join us as a Global Hackathon Ambassador, Partner
-              or Volunteer? Shoot us an e-mail at{' '}
-              <TextLink href="mailto:globalhack@kiwi.com">
-                globalhack@kiwi.com
-              </TextLink>
-              .
-            </>
-          }
-        />
+        <Contact />
         <JoinUs
           title="Join Us"
           descrtiption="Please, fill in your application carefully and thoroughly, we'll be choosing the attendees based on what you write there."
