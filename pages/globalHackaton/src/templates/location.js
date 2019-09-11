@@ -11,6 +11,7 @@ import Mentors from '@kiwicom/orbit-landing-components/src/Mentors';
 import Mission from '@kiwicom/orbit-landing-components/src/Mission';
 import Hero from '@kiwicom/orbit-landing-components/src/Hero';
 import JoinUs from '@kiwicom/orbit-landing-components/src/JoinUs';
+import Timeline from '@kiwicom/orbit-landing-components/src/Timeline';
 
 import Footer from '../components/Footer';
 import Seo from '../components/seo';
@@ -84,6 +85,26 @@ const resolveSliceMapping = el => {
         title={el.primary.mentors_title.text}
         subTitle={el.primary.mentors_subtitle.text}
         mentors={mentorsMapped}
+      />
+    );
+  }
+
+  if (el.slice_type === 'timeline') {
+    console.log(el);
+    const { primary, items } = el;
+    const mappedItems = items.map(it => {
+      return {
+        time: it.item_time1 && it.item_time1.text,
+        title: it.item_title && it.item_title.text,
+      };
+    });
+
+    return (
+      <Timeline
+        suppressed={primary.background === 'suppressed'}
+        title={primary.timeline_title && primary.timeline_title.text}
+        content={primary.timeline_content && primary.timeline_content.text}
+        items={mappedItems}
       />
     );
   }
@@ -370,6 +391,27 @@ export const pageQuery = graphql`
               }
               mentor_item_profile {
                 url
+              }
+            }
+          }
+          ... on PrismicLocationsBodyTimeline {
+            id
+            slice_type
+            primary {
+              background
+              timeline_title {
+                text
+              }
+              timeline_content {
+                text
+              }
+            }
+            items {
+              item_time1 {
+                text
+              }
+              item_title {
+                text
               }
             }
           }
