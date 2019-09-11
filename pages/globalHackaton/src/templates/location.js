@@ -212,7 +212,7 @@ const Location = ({
           id="about"
           category=""
           title="What do we evaluate?"
-          subTitle="Technical aspects 40%, Design 20%, Idea 30 %, Wow factor 10%"
+          subTitle="Technical aspects 40%, Design 20%, Idea 30%, Wow factor 10%"
           description={
             <>
               <b>Technical aspects</b>: The judging team would like to hear the
