@@ -90,7 +90,6 @@ const resolveSliceMapping = el => {
   }
 
   if (el.slice_type === 'timeline') {
-    console.log(el);
     const { primary, items } = el;
     const mappedItems = items.map(it => {
       return {
