@@ -47,7 +47,6 @@ const StyledWrapper = styled.div`
 `;
 
 const IndexPage = () => {
-
   const data = useStaticQuery(graphql`
     query pagesAllPosts {
       allPrismicLocations {
@@ -107,7 +106,12 @@ const IndexPage = () => {
               tablet={{ direction: 'row', align: 'center' }}
             >
               <Button href="#locations">Register as participant</Button>
-              <Button href="#new-locations" type="white" bordered>
+              <Button
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfiqeXYsVUS5Q17QZT5GB4botBn-BKU2hzkOjlFxRJVfewdxA/viewform"
+                type="white"
+                external
+                bordered
+              >
                 Add your hackathon
               </Button>
             </Stack>

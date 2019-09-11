@@ -212,7 +212,7 @@ const Location = ({
           id="about"
           category=""
           title="What do we evaluate?"
-          subTitle="Technical aspects 40%, Design 20%, Idea 30 %, Wow factor 10%"
+          subTitle="Technical aspects 40%, Design 20%, Idea 30%, Wow factor 10%"
           description={
             <>
               <b>Technical aspects</b>: The judging team would like to hear the
@@ -224,9 +224,11 @@ const Location = ({
               <br />
               <br />
               <b>Design</b>: How well is it designed? Did you put thought into
-              the user experience? Idea: How creative is your idea? What
-              approach did you follow? How well is it aligned with the hackathon
-              topics?
+              the user experience?
+              <br />
+              <br />
+              <b>Idea</b>: How creative is your idea? What approach did you
+              follow? How well is it aligned with the hackathon topics?
               <br />
               <br />
               <b>Wow! Factor</b>: show the jury what is unique about the
