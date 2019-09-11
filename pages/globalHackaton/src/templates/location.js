@@ -224,9 +224,11 @@ const Location = ({
               <br />
               <br />
               <b>Design</b>: How well is it designed? Did you put thought into
-              the user experience? Idea: How creative is your idea? What
-              approach did you follow? How well is it aligned with the hackathon
-              topics?
+              the user experience?
+              <br />
+              <br />
+              <b>Idea</b>: How creative is your idea? What approach did you
+              follow? How well is it aligned with the hackathon topics?
               <br />
               <br />
               <b>Wow! Factor</b>: show the jury what is unique about the

@@ -35,7 +35,7 @@ const NewLocations = () => {
         {
           time: 'Europe',
           title:
-            'Amsterdam, Netherlands; Berlin, Germany; Bratislava, Slovakia; Bucharest, Romania; Budapest, Hungary; Edinburgh, United Kingdon; Tirana, Albania; Warsaw, Poland; Moscow, Russia' 
+            'Amsterdam, Netherlands; Berlin, Germany; Bratislava, Slovakia; Bucharest, Romania; Budapest, Hungary; Edinburgh, United Kingdon; Tirana, Albania; Warsaw, Poland; Moscow, Russia',
         },
         {
           time: 'Americas',
