@@ -42,15 +42,16 @@ const resolveSliceMapping = el => {
         title: item.prize_item_title && item.prize_item_title.text,
       };
     });
+
     return (
       <Prizes
         key={el.id}
         id="prizes"
         title={el.primary.prizes_title.text}
         description={
-          <span
+          <div
             dangerouslySetInnerHTML={{
-              __html: el.primary.prize_description.html,
+              __html: `<div>${el.primary.prize_description.html}</div>`,
             }}
           />
         }
@@ -185,19 +186,19 @@ const Location = ({
                 },
                 {
                   title: 'About',
-                  href: '/#about',
+                  href: '#about',
                 },
                 {
                   title: 'Prizes',
-                  href: '/#prizes',
+                  href: '#prizes',
                 },
                 {
                   title: 'FAQ',
-                  href: '/#faq',
+                  href: '#faq',
                 },
                 {
                   title: 'Contact',
-                  href: '/#contact',
+                  href: '#contact',
                 },
               ]}
             />
