@@ -101,7 +101,7 @@ const resolveSliceMapping = el => {
     return (
       <Timeline
         suppressed={primary.background === 'suppressed'}
-        title={primary.timeline_title && primary.timeline_title.text}
+        title={primary.titled && primary.titled.text}
         content={primary.timeline_content && primary.timeline_content.text}
         items={mappedItems}
       />
@@ -398,7 +398,7 @@ export const pageQuery = graphql`
             slice_type
             primary {
               background
-              timeline_title {
+              titled {
                 text
               }
               timeline_content {
