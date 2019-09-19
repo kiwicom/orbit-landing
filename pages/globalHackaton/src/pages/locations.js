@@ -31,7 +31,7 @@ const StyledWrapper = styled.div`
   width: 100%;
   height: auto;
   max-width: 1920px;
-  padding: calc(1rem + 3vw) calc(1rem + 7.02vw) 0;
+  padding: calc(1rem + 3vw) calc(1rem + 7.02vw) calc(1rem + 7.02vw);
   box-sizing: border-box;
 `;
 
@@ -41,7 +41,6 @@ const StyledNavBarWrapper = styled.div`
 `;
 
 const IndexPage = () => {
-
   const data = useStaticQuery(graphql`
     query locationsAllPosts {
       allPrismicLocations {
@@ -77,7 +76,6 @@ const IndexPage = () => {
       logo: el.data.logo.url,
     };
   });
-
 
   return (
     <OrbitLanding>
@@ -142,7 +140,6 @@ const IndexPage = () => {
             </Grid>
           </Stack>
         </StyledWrapper>
-        <NewLocations />
         <Contact
           id="contact"
           title="Contact"
@@ -169,7 +166,6 @@ const IndexPage = () => {
             </>
           }
         />
-
         <Footer />
       </>
     </OrbitLanding>
