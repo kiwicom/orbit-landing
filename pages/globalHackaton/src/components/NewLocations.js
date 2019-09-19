@@ -9,16 +9,15 @@ const NewLocations = () => {
     <Timeline
       id="new-locations"
       background="white"
-      title="Locations we are working on"
+      title="Add your location"
       suppressed
       content={
         <>
           <Stack>
             <div>
-              Where else can you expect a hackathon? Check the list below,{' '}
+              Do you want to add you event? Fill in the request below or {' '}
               <TextLink href="mailto:globalhack@kiwi.com">let us know</TextLink>{' '}
-              if you want to be a partner or sponsor some of them. Help us
-              expand the list by adding your event.
+              if you want to be a partner or sponsor.
             </div>
             <Button
               type="primary"
@@ -31,14 +30,6 @@ const NewLocations = () => {
           </Stack>
         </>
       }
-      items={[
-        {
-          time: 'Europe',
-          title:
-            'all announced',
-        },
-        
-      ]}
     />
   );
 };
