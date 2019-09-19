@@ -37,16 +37,7 @@ const NewLocations = () => {
           title:
             'all announced',
         },
-        {
-          time: 'Americas',
-          title:
-            'New York City, USA; San Juan, Puerto Rico; Rochester, New York; São Paulo, Brazil',
-        },
-        {
-          time: 'Asia',
-          title:
-            'Tel Aviv, Israel; Pune, India; Hong Kong, Hong Kong; Taiwan, Taiwan; Eskişehir, Turkey; Delhi, India; Chandigarh, India; Bangkok, Thailand; Ahmedabad, India; Greater Noida, India; Delhi NCR, India; Bangalore, India; Chennai, India; Jaipur, India',
-        },
+        
       ]}
     />
   );
