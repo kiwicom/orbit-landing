@@ -1,6 +1,6 @@
 // @flow
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import './reset.css';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -11,17 +11,12 @@ import OrbitLanding from '@kiwicom/orbit-landing-components/src/OrbitLanding';
 import LocationCard from '@kiwicom/orbit-landing-components/src/LocationsCard';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
-import Text from '@kiwicom/orbit-components/lib/Text';
-import Facebook from '@kiwicom/orbit-components/lib/icons/Facebook';
-import Twitter from '@kiwicom/orbit-components/lib/icons/Twitter';
-import Linkedin from '@kiwicom/orbit-components/lib/icons/Linkedin';
 import TextLink from '@kiwicom/orbit-components/lib/TextLink';
 import Contact from '@kiwicom/orbit-landing-components/src/Contact';
 import NavBar from '@kiwicom/orbit-landing-components/src/NavBar';
 import Locations from '@kiwicom/orbit-landing-components/src/Locations';
 
 import Footer from '../components/Footer';
-import NewLocations from '../components/NewLocations';
 import Seo from '../components/seo';
 import heroPattern from '../images/pattern04.svg';
 
@@ -48,6 +43,7 @@ const IndexPage = () => {
           id
           uid
           data {
+            display_on_website
             logo {
               url
             }
@@ -66,16 +62,18 @@ const IndexPage = () => {
     }
   `);
 
-  const locationList = data.allPrismicLocations.nodes.map(el => {
-    return {
-      id: el.id,
-      internalHref: `/${el.uid}`,
-      href: el.data.link_to_event && el.data.link_to_event.url,
-      location: el.data.location_city.text,
-      eventName: el.data.location_country.text,
-      logo: el.data.logo.url,
-    };
-  });
+  const locationList = data.allPrismicLocations.nodes
+    .filter(el => el.data.display_on_website !== 'false')
+    .map(el => {
+      return {
+        id: el.id,
+        internalHref: `/${el.uid}`,
+        href: el.data.link_to_event && el.data.link_to_event.url,
+        location: el.data.location_city.text,
+        eventName: el.data.location_country.text,
+        logo: el.data.logo.url,
+      };
+    });
 
   return (
     <OrbitLanding>

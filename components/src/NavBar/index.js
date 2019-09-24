@@ -4,7 +4,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import Hide from '@kiwicom/orbit-components/lib/Hide';
-import TextLink from '@kiwicom/orbit-components/lib/TextLink';
 
 import defaultTheme from '../defaultTheme';
 import logo from '../../static/kiwi-white.svg';

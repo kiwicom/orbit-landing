@@ -5,13 +5,10 @@ import styled from 'styled-components';
 import TextLink from '@kiwicom/orbit-components/lib/TextLink';
 import OrbitLanding from '@kiwicom/orbit-landing-components/src/OrbitLanding';
 import NavBar from '@kiwicom/orbit-landing-components/src/NavBar';
-import Prizes from '@kiwicom/orbit-landing-components/src/Prizes';
 import Faq from '@kiwicom/orbit-landing-components/src/Faq';
-import Mentors from '@kiwicom/orbit-landing-components/src/Mentors';
 import Mission from '@kiwicom/orbit-landing-components/src/Mission';
 import Hero from '@kiwicom/orbit-landing-components/src/Hero';
 import JoinUs from '@kiwicom/orbit-landing-components/src/JoinUs';
-import Timeline from '@kiwicom/orbit-landing-components/src/Timeline';
 
 import Footer from '../components/Footer';
 import Seo from '../components/seo';
@@ -24,6 +21,7 @@ import Schedule from '../components/Schedule';
 import background from '../images/hero02.jpg';
 import joinUsImg from '../images/joinUsImg.jpg';
 import joinUsPattern from '../images/pattern03.svg';
+import { sliceMapping, sponsorsMapping } from '../components/SliceMapping';
 
 const descriptionSupport = (
   <>
@@ -33,82 +31,6 @@ const descriptionSupport = (
     <TextLink href="mailto:globalhack@kiwi.com">here.</TextLink>
   </>
 );
-
-const resolveSliceMapping = el => {
-  if (el.slice_type === 'prices') {
-    const prizesMapped = el.items.map(item => {
-      return {
-        place: item.prize_item_place,
-        prize: item.prize_item_description && item.prize_item_description.text,
-        title: item.prize_item_title && item.prize_item_title.text,
-      };
-    });
-
-    return (
-      <Prizes
-        key={el.id}
-        id="prizes"
-        title={el.primary.prizes_title.text}
-        description={
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `<div>${el.primary.prize_description.html}</div>`,
-            }}
-          />
-        }
-        prizes={prizesMapped}
-        infoText={el.primary.additional_info.text}
-      />
-    );
-  }
-
-  if (el.slice_type === 'mentors') {
-    const mentorsMapped = el.items.map(item => {
-      return {
-        name: item.mentor_item_name && item.mentor_item_name.text,
-        description:
-          item.mentor_item_description && item.mentor_item_description.text,
-        socials: {
-          linkedin: item.mentor_item_linkedin && item.mentor_item_linkedin.url,
-          facebook: item.mentor_item_facebook && item.mentor_item_facebook.url,
-          twitter: item.mentor_item_twitter && item.mentor_item_twitter.url,
-        },
-        profilePicture:
-          item.mentor_item_profile && item.mentor_item_profile.url,
-      };
-    });
-    return (
-      <Mentors
-        suppressed
-        key={el.id}
-        category={el.primary.category.text}
-        title={el.primary.mentors_title.text}
-        subTitle={el.primary.mentors_subtitle.text}
-        mentors={mentorsMapped}
-      />
-    );
-  }
-
-  if (el.slice_type === 'timeline') {
-    const { primary, items } = el;
-    const mappedItems = items.map(it => {
-      return {
-        time: it.item_time1 && it.item_time1.text,
-        title: it.item_title && it.item_title.text,
-      };
-    });
-
-    return (
-      <Timeline
-        suppressed={primary.background === 'suppressed'}
-        title={primary.titled && primary.titled.text}
-        content={primary.timeline_content && primary.timeline_content.text}
-        items={mappedItems}
-      />
-    );
-  }
-  return null;
-};
 
 const CustomButton = styled.button`
   position: relative;
@@ -227,7 +149,7 @@ const Location = ({
         <About />
         {data.body &&
           data.body.map(el => {
-            return resolveSliceMapping(el);
+            return sliceMapping(el);
           })}
         <Mission
           id="about"
@@ -331,6 +253,10 @@ const Location = ({
           backgroundImage={joinUsImg}
           patterns={[joinUsPattern, joinUsPattern]}
         />
+        {data.body &&
+          data.body.map(el => {
+            return sponsorsMapping(el);
+          })}
         <Footer />
       </>
     </OrbitLanding>
@@ -411,6 +337,16 @@ export const pageQuery = graphql`
               }
               item_title {
                 text
+              }
+            }
+          }
+          ... on PrismicLocationsBodySponsors {
+            id
+            slice_type
+            items {
+              sponsor_image {
+                url
+                alt
               }
             }
           }

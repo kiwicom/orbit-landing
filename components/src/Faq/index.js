@@ -31,7 +31,7 @@ const Faq = ({ items, theme, id }) => {
           spacing="natural"
           tablet={{ spacing: 'loose' }}
         >
-          <Heading style="title1" element="h2" inverted>
+          <Heading type="title1" element="h2" inverted>
             FAQ
           </Heading>
           <Stack spacing="none" flex wrap>
