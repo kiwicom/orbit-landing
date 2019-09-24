@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Heading from '@kiwicom/orbit-components/lib/Heading';
 import Text from '@kiwicom/orbit-components/lib/Text';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
@@ -52,7 +52,6 @@ const StyledContentContainer = styled.div`
 StyledContentContainer.defaultProps = {
   theme: defaultTheme,
 };
-
 
 const Timeline = ({
   id,

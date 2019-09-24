@@ -1,17 +1,15 @@
 // @flow
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import './reset.css';
 import styled from 'styled-components';
 import Button from '@kiwicom/orbit-components/lib/Button';
 import TextLink from '@kiwicom/orbit-components/lib/TextLink';
 import Stack from '@kiwicom/orbit-components/lib/Stack';
 import { useStaticQuery, graphql } from 'gatsby';
-
 // Components
 import Faq from '@kiwicom/orbit-landing-components/src/Faq';
 import NavBar from '@kiwicom/orbit-landing-components/src/NavBar';
-import Mission from '@kiwicom/orbit-landing-components/src/Mission';
 import JoinUs from '@kiwicom/orbit-landing-components/src/JoinUs';
 import Locations from '@kiwicom/orbit-landing-components/src/Locations';
 import HeroCentered from '@kiwicom/orbit-landing-components/src/HeroCentered';
@@ -20,7 +18,6 @@ import Prizes from '@kiwicom/orbit-landing-components/src/Prizes';
 import OrbitLanding from '@kiwicom/orbit-landing-components/src/OrbitLanding';
 
 import Footer from '../components/Footer';
-import NewLocations from '../components/NewLocations';
 import Seo from '../components/seo';
 import About from '../components/About';
 import Images from '../components/Images';
@@ -32,6 +29,8 @@ import heroImg2 from '../images/hero02.jpg';
 import heroSvg from '../images/hero2.svg';
 import joinUsImg from '../images/joinUsImg.jpg';
 import joinUsPattern from '../images/pattern03.svg';
+import sab from '../images/sab-dark.png';
+import gdg from '../images/gdg.png';
 
 const descriptionSupport = (
   <>
@@ -51,12 +50,9 @@ const IndexPage = () => {
     query pagesAllPosts {
       allPrismicLocations {
         nodes {
-          id
           uid
           data {
-            logo {
-              url
-            }
+            display_on_website
             logo_dark {
               url
             }
@@ -76,19 +72,21 @@ const IndexPage = () => {
     }
   `);
 
-  const locationList = data.allPrismicLocations.nodes.map(el => {
-    return {
-      featured: el.data.featured === 'featured',
-      backgroundImage: el.data.background_image.url,
-      href:
-        el.data.link_to_event && el.data.link_to_event.url
-          ? el.data.link_to_event.url
-          : `/${el.uid}`,
-      location: el.data.location_city.text,
-      eventName: el.data.location_country.text,
-      logo: el.data.logo_dark.url,
-    };
-  });
+  const locationList = data.allPrismicLocations.nodes
+    .filter(el => el.data.display_on_website !== 'false')
+    .map(el => {
+      return {
+        featured: el.data.featured === 'featured',
+        backgroundImage: el.data.background_image.url,
+        href:
+          el.data.link_to_event && el.data.link_to_event.url
+            ? el.data.link_to_event.url
+            : `/${el.uid}`,
+        location: el.data.location_city.text,
+        eventName: el.data.location_country.text,
+        logo: el.data.logo_dark.url,
+      };
+    });
 
   return (
     <OrbitLanding>
@@ -254,6 +252,7 @@ const IndexPage = () => {
           backgroundImage={joinUsImg}
           patterns={[joinUsPattern, joinUsPattern]}
         />
+        <Sponsors logos={[gdg, sab]} />
         <Footer />
       </StyledWrapper>
     </OrbitLanding>

@@ -12,9 +12,6 @@ import Twitter from '@kiwicom/orbit-components/lib/icons/Twitter';
 import Linkedin from '@kiwicom/orbit-components/lib/icons/Linkedin';
 
 import Container from '../utils/Container';
-import Pattern from '../utils/Pattern';
-import pattern09 from '../../static/pattern09.svg';
-import defaultTheme from '../defaultTheme';
 
 const Wrapper = styled.div``;
 

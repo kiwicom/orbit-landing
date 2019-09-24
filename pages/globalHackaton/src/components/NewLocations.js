@@ -34,10 +34,8 @@ const NewLocations = () => {
       items={[
         {
           time: 'Europe',
-          title:
-            'all announced',
+          title: 'all announced',
         },
-        
       ]}
     />
   );
