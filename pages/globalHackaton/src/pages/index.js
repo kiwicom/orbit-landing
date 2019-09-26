@@ -134,6 +134,10 @@ const IndexPage = () => {
                   title: 'Contact',
                   href: '#contact',
                 },
+                {
+                  title: 'Sponsors',
+                  href: '#sponsors',
+                },
               ]}
             />
           }
@@ -252,7 +256,7 @@ const IndexPage = () => {
           backgroundImage={joinUsImg}
           patterns={[joinUsPattern, joinUsPattern]}
         />
-        <Sponsors logos={[gdg, sab]} />
+        <Sponsors id="sponsors" logos={[gdg, sab]} />
         <Footer />
       </StyledWrapper>
     </OrbitLanding>

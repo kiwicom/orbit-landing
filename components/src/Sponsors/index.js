@@ -42,7 +42,7 @@ const SponsorWrapper = styled.div`
   align-items: center;
   width: 50%;
   margin: 4vh 0;
-  padding: 0 3.37vw;
+  padding: 0 1vw;
   box-sizing: border-box;
 
   ${media.tablet(css`

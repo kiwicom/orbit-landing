@@ -9,7 +9,7 @@ export const sponsorsMapping = el => {
     const mappedLogos = el.items.map(el => {
       return el.sponsor_image.url;
     });
-    return <Sponsors logos={mappedLogos} />;
+    return <Sponsors id="sponsors" logos={mappedLogos} />;
   }
   return null;
 };

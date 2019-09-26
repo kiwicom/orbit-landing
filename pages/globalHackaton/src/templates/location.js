@@ -142,6 +142,10 @@ const Location = ({
                   title: 'Contact',
                   href: '#contact',
                 },
+                {
+                  title: 'Sponsors',
+                  href: '#sponsors',
+                },
               ]}
             />
           }
