@@ -56,7 +56,7 @@ SponsorWrapper.defaultProps = {
 
 const SponsorLogo = styled.img`
   max-width: stretch;
-  max-height: 50px;
+  max-height: 100px;
 `;
 
 const Sponsors = ({ logos, id }) => {
