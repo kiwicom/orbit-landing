@@ -31,6 +31,7 @@ import joinUsImg from '../images/joinUsImg.jpg';
 import joinUsPattern from '../images/pattern03.svg';
 import sab from '../images/sab-dark.png';
 import gdg from '../images/gdg.png';
+import y4pt from '../images/y4pt.png';
 
 const descriptionSupport = (
   <>
@@ -256,7 +257,7 @@ const IndexPage = () => {
           backgroundImage={joinUsImg}
           patterns={[joinUsPattern, joinUsPattern]}
         />
-        <Sponsors id="sponsors" logos={[gdg, sab]} />
+        <Sponsors id="sponsors" logos={[gdg, sab, y4pt]} />
         <Footer />
       </StyledWrapper>
     </OrbitLanding>
